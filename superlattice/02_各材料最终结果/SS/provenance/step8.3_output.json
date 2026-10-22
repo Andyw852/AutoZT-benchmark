@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-22T17:07:05",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step8.3_output",
+  "material": {
+    "name": "SS",
+    "path": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu",
+    "local": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice/SS"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step13_output.py",
+    "sha256": "41b615494e43d41c4f55335bb6ba380ebd21dc6e11b48e3a72fa251ae0976ed7",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "c5be81578711eb97ce195529bf8e71c3e9908ef5b5fb666fdef1d4156cad8b0a",
+      "source": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice/SS/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "gen_step13_output.py": {
+      "sha256": "41b615494e43d41c4f55335bb6ba380ebd21dc6e11b48e3a72fa251ae0976ed7",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.3_output/gen_step13_output.py",
+      "origin": "skill",
+      "args": null
+    },
+    "step.conf": {
+      "sha256": "8f613ec9920c9dc7a537c89daef9011d19112d40df9c9daf14acc9bed07c196c",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "stepconf.py": {
+      "sha256": "0819cce62a2cb9292c2efb9e01a881f4b78970077d0f5826c5c526baa4397710",
+      "src_sha256": "0819cce62a2cb9292c2efb9e01a881f4b78970077d0f5826c5c526baa4397710",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "8f613ec9920c9dc7a537c89daef9011d19112d40df9c9daf14acc9bed07c196c",
+    "chars": 5225,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step8.3_output   材料 SS\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [2] /mnt/d/joint_research_project/AutoZT/基准测试/superlattice/SS/ke-dft-cpu/project_setting/templates/step.conf   (project_setting 共用)\n\n[params]\nBANDGAP        = pbe                                                                                                                                                                                                                                                                                                                                                                                                                    # <- [2]\nFUNC           = pbe                                                                                                                                                                                                                                                                                                                                                                                                                    # <- [2]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh                                                                                                                                                                                                                                                                                                                                                                # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                                                                                                                                                                                                                                                                                                                                                                                   # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mace_models                                                                                                                                                                                                                                                                                                                                                                        # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                                                                                                                                                                                                                                                                                                                                                                               # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials                                                                                                                                                                                                                                                                                                                                                                   # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                                                                                                                                                                                                                                                                                                                                                                                 # <- [cluster:jzzn]\nQE_BIN         = /public/home/wangchao/software/q-e-qe-7.3/bin                                                                                                                                                                                                                                                                                                                                                                          # <- [cluster:jzzn]\nQE_PSEUDO_DIR  = /public/home/wangchao/software/AutoZT/pseudo-nc                                                                                                                                                                                                                                                                                                                                                                        # <- [cluster:jzzn]\nQE_SETUP       = export LD_LIBRARY_PATH=/public/software/intel/2019/mkl/lib/intel64_lin:/public/software/intel/2019/intelpython3/lib:/public/software/intel/2019/impi/2019.3.199/intel64/lib/release:/public/software/intel/2019/impi/2019.3.199/intel64/lib:${LD_LIBRARY_PATH:-}; export PATH=/public/software/intel/2019/impi/2019.3.199/intel64/bin:/public/home/wangchao/software/q-e-qe-7.3/bin:${PATH}; export OMP_NUM_THREADS=1  # <- [cluster:jzzn]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice",
+    "argv": "/home/wangchao/software/AutoZT/bin/autozt"
+  }
+}

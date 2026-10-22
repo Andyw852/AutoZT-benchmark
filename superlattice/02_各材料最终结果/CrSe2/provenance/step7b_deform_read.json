@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-21T04:26:20",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step7b_deform_read",
+  "material": {
+    "name": "CrSe2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/superlattice/CrSe2/ke-dft-cpu",
+    "local": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice/CrSe2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/superlattice/CrSe2/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step9b_deform_read.py",
+    "sha256": "e304493d043f5f4309fa27798108f97b1d8e3d62ba98dfa820db06452c14d00a",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "d1e07726e977a8efd033d4a9433975add543444f2f95bc725128cfef97b6597e",
+      "source": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice/CrSe2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "dp_symmetrize.py": {
+      "sha256": "38b93f8968d2ff5825c03917a32afc9e28cf20528d5a26da836e45ed686c7736",
+      "src_sha256": "38b93f8968d2ff5825c03917a32afc9e28cf20528d5a26da836e45ed686c7736",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./dp_symmetrize.py",
+      "origin": "skill"
+    },
+    "gen_step9b_deform_read.py": {
+      "sha256": "e304493d043f5f4309fa27798108f97b1d8e3d62ba98dfa820db06452c14d00a",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step7_deform/step7b_read/gen_step9b_deform_read.py",
+      "origin": "skill",
+      "args": null
+    },
+    "ke_common.py": {
+      "sha256": "78cc71e8535af113b1a7ecce6f4faedfb8efb10129f08e0279c22e4ae46c90f5",
+      "src_sha256": "78cc71e8535af113b1a7ecce6f4faedfb8efb10129f08e0279c22e4ae46c90f5",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./ke_common.py",
+      "origin": "skill"
+    },
+    "nspin_norm_fix.py": {
+      "sha256": "0b8f3d03f44a37b72093116cb0aa98bac2aca9b972013ca0930240bb64ddb3a8",
+      "src_sha256": "0b8f3d03f44a37b72093116cb0aa98bac2aca9b972013ca0930240bb64ddb3a8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./nspin_norm_fix.py",
+      "origin": "skill"
+    },
+    "step.conf": {
+      "sha256": "c53373463b5f7d8930547314c84466f1fd5d211b0692f783b6427e00e502ef7c",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "stepconf.py": {
+      "sha256": "2ab447befe0d37a4c12b9dda2dc27b8ac60a15228c1c1230baaee3b94f8f1a85",
+      "src_sha256": "2ab447befe0d37a4c12b9dda2dc27b8ac60a15228c1c1230baaee3b94f8f1a85",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "c53373463b5f7d8930547314c84466f1fd5d211b0692f783b6427e00e502ef7c",
+    "chars": 1103,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step7b_deform_read   材料 CrSe2\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [2] /mnt/d/joint_research_project/AutoZT/基准测试/superlattice/CrSe2/ke-dft-cpu/project_setting/templates/step.conf   (project_setting 共用)\n\n[params]\nBANDGAP        = hse                                                      # <- [2]\nFUNC           = pbe                                                      # <- [2]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice",
+    "argv": "/home/wangchao/software/AutoZT/bin/autozt"
+  }
+}

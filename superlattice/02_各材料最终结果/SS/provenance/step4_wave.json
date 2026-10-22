@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-20T20:36:24",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step4_wave",
+  "material": {
+    "name": "SS",
+    "path": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu",
+    "local": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice/SS"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step6_wave.py",
+    "sha256": "d42a6860fdd9a417dbd632e02936827bd95ddad328383261d04f77a8d642da00",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "c5be81578711eb97ce195529bf8e71c3e9908ef5b5fb666fdef1d4156cad8b0a",
+      "source": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice/SS/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "gen_step6_wave.py": {
+      "sha256": "d42a6860fdd9a417dbd632e02936827bd95ddad328383261d04f77a8d642da00",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step4_wave/gen_step6_wave.py",
+      "origin": "skill",
+      "args": null
+    },
+    "ke_common.py": {
+      "sha256": "78cc71e8535af113b1a7ecce6f4faedfb8efb10129f08e0279c22e4ae46c90f5",
+      "src_sha256": "78cc71e8535af113b1a7ecce6f4faedfb8efb10129f08e0279c22e4ae46c90f5",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./ke_common.py",
+      "origin": "skill"
+    },
+    "step.conf": {
+      "sha256": "6945876370be1d6ab0845e579edfea04aaa4bdb8ea3b839ffc89964f0a793874",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "stepconf.py": {
+      "sha256": "2ab447befe0d37a4c12b9dda2dc27b8ac60a15228c1c1230baaee3b94f8f1a85",
+      "src_sha256": "2ab447befe0d37a4c12b9dda2dc27b8ac60a15228c1c1230baaee3b94f8f1a85",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    },
+    "submit_amset.tpl": {
+      "sha256": "c8bbd6511a169510fe4a59c273adb5378253e901bc78717d4fc0127467d5f0af",
+      "src_sha256": "c8bbd6511a169510fe4a59c273adb5378253e901bc78717d4fc0127467d5f0af",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_amset.tpl",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "6945876370be1d6ab0845e579edfea04aaa4bdb8ea3b839ffc89964f0a793874",
+    "chars": 1089,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step4_wave   材料 SS\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [2] /mnt/d/joint_research_project/AutoZT/基准测试/superlattice/SS/ke-dft-cpu/project_setting/templates/step.conf   (project_setting 共用)\n\n[params]\nBANDGAP        = hse                                                      # <- [2]\nFUNC           = pbe                                                      # <- [2]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice",
+    "argv": "/home/wangchao/software/AutoZT/bin/autozt"
+  }
+}

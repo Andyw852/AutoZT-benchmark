@@ -1,0 +1,814 @@
+{
+  "dim": "2d",
+  "is_2d": true,
+  "temperature_K": 300.0,
+  "skill_rev": "2026-10-11-0034",
+  "env": {
+    "python": "/public/home/wangchao/miniconda3/envs/atomate2_p_a/bin/python",
+    "amset": "N/A",
+    "host": "login01"
+  },
+  "overrides": {},
+  "s3_grid": {
+    "mesh": [
+      12,
+      42,
+      3
+    ],
+    "issues": [],
+    "allow_coarse": false
+  },
+  "functional": {
+    "func": "pbe",
+    "label": "PBE（GGA=PE，无色散修正）",
+    "source": "step1_opt/workflow_method.txt",
+    "note": "和文献比较前先核对文献用的泛函。"
+  },
+  "formula": "2D Bardeen-Shockley: μ=eℏ³C_2D/(k_BT m* m_d E1²)",
+  "results": [
+    {
+      "carrier": "electron",
+      "inputs": {
+        "C_2D_N_per_m": 107.84787,
+        "C_provenance": "step6 面内(C11+C22)/2 × h(V/A)=20.000Å",
+        "m_eff_m0": 0.7636,
+        "m_provenance": "带边方向分解+q^4外推(面内, 5方向, 最轻两支 0.7444/0.7832, 全组 0.7444..1.7747, spin=0)",
+        "E1_eV": 5.6043,
+        "E1_provenance": "band_edges.json 真空对齐(n=2)面内对角",
+        "T_K": 300.0
+      },
+      "mobility_cm2_Vs": 125.422,
+      "status": "ok",
+      "by_direction": {
+        "C_2D_N_per_m": [
+          106.96844000000002,
+          108.72729999999999
+        ],
+        "C_provenance": "step6 C11/C22 × h(V/A)=20.000A",
+        "m_eff_m0": [
+          0.9665,
+          1.0662
+        ],
+        "m_provenance": "带边二次型拟合(amset-subproc, 24点/8壳层, R<0.14, 模型=a+b+c+q4+d+e+f, 交叉项/主项=0.00, cond=3e+04, rel=0.057, spin=0)",
+        "E1_eV": [
+          5.839,
+          5.3695
+        ],
+        "E1_provenance": "band_edges.json 真空对齐(n=2) D_xx/D_yy",
+        "T_K": 300.0,
+        "formula": "mu_a = e*hbar^3*C_2D,a/(kB*T*m_a*m_d*E1_a^2); tau_a = mu_a*m_a/e",
+        "m_d_m0": 1.0151,
+        "x": {
+          "C_2D_N_per_m": 106.968,
+          "m_eff_m0": 0.9665,
+          "E1_eV": 5.839,
+          "mobility_cm2_Vs": 68.107,
+          "tau_s": 3.7425930378997606e-14
+        },
+        "y": {
+          "C_2D_N_per_m": 108.727,
+          "m_eff_m0": 1.0662,
+          "E1_eV": 5.3695,
+          "mobility_cm2_Vs": 74.207,
+          "tau_s": 4.498469742241963e-14
+        },
+        "status": "ok"
+      },
+      "multi_valley": {
+        "status": "谷 up 带 49 k=[0.5, 0.4048]（离带边 0.235 eV）拟合失败：逆质量张量奇异（4|a||b|-c²=-4，能量椭圆退化） —— 它在窗口 VALLEY_WINDOW_EV=0.30 里不能丢；确认它不重要就在本材料 step.conf 把 VALLEY_WINDOW_EV 调到它以下"
+      },
+      "mobility_vs_T": [
+        {
+          "T_K": 100.0,
+          "mobility_cm2_Vs": 376.266,
+          "mobility_x_cm2_Vs": 204.321,
+          "tau_x_s": 1.1227779113699282e-13,
+          "mobility_y_cm2_Vs": 222.621,
+          "tau_y_s": 1.349540922672589e-13,
+          "mobility_inplane_cm2_Vs": 213.471
+        },
+        {
+          "T_K": 200.0,
+          "mobility_cm2_Vs": 188.133,
+          "mobility_x_cm2_Vs": 102.16,
+          "tau_x_s": 5.613889556849641e-14,
+          "mobility_y_cm2_Vs": 111.31,
+          "tau_y_s": 6.747704613362945e-14,
+          "mobility_inplane_cm2_Vs": 106.735
+        },
+        {
+          "T_K": 300.0,
+          "mobility_cm2_Vs": 125.422,
+          "mobility_x_cm2_Vs": 68.107,
+          "tau_x_s": 3.7425930378997606e-14,
+          "mobility_y_cm2_Vs": 74.207,
+          "tau_y_s": 4.498469742241963e-14,
+          "mobility_inplane_cm2_Vs": 71.157
+        },
+        {
+          "T_K": 400.0,
+          "mobility_cm2_Vs": 94.066,
+          "mobility_x_cm2_Vs": 51.08,
+          "tau_x_s": 2.8069447784248204e-14,
+          "mobility_y_cm2_Vs": 55.655,
+          "tau_y_s": 3.3738523066814724e-14,
+          "mobility_inplane_cm2_Vs": 53.367
+        },
+        {
+          "T_K": 500.0,
+          "mobility_cm2_Vs": 75.253,
+          "mobility_x_cm2_Vs": 40.864,
+          "tau_x_s": 2.2455558227398563e-14,
+          "mobility_y_cm2_Vs": 44.524,
+          "tau_y_s": 2.6990818453451777e-14,
+          "mobility_inplane_cm2_Vs": 42.694
+        },
+        {
+          "T_K": 600.0,
+          "mobility_cm2_Vs": 62.711,
+          "mobility_x_cm2_Vs": 34.053,
+          "tau_x_s": 1.8712965189498803e-14,
+          "mobility_y_cm2_Vs": 37.103,
+          "tau_y_s": 2.2492348711209815e-14,
+          "mobility_inplane_cm2_Vs": 35.578
+        },
+        {
+          "T_K": 700.0,
+          "mobility_cm2_Vs": 53.752,
+          "mobility_x_cm2_Vs": 29.189,
+          "tau_x_s": 1.603968444814183e-14,
+          "mobility_y_cm2_Vs": 31.803,
+          "tau_y_s": 1.927915603817984e-14,
+          "mobility_inplane_cm2_Vs": 30.496
+        },
+        {
+          "T_K": 800.0,
+          "mobility_cm2_Vs": 47.033,
+          "mobility_x_cm2_Vs": 25.54,
+          "tau_x_s": 1.4034723892124102e-14,
+          "mobility_y_cm2_Vs": 27.828,
+          "tau_y_s": 1.6869261533407362e-14,
+          "mobility_inplane_cm2_Vs": 26.684
+        },
+        {
+          "T_K": 900.0,
+          "mobility_cm2_Vs": 41.807,
+          "mobility_x_cm2_Vs": 22.702,
+          "tau_x_s": 1.2475310126332535e-14,
+          "mobility_y_cm2_Vs": 24.736,
+          "tau_y_s": 1.4994899140806543e-14,
+          "mobility_inplane_cm2_Vs": 23.719
+        }
+      ]
+    },
+    {
+      "carrier": "hole",
+      "inputs": {
+        "C_2D_N_per_m": 107.84787,
+        "C_provenance": "step6 面内(C11+C22)/2 × h(V/A)=20.000Å",
+        "m_eff_m0": 0.8293,
+        "m_provenance": "带边方向分解+q^4外推(面内, 5方向, 最轻两支 0.7830/0.8783, 全组 0.7830..1.3492, spin=0)",
+        "E1_eV": 3.1242,
+        "E1_provenance": "band_edges.json 真空对齐(n=2)面内对角",
+        "T_K": 300.0
+      },
+      "mobility_cm2_Vs": 342.173,
+      "status": "ok",
+      "by_direction": {
+        "C_2D_N_per_m": [
+          106.96844000000002,
+          108.72729999999999
+        ],
+        "C_provenance": "step6 C11/C22 × h(V/A)=20.000A",
+        "m_eff_m0": [
+          0.9766,
+          1.0025
+        ],
+        "m_provenance": "带边二次型拟合(amset-subproc, 24点/8壳层, R<0.14, 模型=a+b+c+q4+d+e+f, 交叉项/主项=0.00, cond=3e+04, rel=0.051, spin=0)",
+        "E1_eV": [
+          3.079,
+          3.1695
+        ],
+        "E1_provenance": "band_edges.json 真空对齐(n=2) D_xx/D_yy",
+        "T_K": 300.0,
+        "formula": "mu_a = e*hbar^3*C_2D,a/(kB*T*m_a*m_d*E1_a^2); tau_a = mu_a*m_a/e",
+        "m_d_m0": 0.9895,
+        "x": {
+          "C_2D_N_per_m": 106.968,
+          "m_eff_m0": 0.9766,
+          "E1_eV": 3.079,
+          "mobility_cm2_Vs": 248.688,
+          "tau_s": 1.3808607832152573e-13
+        },
+        "y": {
+          "C_2D_N_per_m": 108.727,
+          "m_eff_m0": 1.0025,
+          "E1_eV": 3.1695,
+          "mobility_cm2_Vs": 232.385,
+          "tau_s": 1.3245571536763921e-13
+        },
+        "status": "ok"
+      },
+      "multi_valley": {
+        "status": "拒绝：有贡献的谷之间形变势相差 4.5 倍（X E1=0.69 eV、最大布居 1.4%；k(-0.000,0.331) E1=3.12 eV；阈值 VALLEY_E1_RATIO_MAX=3）。τ∝1/E1²，E1 小的谷 τ 长约 20 倍，布居再小也会主导电导；它的 LA 膨胀形变势耦合几乎抵消，真实输运由 DPT 不含的 TA/谷间/光学散射决定（Jin et al. PRB 90, 045422：DFPT 拟合的 Q/K 声学形变势比 0.6–0.9，WSe2 电子含谷间 30、只 K 250 cm²/Vs），多谷 DPT 给不出可信数。单谷结果（若有）照旧可用；各谷带符号的 dE/dε 见 valleys[].E1_signed_xy_eV / dEdeps_raw_xy_eV",
+        "window_eV": 0.3,
+        "valleys": [
+          {
+            "label": "k(-0.000,0.331)",
+            "g": 2,
+            "spin": "up",
+            "band_index": 47,
+            "dE_eV": 0.0,
+            "k_frac": [
+              [
+                -0.0,
+                0.331256,
+                0.0
+              ],
+              [
+                -0.0,
+                -0.331256,
+                0.0
+              ]
+            ],
+            "k_grid": [
+              [
+                0.0,
+                0.333333,
+                0.0
+              ],
+              [
+                0.0,
+                -0.333333,
+                0.0
+              ]
+            ],
+            "m_d_m0": 0.9895,
+            "M_m0": [
+              [
+                0.9766,
+                0.0
+              ],
+              [
+                0.0,
+                1.0025
+              ]
+            ],
+            "E1_xy_eV": [
+              [
+                3.079,
+                3.1695
+              ],
+              [
+                3.079,
+                3.1695
+              ]
+            ],
+            "E1_xy_raw_eV": [
+              [
+                3.079,
+                3.1695
+              ],
+              [
+                3.079,
+                3.1695
+              ]
+            ],
+            "E1_signed_xy_eV": [
+              [
+                -3.079,
+                -3.1695
+              ],
+              [
+                -3.079,
+                -3.1695
+              ]
+            ],
+            "dEdeps_raw_xy_eV": [
+              [
+                -6.06,
+                -6.16
+              ],
+              [
+                -6.06,
+                -6.16
+              ]
+            ],
+            "E1_eff_eV": 3.1233,
+            "pop_max": 1.0,
+            "k_S7": [
+              [
+                0.0,
+                0.333333,
+                0.0
+              ],
+              [
+                0.0,
+                -0.333333,
+                0.0
+              ]
+            ],
+            "k_offset_S7_invA": 0.0042,
+            "extremum_shift_invA": 0.0042,
+            "fit": "24点/8壳层, 模型=a+b+c+q4+d+e+f, rel=0.051",
+            "weight_T0": 0.9568
+          },
+          {
+            "label": "Γ",
+            "g": 1,
+            "spin": "up",
+            "band_index": 47,
+            "dE_eV": 0.1268,
+            "k_frac": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "k_grid": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "m_d_m0": 12.0117,
+            "M_m0": [
+              [
+                29.747,
+                0.0
+              ],
+              [
+                0.0,
+                4.8502
+              ]
+            ],
+            "E1_xy_eV": [
+              [
+                1.491,
+                1.5605
+              ]
+            ],
+            "E1_xy_raw_eV": [
+              [
+                1.491,
+                1.5605
+              ]
+            ],
+            "E1_signed_xy_eV": [
+              [
+                1.491,
+                1.5605
+              ]
+            ],
+            "dEdeps_raw_xy_eV": [
+              [
+                -1.49,
+                -1.43
+              ]
+            ],
+            "E1_eff_eV": 1.5245,
+            "pop_max": 0.5189,
+            "k_S7": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "k_offset_S7_invA": 0.0,
+            "extremum_shift_invA": 0.0,
+            "fit": "8点/3壳层, 模型=a+b+c+q4, rel=0.000",
+            "weight_T0": 0.043
+          },
+          {
+            "label": "k(-0.402,0.383)",
+            "g": 2,
+            "spin": "up",
+            "band_index": 46,
+            "dE_eV": 0.2311,
+            "k_frac": [
+              [
+                0.597705,
+                0.383266,
+                0.0
+              ],
+              [
+                0.597705,
+                -0.383266,
+                0.0
+              ]
+            ],
+            "k_grid": [
+              [
+                0.5,
+                0.380952,
+                0.0
+              ],
+              [
+                0.5,
+                -0.380952,
+                0.0
+              ]
+            ],
+            "m_d_m0": 1.2725,
+            "M_m0": [
+              [
+                1.059,
+                -0.0406
+              ],
+              [
+                -0.0406,
+                1.5304
+              ]
+            ],
+            "E1_xy_eV": [
+              [
+                2.449,
+                3.7695
+              ],
+              [
+                2.449,
+                3.7695
+              ]
+            ],
+            "E1_xy_raw_eV": [
+              [
+                2.449,
+                3.7695
+              ],
+              [
+                2.449,
+                3.7695
+              ]
+            ],
+            "E1_signed_xy_eV": [
+              [
+                -2.449,
+                -3.7695
+              ],
+              [
+                -2.449,
+                -3.7695
+              ]
+            ],
+            "dEdeps_raw_xy_eV": [
+              [
+                -5.43,
+                -6.76
+              ],
+              [
+                -5.43,
+                -6.76
+              ]
+            ],
+            "E1_eff_eV": 2.9043,
+            "pop_max": 0.0287,
+            "k_S7": [
+              [
+                0.583333,
+                0.380952,
+                0.0
+              ],
+              [
+                0.583333,
+                -0.380952,
+                0.0
+              ]
+            ],
+            "k_offset_S7_invA": 0.0096,
+            "extremum_shift_invA": 0.0569,
+            "fit": "25点/14壳层, 模型=a+b+c+q4+d+e+f, rel=0.024",
+            "weight_T0": 0.0002
+          },
+          {
+            "label": "X",
+            "g": 1,
+            "spin": "up",
+            "band_index": 46,
+            "dE_eV": 0.2715,
+            "k_frac": [
+              [
+                0.5,
+                0.0,
+                0.0
+              ]
+            ],
+            "k_grid": [
+              [
+                0.5,
+                0.0,
+                0.0
+              ]
+            ],
+            "m_d_m0": 2.0504,
+            "M_m0": [
+              [
+                0.8878,
+                0.0
+              ],
+              [
+                0.0,
+                4.7358
+              ]
+            ],
+            "E1_xy_eV": [
+              [
+                0.521,
+                1.4805
+              ]
+            ],
+            "E1_xy_raw_eV": [
+              [
+                0.521,
+                1.4805
+              ]
+            ],
+            "E1_signed_xy_eV": [
+              [
+                0.521,
+                1.4805
+              ]
+            ],
+            "dEdeps_raw_xy_eV": [
+              [
+                -2.46,
+                -1.51
+              ]
+            ],
+            "E1_eff_eV": 0.695,
+            "pop_max": 0.0137,
+            "k_S7": [
+              [
+                0.5,
+                0.0,
+                0.0
+              ]
+            ],
+            "k_offset_S7_invA": 0.0,
+            "extremum_shift_invA": 0.0,
+            "fit": "14点/8壳层, 模型=a+b+c+q4, rel=0.007",
+            "weight_T0": 0.0
+          }
+        ],
+        "edge_star": "k(-0.000,0.331)",
+        "populations_vs_T": [
+          {
+            "T_K": 100.0,
+            "weights": {
+              "Γ": 0.0,
+              "k(-0.000,0.331)": 1.0,
+              "X": 0.0,
+              "k(-0.402,0.383)": 0.0
+            }
+          },
+          {
+            "T_K": 200.0,
+            "weights": {
+              "Γ": 0.0038,
+              "k(-0.000,0.331)": 0.9961,
+              "X": 0.0,
+              "k(-0.402,0.383)": 0.0
+            }
+          },
+          {
+            "T_K": 300.0,
+            "weights": {
+              "Γ": 0.043,
+              "k(-0.000,0.331)": 0.9568,
+              "X": 0.0,
+              "k(-0.402,0.383)": 0.0002
+            }
+          },
+          {
+            "T_K": 400.0,
+            "weights": {
+              "Γ": 0.1326,
+              "k(-0.000,0.331)": 0.8657,
+              "X": 0.0003,
+              "k(-0.402,0.383)": 0.0014
+            }
+          },
+          {
+            "T_K": 500.0,
+            "weights": {
+              "Γ": 0.2408,
+              "k(-0.000,0.331)": 0.7533,
+              "X": 0.0014,
+              "k(-0.402,0.383)": 0.0045
+            }
+          },
+          {
+            "T_K": 600.0,
+            "weights": {
+              "Γ": 0.3385,
+              "k(-0.000,0.331)": 0.6484,
+              "X": 0.0035,
+              "k(-0.402,0.383)": 0.0095
+            }
+          },
+          {
+            "T_K": 700.0,
+            "weights": {
+              "Γ": 0.4163,
+              "k(-0.000,0.331)": 0.5616,
+              "X": 0.0065,
+              "k(-0.402,0.383)": 0.0157
+            }
+          },
+          {
+            "T_K": 800.0,
+            "weights": {
+              "Γ": 0.4751,
+              "k(-0.000,0.331)": 0.4928,
+              "X": 0.0099,
+              "k(-0.402,0.383)": 0.0222
+            }
+          },
+          {
+            "T_K": 900.0,
+            "weights": {
+              "Γ": 0.5189,
+              "k(-0.000,0.331)": 0.4387,
+              "X": 0.0137,
+              "k(-0.402,0.383)": 0.0287
+            }
+          }
+        ],
+        "dvac_eV_per_unit_strain": {
+          "xx": -2.980969,
+          "yy": -2.990472
+        },
+        "E1_selfcheck": {
+          "xx": {
+            "recomputed_eV": 3.079,
+            "S7.1_eV": 3.079
+          },
+          "yy": {
+            "recomputed_eV": 3.1695,
+            "S7.1_eV": 3.1695
+          }
+        },
+        "S7_files": {
+          "undeformed": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step7_deform/undeformed/vasprun.xml",
+          "deform-01": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step7_deform/deform-01/ionrelax/vasprun.xml",
+          "deform-02": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step7_deform/deform-02/ionrelax/vasprun.xml",
+          "deform-03": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step7_deform/deform-03/ionrelax/vasprun.xml",
+          "deform-04": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step7_deform/deform-04/ionrelax/vasprun.xml"
+        },
+        "warnings": []
+      },
+      "single_valley_scope": {
+        "edge_star": "k(-0.000,0.331)",
+        "T_K": 300.0,
+        "share": 0.9568,
+        "others": {
+          "Γ": 0.043,
+          "X": 0.0,
+          "k(-0.402,0.383)": 0.0002
+        },
+        "shares_vs_T": [
+          {
+            "T_K": 100.0,
+            "share": 1.0
+          },
+          {
+            "T_K": 200.0,
+            "share": 0.9961
+          },
+          {
+            "T_K": 300.0,
+            "share": 0.9568
+          },
+          {
+            "T_K": 400.0,
+            "share": 0.8657
+          },
+          {
+            "T_K": 500.0,
+            "share": 0.7533
+          },
+          {
+            "T_K": 600.0,
+            "share": 0.6484
+          },
+          {
+            "T_K": 700.0,
+            "share": 0.5616
+          },
+          {
+            "T_K": 800.0,
+            "share": 0.4928
+          },
+          {
+            "T_K": 900.0,
+            "share": 0.4387
+          }
+        ],
+        "note": "单谷值只代表 k(-0.000,0.331) 谷：300 K 时占载流子 95.7%（Γ 4.3%、k(-0.402,0.383) 0.0%、X 0.0% 未计入），900 K 时降到 43.9%；这些谷和谷间散射单谷 DPT 都不含，材料的迁移率以 S8.4（AMSET）为准"
+      },
+      "mobility_vs_T": [
+        {
+          "T_K": 100.0,
+          "mobility_cm2_Vs": 1026.519,
+          "mobility_x_cm2_Vs": 746.064,
+          "tau_x_s": 4.142582349645772e-13,
+          "mobility_y_cm2_Vs": 697.155,
+          "tau_y_s": 3.9736714610291764e-13,
+          "mobility_inplane_cm2_Vs": 721.61
+        },
+        {
+          "T_K": 200.0,
+          "mobility_cm2_Vs": 513.26,
+          "mobility_x_cm2_Vs": 373.032,
+          "tau_x_s": 2.071291174822886e-13,
+          "mobility_y_cm2_Vs": 348.577,
+          "tau_y_s": 1.9868357305145882e-13,
+          "mobility_inplane_cm2_Vs": 360.804
+        },
+        {
+          "T_K": 300.0,
+          "mobility_cm2_Vs": 342.173,
+          "mobility_x_cm2_Vs": 248.688,
+          "tau_x_s": 1.3808607832152573e-13,
+          "mobility_y_cm2_Vs": 232.385,
+          "tau_y_s": 1.3245571536763921e-13,
+          "mobility_inplane_cm2_Vs": 240.536
+        },
+        {
+          "T_K": 400.0,
+          "mobility_cm2_Vs": 256.63,
+          "mobility_x_cm2_Vs": 186.516,
+          "tau_x_s": 1.035645587411443e-13,
+          "mobility_y_cm2_Vs": 174.289,
+          "tau_y_s": 9.934178652572941e-14,
+          "mobility_inplane_cm2_Vs": 180.402
+        },
+        {
+          "T_K": 500.0,
+          "mobility_cm2_Vs": 205.304,
+          "mobility_x_cm2_Vs": 149.213,
+          "tau_x_s": 8.285164699291543e-14,
+          "mobility_y_cm2_Vs": 139.431,
+          "tau_y_s": 7.947342922058353e-14,
+          "mobility_inplane_cm2_Vs": 144.322
+        },
+        {
+          "T_K": 600.0,
+          "mobility_cm2_Vs": 171.087,
+          "mobility_x_cm2_Vs": 124.344,
+          "tau_x_s": 6.904303916076286e-14,
+          "mobility_y_cm2_Vs": 116.192,
+          "tau_y_s": 6.622785768381961e-14,
+          "mobility_inplane_cm2_Vs": 120.268
+        },
+        {
+          "T_K": 700.0,
+          "mobility_cm2_Vs": 146.646,
+          "mobility_x_cm2_Vs": 106.581,
+          "tau_x_s": 5.917974785208245e-14,
+          "mobility_y_cm2_Vs": 99.594,
+          "tau_y_s": 5.6766735157559664e-14,
+          "mobility_inplane_cm2_Vs": 103.088
+        },
+        {
+          "T_K": 800.0,
+          "mobility_cm2_Vs": 128.315,
+          "mobility_x_cm2_Vs": 93.258,
+          "tau_x_s": 5.178227937057215e-14,
+          "mobility_y_cm2_Vs": 87.144,
+          "tau_y_s": 4.9670893262864706e-14,
+          "mobility_inplane_cm2_Vs": 90.201
+        },
+        {
+          "T_K": 900.0,
+          "mobility_cm2_Vs": 114.058,
+          "mobility_x_cm2_Vs": 82.896,
+          "tau_x_s": 4.6028692773841905e-14,
+          "mobility_y_cm2_Vs": 77.462,
+          "tau_y_s": 4.41519051225464e-14,
+          "mobility_inplane_cm2_Vs": 80.179
+        }
+      ]
+    }
+  ],
+  "note": "经典 DPT 声学支迁移率，用于和 amset(ADP) 对标。m*/E1 自动值精度有限——务必核对，或在本材料 step.conf 手填。μ∝1/T。",
+  "temperatures_K": [
+    100.0,
+    200.0,
+    300.0,
+    400.0,
+    500.0,
+    600.0,
+    700.0,
+    800.0,
+    900.0
+  ],
+  "za_coupling": {
+    "sigma_h": true,
+    "structure": "step3_uniform/POSCAR",
+    "symprec": 0.01,
+    "note": "有水平镜面 σh：ZA 一阶耦合被对称性禁止，只算面内声学支成立"
+  }
+}
