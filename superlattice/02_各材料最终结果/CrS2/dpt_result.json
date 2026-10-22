@@ -2,7 +2,7 @@
   "dim": "2d",
   "is_2d": true,
   "temperature_K": 300.0,
-  "skill_rev": "2026-10-22-0069-3d-valley-axis",
+  "skill_rev": "2026-10-22-0071-2d-headline-md",
   "env": {
     "python": "/public/home/wangchao/miniconda3/envs/atomate2_p_a/bin/python",
     "amset": "N/A",
@@ -49,7 +49,7 @@
           0.8858,
           0.8858
         ],
-        "m_provenance": "带边二次型拟合(amset-subproc, 12点/2壳层, R<0.09, 模型=a+b+c+q4, 交叉项/主项=0.00, cond=5e+02, rel=0.056, spin=0)",
+        "m_provenance": "带边二次型拟合(amset-subproc, 12点/2壳层, R<0.09, 模型=a+b+c+q4, 交叉项/主项=0.00, cond=1e+01, rel=0.056, spin=0)",
         "E1_eV": [
           5.9751,
           5.975
@@ -698,7 +698,7 @@
           0.8913,
           0.8913
         ],
-        "m_provenance": "带边二次型拟合(amset-subproc, 12点/2壳层, R<0.09, 模型=a+b+c+q4, 交叉项/主项=0.00, cond=5e+02, rel=0.060, spin=0)",
+        "m_provenance": "带边二次型拟合(amset-subproc, 12点/2壳层, R<0.09, 模型=a+b+c+q4, 交叉项/主项=0.00, cond=1e+01, rel=0.060, spin=0)",
         "E1_eV": [
           3.1651,
           3.165

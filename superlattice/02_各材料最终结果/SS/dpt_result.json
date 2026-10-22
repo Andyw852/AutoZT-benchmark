@@ -2,7 +2,7 @@
   "dim": "2d",
   "is_2d": true,
   "temperature_K": 300.0,
-  "skill_rev": "2026-10-22-0069-3d-valley-axis",
+  "skill_rev": "2026-10-22-0071-2d-headline-md",
   "env": {
     "python": "/public/home/wangchao/miniconda3/envs/atomate2_p_a/bin/python",
     "amset": "N/A",
@@ -31,13 +31,13 @@
       "inputs": {
         "C_2D_N_per_m": 107.84787,
         "C_provenance": "step6 面内(C11+C22)/2 × h(V/A)=20.000Å",
-        "m_eff_m0": 0.7636,
-        "m_provenance": "带边方向分解+q^4外推(面内, 5方向, 最轻两支 0.7444/0.7832, 全组 0.7444..1.7747, spin=0)",
+        "m_eff_m0": 1.0151,
+        "m_provenance": "面内二次型拟合 m_d=√(m_x·m_y)（带边二次型拟合(amset-subproc, 24点/8壳层, R<0.14, 模型=a+b+c+q4+d+e+f, 交叉项/主项=0.00, cond=2e+01, rel=0.057, spin=0)）；旧的方向分解值 0.7636 不再用（面内各向异性时取到轻轴质量）；带边方向分解+q^4外推(面内, 5方向, 最轻两支 0.7444/0.7832, 全组 0.7444..1.7747, spin=0)",
         "E1_eV": 5.6043,
         "E1_provenance": "band_edges.json 真空对齐(n=2)面内对角",
         "T_K": 300.0
       },
-      "mobility_cm2_Vs": 125.422,
+      "mobility_cm2_Vs": 70.972,
       "status": "ok",
       "by_direction": {
         "C_2D_N_per_m": [
@@ -49,7 +49,7 @@
           0.9665,
           1.0662
         ],
-        "m_provenance": "带边二次型拟合(amset-subproc, 24点/8壳层, R<0.14, 模型=a+b+c+q4+d+e+f, 交叉项/主项=0.00, cond=3e+04, rel=0.057, spin=0)",
+        "m_provenance": "带边二次型拟合(amset-subproc, 24点/8壳层, R<0.14, 模型=a+b+c+q4+d+e+f, 交叉项/主项=0.00, cond=2e+01, rel=0.057, spin=0)",
         "E1_eV": [
           5.839,
           5.3695
@@ -80,7 +80,7 @@
       "mobility_vs_T": [
         {
           "T_K": 100.0,
-          "mobility_cm2_Vs": 376.266,
+          "mobility_cm2_Vs": 212.916,
           "mobility_x_cm2_Vs": 204.321,
           "tau_x_s": 1.1227779113699282e-13,
           "mobility_y_cm2_Vs": 222.621,
@@ -89,7 +89,7 @@
         },
         {
           "T_K": 200.0,
-          "mobility_cm2_Vs": 188.133,
+          "mobility_cm2_Vs": 106.458,
           "mobility_x_cm2_Vs": 102.16,
           "tau_x_s": 5.613889556849641e-14,
           "mobility_y_cm2_Vs": 111.31,
@@ -98,7 +98,7 @@
         },
         {
           "T_K": 300.0,
-          "mobility_cm2_Vs": 125.422,
+          "mobility_cm2_Vs": 70.972,
           "mobility_x_cm2_Vs": 68.107,
           "tau_x_s": 3.7425930378997606e-14,
           "mobility_y_cm2_Vs": 74.207,
@@ -107,7 +107,7 @@
         },
         {
           "T_K": 400.0,
-          "mobility_cm2_Vs": 94.066,
+          "mobility_cm2_Vs": 53.229,
           "mobility_x_cm2_Vs": 51.08,
           "tau_x_s": 2.8069447784248204e-14,
           "mobility_y_cm2_Vs": 55.655,
@@ -116,7 +116,7 @@
         },
         {
           "T_K": 500.0,
-          "mobility_cm2_Vs": 75.253,
+          "mobility_cm2_Vs": 42.583,
           "mobility_x_cm2_Vs": 40.864,
           "tau_x_s": 2.2455558227398563e-14,
           "mobility_y_cm2_Vs": 44.524,
@@ -125,7 +125,7 @@
         },
         {
           "T_K": 600.0,
-          "mobility_cm2_Vs": 62.711,
+          "mobility_cm2_Vs": 35.486,
           "mobility_x_cm2_Vs": 34.053,
           "tau_x_s": 1.8712965189498803e-14,
           "mobility_y_cm2_Vs": 37.103,
@@ -134,7 +134,7 @@
         },
         {
           "T_K": 700.0,
-          "mobility_cm2_Vs": 53.752,
+          "mobility_cm2_Vs": 30.417,
           "mobility_x_cm2_Vs": 29.189,
           "tau_x_s": 1.603968444814183e-14,
           "mobility_y_cm2_Vs": 31.803,
@@ -143,7 +143,7 @@
         },
         {
           "T_K": 800.0,
-          "mobility_cm2_Vs": 47.033,
+          "mobility_cm2_Vs": 26.614,
           "mobility_x_cm2_Vs": 25.54,
           "tau_x_s": 1.4034723892124102e-14,
           "mobility_y_cm2_Vs": 27.828,
@@ -152,7 +152,7 @@
         },
         {
           "T_K": 900.0,
-          "mobility_cm2_Vs": 41.807,
+          "mobility_cm2_Vs": 23.657,
           "mobility_x_cm2_Vs": 22.702,
           "tau_x_s": 1.2475310126332535e-14,
           "mobility_y_cm2_Vs": 24.736,
@@ -166,13 +166,13 @@
       "inputs": {
         "C_2D_N_per_m": 107.84787,
         "C_provenance": "step6 面内(C11+C22)/2 × h(V/A)=20.000Å",
-        "m_eff_m0": 0.8293,
-        "m_provenance": "带边方向分解+q^4外推(面内, 5方向, 最轻两支 0.7830/0.8783, 全组 0.7830..1.3492, spin=0)",
+        "m_eff_m0": 0.9895,
+        "m_provenance": "面内二次型拟合 m_d=√(m_x·m_y)（带边二次型拟合(amset-subproc, 24点/8壳层, R<0.14, 模型=a+b+c+q4+d+e+f, 交叉项/主项=0.00, cond=2e+01, rel=0.051, spin=0)）；旧的方向分解值 0.8293 不再用（面内各向异性时取到轻轴质量）；带边方向分解+q^4外推(面内, 5方向, 最轻两支 0.7830/0.8783, 全组 0.7830..1.3492, spin=0)",
         "E1_eV": 3.1242,
         "E1_provenance": "band_edges.json 真空对齐(n=2)面内对角",
         "T_K": 300.0
       },
-      "mobility_cm2_Vs": 342.173,
+      "mobility_cm2_Vs": 240.347,
       "status": "ok",
       "by_direction": {
         "C_2D_N_per_m": [
@@ -184,7 +184,7 @@
           0.9766,
           1.0025
         ],
-        "m_provenance": "带边二次型拟合(amset-subproc, 24点/8壳层, R<0.14, 模型=a+b+c+q4+d+e+f, 交叉项/主项=0.00, cond=3e+04, rel=0.051, spin=0)",
+        "m_provenance": "带边二次型拟合(amset-subproc, 24点/8壳层, R<0.14, 模型=a+b+c+q4+d+e+f, 交叉项/主项=0.00, cond=2e+01, rel=0.051, spin=0)",
         "E1_eV": [
           3.079,
           3.1695
@@ -711,7 +711,7 @@
       "mobility_vs_T": [
         {
           "T_K": 100.0,
-          "mobility_cm2_Vs": 1026.519,
+          "mobility_cm2_Vs": 721.041,
           "mobility_x_cm2_Vs": 746.064,
           "tau_x_s": 4.142582349645772e-13,
           "mobility_y_cm2_Vs": 697.155,
@@ -720,7 +720,7 @@
         },
         {
           "T_K": 200.0,
-          "mobility_cm2_Vs": 513.26,
+          "mobility_cm2_Vs": 360.521,
           "mobility_x_cm2_Vs": 373.032,
           "tau_x_s": 2.071291174822886e-13,
           "mobility_y_cm2_Vs": 348.577,
@@ -729,7 +729,7 @@
         },
         {
           "T_K": 300.0,
-          "mobility_cm2_Vs": 342.173,
+          "mobility_cm2_Vs": 240.347,
           "mobility_x_cm2_Vs": 248.688,
           "tau_x_s": 1.3808607832152573e-13,
           "mobility_y_cm2_Vs": 232.385,
@@ -738,7 +738,7 @@
         },
         {
           "T_K": 400.0,
-          "mobility_cm2_Vs": 256.63,
+          "mobility_cm2_Vs": 180.26,
           "mobility_x_cm2_Vs": 186.516,
           "tau_x_s": 1.035645587411443e-13,
           "mobility_y_cm2_Vs": 174.289,
@@ -747,7 +747,7 @@
         },
         {
           "T_K": 500.0,
-          "mobility_cm2_Vs": 205.304,
+          "mobility_cm2_Vs": 144.208,
           "mobility_x_cm2_Vs": 149.213,
           "tau_x_s": 8.285164699291543e-14,
           "mobility_y_cm2_Vs": 139.431,
@@ -756,7 +756,7 @@
         },
         {
           "T_K": 600.0,
-          "mobility_cm2_Vs": 171.087,
+          "mobility_cm2_Vs": 120.174,
           "mobility_x_cm2_Vs": 124.344,
           "tau_x_s": 6.904303916076286e-14,
           "mobility_y_cm2_Vs": 116.192,
@@ -765,7 +765,7 @@
         },
         {
           "T_K": 700.0,
-          "mobility_cm2_Vs": 146.646,
+          "mobility_cm2_Vs": 103.006,
           "mobility_x_cm2_Vs": 106.581,
           "tau_x_s": 5.917974785208245e-14,
           "mobility_y_cm2_Vs": 99.594,
@@ -774,7 +774,7 @@
         },
         {
           "T_K": 800.0,
-          "mobility_cm2_Vs": 128.315,
+          "mobility_cm2_Vs": 90.13,
           "mobility_x_cm2_Vs": 93.258,
           "tau_x_s": 5.178227937057215e-14,
           "mobility_y_cm2_Vs": 87.144,
@@ -783,7 +783,7 @@
         },
         {
           "T_K": 900.0,
-          "mobility_cm2_Vs": 114.058,
+          "mobility_cm2_Vs": 80.116,
           "mobility_x_cm2_Vs": 82.896,
           "tau_x_s": 4.6028692773841905e-14,
           "mobility_y_cm2_Vs": 77.462,
