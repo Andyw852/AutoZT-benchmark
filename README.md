@@ -87,6 +87,9 @@ AutoZT 工作流（[`autozt`](https://github.com/Andyw852/AutoZT) + `skill/`）�
 | SS | CrS2/CrSe2 短周期横向超晶格 | 12 | 0.8185 eV | 0.816 |
 | LS | CrS2/CrSe2 长周期横向超晶格 | 24 | 待算 | 0.790 |
 
+**综合报告**：[`superlattice/05_综合汇总/综合报告.md`](superlattice/05_综合汇总/综合报告.md)
+（全部数据表：[`全部数据汇总表_300K.csv`](superlattice/05_综合汇总/全部数据汇总表_300K.csv)，22 列 × 12 行）
+
 **关键结论**（详见 [`superlattice/00_关键数据速览.md`](superlattice/00_关键数据速览.md)）：
 
 1. **E1、C_2D 与文献差 <2%** —— 弹性常数与形变势计算正确
