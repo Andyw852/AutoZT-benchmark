@@ -1,3 +1,6 @@
 *.pyc
 __pycache__/
 .DS_Store
+
+# autozt 失效备份（stale-upstream-*）不进仓库
+*stale-upstream*
