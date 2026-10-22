@@ -131068,7 +131068,7 @@
   ],
   "note": "σ、κ_e 为 per-τ（乘上常数 τ 得绝对值）；S 与 τ 无关；Lorenz L=κ_e/(σT) 里 τ 抵消，可直接与 amset/文献比。载流子浓度符号：- 为电子(n 型)、+ 为空穴(p 型)，与 amset 一致。",
   "dim": "2d",
-  "skill_rev": "2026-10-18-0057",
+  "skill_rev": "2026-10-21-0063r1",
   "s3_grid": {
     "mesh": [
       48,
@@ -131078,8 +131078,8 @@
     "issues": []
   },
   "tensor_average": "in-plane (xx+yy)/2",
-  "twoD_c_over_t": 3.058618422058756,
-  "twoD_c_over_t_source": "vdw(本步按 step3_uniform/POSCAR 现算；S8 生成后层厚不同会让本步重排)",
+  "twoD_c_over_t": 3.0586,
+  "twoD_c_over_t_source": "step8.4_amset2d/2d_correction.json",
   "twoD_thickness_A": 6.5389,
-  "twoD_note": "2D：张量已取面内 (xx+yy)/2；σ、κ_e 仍按超胞体积口径（与 amset 一致，可直接对比）。要面内薄片口径再乘 c/t=3.058618422058756。"
+  "twoD_note": "2D：张量已取面内 (xx+yy)/2；σ、κ_e 仍按超胞体积口径（与 amset 一致，可直接对比）。要面内薄片口径再乘 c/t=3.0586。"
 }

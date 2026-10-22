@@ -2,7 +2,7 @@
   "dim": "2d",
   "is_2d": true,
   "temperature_K": 300.0,
-  "skill_rev": "2026-10-11-0034",
+  "skill_rev": "2026-10-22-0069-3d-valley-axis",
   "env": {
     "python": "/public/home/wangchao/miniconda3/envs/atomate2_p_a/bin/python",
     "amset": "N/A",

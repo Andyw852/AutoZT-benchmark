@@ -21,8 +21,4 @@
 # ZT_yy          未算（没拿到 kappa_L，见上）
 # PF_xx_W/mK2    峰值 0.1472 @ mu=-1.439 eV（n=1.352e+22 cm^-3，hole 支）
 # PF_yy_W/mK2    峰值 0.1473 @ mu=-1.439 eV（n=1.352e+22 cm^-3，hole 支）
-
-# ---- 按载流子浓度对齐 amset：paper_at_doping_600K.csv ----
-# 掺杂列表来源：DOPING_LIST 兜底（amset 结果没读到）（6 个点，命中 6 个）
-# [口径] BoltzTraP2 的 n 与 amset 的 doping 都按含真空的元胞体积定义，符号约定同为 负=n型/正=p型
-#        元胞 c=20.0000 Å；n_2D = n_3D × c 跨口径不歧义
+# 掺杂对齐失败：ValueError: math domain error
