@@ -1,0 +1,42 @@
+{
+  "pheasy_rmse_eV_per_A": 0.0013129774285870997,
+  "pheasy_relative_error": 0.003064530238567455,
+  "pheasy_worst_force_correlation": 1.0,
+  "pheasy_free_ifcs": 796,
+  "rasr_applied": true,
+  "rasr_requested": "",
+  "ns_rank_tol": "1e-6",
+  "fc2max": 30.068043949912106,
+  "fc3max": 32.812175984075246,
+  "ns_anharm3_shape": [
+    [
+      43184
+    ],
+    [
+      43184
+    ],
+    [],
+    [
+      2
+    ],
+    [
+      43184
+    ]
+  ],
+  "ns_harm_free_params": 5,
+  "ns_harm_shape": [
+    [
+      370
+    ],
+    [
+      370
+    ],
+    [],
+    [
+      2
+    ],
+    [
+      370
+    ]
+  ]
+}

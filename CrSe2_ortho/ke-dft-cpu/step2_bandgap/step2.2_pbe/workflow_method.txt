@@ -1,0 +1,10 @@
+FUNC=pbe
+GGA=PE
+IVDW=NONE
+LABEL=1H-CrSe2
+FORMULA=CrSe2
+STAGE_MODE=in_job
+DIM=2D
+MAG=magnetic
+LDAU=off
+CELL_POLICY=primitive STD_CELL=primitive_standard VACUUM_AXIS_POLICY=rotate (技能默认)

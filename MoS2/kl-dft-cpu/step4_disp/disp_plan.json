@@ -1,0 +1,34 @@
+{
+  "method": "alm",
+  "n_atoms_sc": 75,
+  "nfree": {
+    "2": 100,
+    "3": 1194
+  },
+  "oversample": 3,
+  "rattle_std": 0.005477,
+  "disp_rms": 0.02963,
+  "n_disp": 36,
+  "fd_distance": 0.03,
+  "alm_cut2": null,
+  "alm_cut3": 6.5,
+  "fc3_cutoff_pair": null,
+  "cut3_candidates": [
+    3.54,
+    4.19,
+    4.73,
+    5.24,
+    5.86,
+    6.5
+  ],
+  "cut3_shells": [
+    2.391,
+    3.1379,
+    3.9469,
+    4.425,
+    5.0437,
+    5.439,
+    6.2759,
+    6.7201
+  ]
+}

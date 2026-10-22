@@ -1,0 +1,113 @@
+{
+  "dim": "2d",
+  "is_2d": true,
+  "temperature_K": 300.0,
+  "skill_rev": "2026-08-31-rscan",
+  "env": {
+    "python": "/public/home/wangchao/miniconda3/envs/atomate2_p_a/bin/python",
+    "amset": "N/A",
+    "host": "login01"
+  },
+  "formula": "2D Bardeen-Shockley: μ=eℏ³C_2D/(k_BT m* m_d E1²)",
+  "results": [
+    {
+      "carrier": "electron",
+      "inputs": {
+        "C_2D_N_per_m": 121.21860000000001,
+        "C_provenance": "step6 面内(C11+C22)/2 × h(V/A)=20.000Å",
+        "m_eff_m0": 0.9696,
+        "m_provenance": "带边方向分解+q^4外推(面内, 3方向, 最轻两支 0.9450/0.9948, 全组 0.9450..1.2786, spin=0)",
+        "E1_eV": 5.8551,
+        "E1_provenance": "band_edges.json 真空对齐(n=2)面内对角",
+        "T_K": 300.0
+      },
+      "mobility_cm2_Vs": 80.103,
+      "status": "ok",
+      "by_direction": {
+        "C_2D_N_per_m": [
+          121.2186,
+          121.2186
+        ],
+        "C_provenance": "step6 C11/C22 × h(V/A)=20.000A",
+        "m_eff_m0": [
+          0.9267,
+          0.9267
+        ],
+        "m_provenance": "带边二次型拟合(amset-subproc, 12点/2壳层, R<0.30, 模型=a+b+c+q4, 交叉项/主项=0.00, cond=5e+01, rel=0.143, spin=0)",
+        "E1_eV": [
+          5.8616,
+          5.8485
+        ],
+        "E1_provenance": "band_edges.json 真空对齐(n=2) D_xx/D_yy",
+        "T_K": 300.0,
+        "formula": "mu_a = e*hbar^3*C_2D,a/(kB*T*m_a*m_d*E1_a^2); tau_a = mu_a*m_a/e",
+        "m_d_m0": 0.9267,
+        "x": {
+          "C_2D_N_per_m": 121.219,
+          "m_eff_m0": 0.9267,
+          "E1_eV": 5.8616,
+          "mobility_cm2_Vs": 87.497,
+          "tau_s": 4.610116556773419e-14
+        },
+        "y": {
+          "C_2D_N_per_m": 121.219,
+          "m_eff_m0": 0.9267,
+          "E1_eV": 5.8485,
+          "mobility_cm2_Vs": 87.89,
+          "tau_s": 4.6307919994405944e-14
+        },
+        "status": "ok"
+      }
+    },
+    {
+      "carrier": "hole",
+      "inputs": {
+        "C_2D_N_per_m": 121.21860000000001,
+        "C_provenance": "step6 面内(C11+C22)/2 × h(V/A)=20.000Å",
+        "m_eff_m0": 1.0097,
+        "m_provenance": "带边方向分解+q^4外推(面内, 3方向, 最轻两支 0.9935/1.0261, 全组 0.9935..1.3789, spin=0)",
+        "E1_eV": 3.08,
+        "E1_provenance": "band_edges.json 真空对齐(n=2)面内对角",
+        "T_K": 300.0
+      },
+      "mobility_cm2_Vs": 266.943,
+      "status": "ok",
+      "by_direction": {
+        "C_2D_N_per_m": [
+          121.2186,
+          121.2186
+        ],
+        "C_provenance": "step6 C11/C22 × h(V/A)=20.000A",
+        "m_eff_m0": [
+          0.9443,
+          0.9443
+        ],
+        "m_provenance": "带边二次型拟合(amset-subproc, 12点/2壳层, R<0.30, 模型=a+b+c+q4, 交叉项/主项=0.00, cond=5e+01, rel=0.133, spin=0)",
+        "E1_eV": [
+          3.0816,
+          3.0785
+        ],
+        "E1_provenance": "band_edges.json 真空对齐(n=2) D_xx/D_yy",
+        "T_K": 300.0,
+        "formula": "mu_a = e*hbar^3*C_2D,a/(kB*T*m_a*m_d*E1_a^2); tau_a = mu_a*m_a/e",
+        "m_d_m0": 0.9443,
+        "x": {
+          "C_2D_N_per_m": 121.219,
+          "m_eff_m0": 0.9443,
+          "E1_eV": 3.0816,
+          "mobility_cm2_Vs": 304.882,
+          "tau_s": 1.6368953132332975e-13
+        },
+        "y": {
+          "C_2D_N_per_m": 121.219,
+          "m_eff_m0": 0.9443,
+          "E1_eV": 3.0785,
+          "mobility_cm2_Vs": 305.497,
+          "tau_s": 1.6401936275930679e-13
+        },
+        "status": "ok"
+      }
+    }
+  ],
+  "note": "经典 DPT 声学支迁移率，用于和 amset(ADP) 对标。m*/E1 自动值精度有限——务必核对，或在 MANUAL 手填。μ∝1/T。"
+}

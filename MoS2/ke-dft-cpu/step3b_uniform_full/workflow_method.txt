@@ -1,0 +1,3 @@
+DIM=2D
+FUNC=pbesol
+# uniform 密网格自洽

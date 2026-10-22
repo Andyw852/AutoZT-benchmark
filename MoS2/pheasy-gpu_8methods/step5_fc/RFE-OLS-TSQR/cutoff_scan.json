@@ -1,0 +1,107 @@
+{
+  "mode": "scan",
+  "candidates": [
+    3.54,
+    4.19,
+    4.73,
+    5.24,
+    5.86,
+    6.5
+  ],
+  "shells": [
+    2.391019942541333,
+    3.1379454367241495,
+    3.94687080782875,
+    4.425038741054663,
+    5.0436694956897385,
+    5.438974023120649,
+    6.275902961339002,
+    6.720135980608725,
+    7.011662162712621,
+    7.417616895333189
+  ],
+  "bootstrap": 0,
+  "stability_thr": 0.3,
+  "recommended_cut": null,
+  "records": [
+    {
+      "cut": 3.54,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cutoff_scan/cut3_3p54",
+      "train_rel_err": 0.0060181480737778095,
+      "free_ifcs": 169,
+      "err_kind": "in-sample",
+      "ratio": 47.928994082840234,
+      "train_rel_se": 0.0
+    },
+    {
+      "cut": 4.19,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cutoff_scan/cut3_4p19",
+      "train_rel_err": 0.005423843387351573,
+      "free_ifcs": 236,
+      "err_kind": "in-sample",
+      "ratio": 34.32203389830509,
+      "train_rel_se": 0.0
+    },
+    {
+      "cut": 4.73,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cutoff_scan/cut3_4p73",
+      "train_rel_err": 0.0038768564423138497,
+      "free_ifcs": 338,
+      "err_kind": "in-sample",
+      "ratio": 23.964497041420117,
+      "train_rel_se": 0.0
+    },
+    {
+      "cut": 5.24,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cutoff_scan/cut3_5p24",
+      "train_rel_err": 0.003038509611896182,
+      "free_ifcs": 566,
+      "err_kind": "in-sample",
+      "ratio": 14.31095406360424,
+      "train_rel_se": 0.0
+    },
+    {
+      "cut": 5.86,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cutoff_scan/cut3_5p86",
+      "train_rel_err": 0.00284688697874335,
+      "free_ifcs": 796,
+      "err_kind": "in-sample",
+      "ratio": 10.175879396984925,
+      "train_rel_se": 0.0
+    },
+    {
+      "cut": 6.5,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cutoff_scan/cut3_6p50",
+      "train_rel_err": 0.00258077581608731,
+      "free_ifcs": 1292,
+      "err_kind": "in-sample",
+      "ratio": 6.269349845201238,
+      "train_rel_se": 0.0
+    }
+  ],
+  "note": "pheasy per-candidate refit + frame bootstrap: a candidate is usable when cut <= its own stable_upper_cut (outermost shell with sigma/|mean| < stability_thr).  The final cutoff choice belongs to a downstream kappa step."
+}

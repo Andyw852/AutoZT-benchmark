@@ -1,0 +1,50 @@
+{
+  "available": true,
+  "material_name": "ke-dft-cpu",
+  "n_atoms": 3,
+  "composition": {
+    "Se": 2,
+    "W": 1
+  },
+  "formula": "Se2W",
+  "nearest": {
+    "i": 1,
+    "j": 2,
+    "si": "Se",
+    "sj": "W",
+    "dist_A": 2.552052805146309,
+    "overlap_thr_A": 1.974,
+    "dist_over_sum": 0.9049832642362797,
+    "ok": true
+  },
+  "coordination": {
+    "cn": [
+      3,
+      3,
+      6
+    ],
+    "cn_min": 3,
+    "cn_max": 6,
+    "n_dangling": 0,
+    "dangling": [],
+    "cutoff_scale": 1.0
+  },
+  "stoichiometry": {
+    "material_name": "ke-dft-cpu",
+    "claim": "ke-dft-cpu",
+    "formula": "Se2W",
+    "elements_match": null,
+    "ok": true,
+    "note": "材料名末段 'ke-dft-cpu' 不是化学式，跳过"
+  },
+  "layers": {
+    "axis": 2,
+    "span_A": 3.364168632146,
+    "n_layers": 3,
+    "vacuum_A": 31.704782367854,
+    "is_2d": true,
+    "flags": []
+  },
+  "flags": [],
+  "ok": true
+}

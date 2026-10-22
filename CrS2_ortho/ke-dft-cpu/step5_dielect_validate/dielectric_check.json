@@ -1,0 +1,68 @@
+{
+  "step": "step5_dielect.validate",
+  "outcar": "step5_dielect/OUTCAR",
+  "ok": true,
+  "status": "done",
+  "reasons": [],
+  "eps_inf": [
+    [
+      6.827694,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      6.827694,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.335135
+    ]
+  ],
+  "eps_ionic": [
+    [
+      0.373914,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      0.373914,
+      0.0
+    ],
+    [
+      -0.0,
+      0.0,
+      0.00076
+    ]
+  ],
+  "frohlich_coupling_max": 0.007604456838775447,
+  "physics": {
+    "nkpts": 19,
+    "born_sum_max": 1e-05,
+    "born_asr_ok": true,
+    "cross_ratio": 0.0612,
+    "offdiag_ratio": 0.0,
+    "born_ions": 3,
+    "eps_inf_independent": [
+      7.2452,
+      7.2452,
+      3.3757
+    ],
+    "vacuum_axes": [
+      2
+    ],
+    "cross_ratio_vacuum_axis": 1.5283,
+    "cross_note": "真空方向含局域场（去极化）效应，与独立粒子值不可比，不计入 cross_ratio",
+    "soc_isym": {
+      "lsorbit": false,
+      "isym": 2
+    }
+  },
+  "warnings": [],
+  "input_files": {
+    "step5_dielect/OUTCAR": "de171a2c919acf62d3eed748c151bd8b1558283d13e23289fa1d8961c24f776e"
+  }
+}

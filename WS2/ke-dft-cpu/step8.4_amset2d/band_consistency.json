@@ -1,0 +1,108 @@
+{
+ "soc_impact": {
+  "check": "soc_impact",
+  "threshold_eV": 0.05,
+  "band_soc": true,
+  "transport_soc": false,
+  "n_common_k": 3,
+  "source": {
+   "soc": "step2_bandgap/step2.2_pbe/EIGENVAL",
+   "no_soc": "step3_uniform/EIGENVAL"
+  },
+  "gap_soc_eV": 1.6742,
+  "gap_nosoc_eV": 1.9416,
+  "gap_change_eV": -0.2674,
+  "vb_level_shift_max_eV": 0.4181,
+  "cb_level_shift_max_eV": 0.0352,
+  "vbm_k_soc": [
+   0.3333,
+   0.3333,
+   0.0
+  ],
+  "vbm_k_nosoc": [
+   0.3333,
+   0.3333,
+   0.0
+  ],
+  "cbm_k_soc": [
+   0.3333,
+   0.3333,
+   0.0
+  ],
+  "cbm_k_nosoc": [
+   0.3333,
+   0.3333,
+   0.0
+  ],
+  "max_shift_at": {
+   "k_frac": [
+    0.3333,
+    0.3333,
+    0.0
+   ],
+   "edge": "CB",
+   "level_index": 27
+  },
+  "status": "warn",
+  "reasons": [
+   "价带边 0.30 eV 内的能级被 SOC 移动/劈裂最多 0.418 eV",
+   "带隙差 -0.267 eV（数值已被剪刀修正，但说明 SOC 对带边重要）"
+  ],
+  "note": "★ SOC 对带边影响显著：价带边 0.30 eV 内的能级被 SOC 移动/劈裂最多 0.418 eV；带隙差 -0.267 eV（数值已被剪刀修正，但说明 SOC 对带边重要）。本材料输运链不带 SOC，剪刀只平移导带、修不了劈裂/谷次序/简并度，迁移率与 Seebeck 可能定性不对；应改用 SOC 输运链重算（需开 SOC_TRANSPORT，未上线前手改 S3/S4/S7 的 [incar] LSORBIT 并走全网格）。只比了 3 个共同 k 点。"
+ },
+ "hybrid_mass": {
+  "check": "hybrid_vs_semilocal_mass",
+  "ratio_tol": 0.25,
+  "fit_window_invA": 0.08,
+  "basis": "同一组 k 点：半局域能带只取杂化路径保留的 28 个点，两边同一窗口",
+  "fits": {
+   "VB": {
+    "semilocal": {
+     "i0": 18,
+     "x0_invA": 1.81874,
+     "fwd": null,
+     "bwd": 0.4661,
+     "fwd_window": null,
+     "bwd_window": 0.1479
+    },
+    "hybrid": {
+     "i0": 18,
+     "x0_invA": 1.81874,
+     "fwd": null,
+     "bwd": 0.3998,
+     "fwd_window": null,
+     "bwd_window": 0.1479
+    }
+   },
+   "CB": {
+    "semilocal": {
+     "i0": 18,
+     "x0_invA": 1.81874,
+     "fwd": null,
+     "bwd": 0.4146,
+     "fwd_window": null,
+     "bwd_window": 0.1479
+    },
+    "hybrid": {
+     "i0": 18,
+     "x0_invA": 1.81874,
+     "fwd": null,
+     "bwd": 0.3774,
+     "fwd_window": null,
+     "bwd_window": 0.1479
+    }
+   }
+  },
+  "functionals": {
+   "semilocal": "PBEsol",
+   "hybrid": null
+  },
+  "mass_ratio_hybrid_over_semilocal": {
+   "VB_bwd": 0.858,
+   "CB_bwd": 0.91
+  },
+  "status": "ok",
+  "reasons": [],
+  "note": "杂化与半局域带边 m* 一致（比值在 1±0.25 内；同一组 k 点：半局域能带只取杂化路径保留的 28 个点，两边同一窗口）"
+ }
+}

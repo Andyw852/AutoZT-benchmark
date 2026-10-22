@@ -1,0 +1,188 @@
+{
+  "triggered": true,
+  "reason": "symprec=1e-5 与 1e-4 空间群不一致 -> 数值微畸变",
+  "when": "2026-09-22T11:49:30",
+  "source": "kl-dft-cpu step2_static",
+  "used_symprec": 0.0001,
+  "audit_before": {
+    "micro_distortion": true,
+    "audit_symprecs": [
+      1e-05,
+      0.0001
+    ],
+    "spacegroup": [
+      {
+        "symprec": 1e-05,
+        "number": 38,
+        "international": "Amm2",
+        "n_ops": 4,
+        "ok": true
+      },
+      {
+        "symprec": 0.0001,
+        "number": 187,
+        "international": "P-6m2",
+        "n_ops": 12,
+        "ok": true
+      }
+    ],
+    "micro_distortion_detail": {
+      "a_minus_b_A": 7.882300618877736e-06,
+      "a_over_b_minus_1": 2.51013559338098e-06,
+      "gamma_minus_120_deg": 8.303465178016722e-05,
+      "alpha_minus_90_deg": 0.0,
+      "beta_minus_90_deg": 0.0
+    },
+    "lattice_metrics": {
+      "a": 3.1401970575143987,
+      "b": 3.14018917521378,
+      "c": 25.0,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 120.00008303465178
+    },
+    "vacuum": {
+      "axis": 2,
+      "axis_name": "c",
+      "vacuum_A": 21.882283680035286,
+      "height_A": 25.0,
+      "center_frac": 0.0,
+      "vacuums_A": [
+        1.8129921004151004,
+        1.8129875495705219,
+        21.882283680035286
+      ],
+      "is_2d": true
+    },
+    "n_atoms": 3,
+    "composition": {
+      "Mo": 1,
+      "S": 2
+    },
+    "symmetrize_symprec": 0.0001,
+    "spglib_version": "2.6.0",
+    "path": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step2_static/POSCAR"
+  },
+  "audit_after": {
+    "micro_distortion": false,
+    "audit_symprecs": [
+      1e-05,
+      0.0001
+    ],
+    "spacegroup": [
+      {
+        "symprec": 1e-05,
+        "number": 187,
+        "international": "P-6m2",
+        "n_ops": 12,
+        "ok": true
+      },
+      {
+        "symprec": 0.0001,
+        "number": 187,
+        "international": "P-6m2",
+        "n_ops": 12,
+        "ok": true
+      }
+    ],
+    "micro_distortion_detail": {
+      "a_minus_b_A": 0.0,
+      "a_over_b_minus_1": 0.0,
+      "gamma_minus_120_deg": 1.4210854715202004e-14,
+      "alpha_minus_90_deg": 0.0,
+      "beta_minus_90_deg": 0.0
+    },
+    "lattice_metrics": {
+      "a": 3.140193116364089,
+      "b": 3.140193116364089,
+      "c": 25.0,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 120.00000000000001
+    },
+    "vacuum": {
+      "axis": 2,
+      "axis_name": "c",
+      "vacuum_A": 21.88228368003529,
+      "height_A": 25.000000000000004,
+      "center_frac": 0.0,
+      "vacuums_A": [
+        1.8129913410402168,
+        1.8129913410402163,
+        21.88228368003529
+      ],
+      "is_2d": true
+    },
+    "n_atoms": 3,
+    "composition": {
+      "Mo": 1,
+      "S": 2
+    },
+    "symmetrize_symprec": 0.0001,
+    "spglib_version": "2.6.0"
+  },
+  "confirmations": {
+    "c1_stoichiometry": {
+      "ok": true,
+      "before": {
+        "Mo": 1,
+        "S": 2
+      },
+      "after": {
+        "Mo": 1,
+        "S": 2
+      },
+      "natoms_before": 3,
+      "natoms_after": 3
+    },
+    "c2_energy": {
+      "status": "pending",
+      "energy_before_eV": null,
+      "energy_after_eV": null,
+      "note": "需要两个单点（对称化前后各一个）才能完成本项；成本 = 2 个单点。"
+    },
+    "c3_vacuum_axis": {
+      "ok": true,
+      "axis_moved": false,
+      "before": {
+        "axis": 2,
+        "axis_name": "c",
+        "vacuum_A": 21.882283680035286,
+        "height_A": 25.0,
+        "center_frac": 0.0,
+        "vacuums_A": [
+          1.8129921004151004,
+          1.8129875495705219,
+          21.882283680035286
+        ],
+        "is_2d": true
+      },
+      "after": {
+        "axis": 2,
+        "axis_name": "c",
+        "vacuum_A": 21.88228368003529,
+        "height_A": 25.000000000000004,
+        "center_frac": 0.0,
+        "vacuums_A": [
+          1.8129913410402168,
+          1.8129913410402163,
+          21.88228368003529
+        ],
+        "is_2d": true
+      },
+      "center_shift_frac": 0.0,
+      "center_tol": 0.02
+    },
+    "all_ok": true,
+    "fully_confirmed": false
+  },
+  "stress_recheck": null,
+  "files": {
+    "before": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step2_static/symmetry_audit/POSCAR.before",
+    "after": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step2_static/symmetry_audit/POSCAR.symmetrized",
+    "json": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step2_static/symmetry_audit/symmetry_audit.json",
+    "log": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step2_static/symmetry_audit/symmetry_audit.log",
+    "out": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step2_static/POSCAR"
+  },
+  "fit_for_use": false
+}

@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-09-23T10:39:08",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step2_bandgap/step2.2_pbe",
+  "material": {
+    "name": "MoSe2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/MoSe2/ke-dft-cpu",
+    "local": "/mnt/d/tf_data/work_AutoZT/MoSe2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/MoSe2/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step3_WAVECAR.py",
+    "sha256": "0fa23321514ef10f44fc6e19c04f8fa4085c12b9baff2e238c2f389ff51d5a36",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "87ba699cd7982366f85c963bcf0239a1149ee19a89342ebd6cfd4671ab89f609",
+      "source": "/mnt/d/tf_data/work_AutoZT/MoSe2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "check_common.py": {
+      "sha256": "696a1683e81fced794d1289c1c688d9f840a71d27ad8e3589a5e4bce8a04a4c8",
+      "src_sha256": "696a1683e81fced794d1289c1c688d9f840a71d27ad8e3589a5e4bce8a04a4c8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/check_common.py",
+      "origin": "skill"
+    },
+    "dim_common.py": {
+      "sha256": "31ef0aeaadd4a4573c4bcd8ae491ce39dbbce5004e63f7917a91713bb3676765",
+      "src_sha256": "31ef0aeaadd4a4573c4bcd8ae491ce39dbbce5004e63f7917a91713bb3676765",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/dim_common.py",
+      "origin": "skill"
+    },
+    "gen_step3_WAVECAR.py": {
+      "sha256": "0fa23321514ef10f44fc6e19c04f8fa4085c12b9baff2e238c2f389ff51d5a36",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.2_pbe/gen_step3_WAVECAR.py",
+      "origin": "skill",
+      "args": null
+    },
+    "incar_2d.tpl": {
+      "sha256": "7249b4c43f7326302006b1de2018eedb435d056f911e65895b22826f1ae9281d",
+      "src_sha256": "7249b4c43f7326302006b1de2018eedb435d056f911e65895b22826f1ae9281d",
+      "rendered": false,
+      "source": "/mnt/d/tf_data/work_AutoZT/MoSe2/ke-dft-cpu/project_setting/templates/step2_bandgap/step2.2_pbe/incar_2d.tpl",
+      "origin": "project"
+    },
+    "incar_3d.tpl": {
+      "sha256": "3df99c9c0c82aebbb2f5f136ac9551c94287f3cad596f47fe66d5e8db7e383d6",
+      "src_sha256": "3df99c9c0c82aebbb2f5f136ac9551c94287f3cad596f47fe66d5e8db7e383d6",
+      "rendered": false,
+      "source": "/mnt/d/tf_data/work_AutoZT/MoSe2/ke-dft-cpu/project_setting/templates/step2_bandgap/step2.2_pbe/incar_3d.tpl",
+      "origin": "project"
+    },
+    "step.conf": {
+      "sha256": "b0ec5547ef76bdc7a365fb21cbfccd3ae306f51c8c053a783dff91feefc19162",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "step3_check_and_resubmit.py": {
+      "sha256": "5f88ebc6aa1bc588816022f1e32ef33b51741cdaf87e211151efc2a06e0d9e6a",
+      "src_sha256": "5f88ebc6aa1bc588816022f1e32ef33b51741cdaf87e211151efc2a06e0d9e6a",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.2_pbe/step3_check_and_resubmit.py",
+      "origin": "skill"
+    },
+    "stepconf.py": {
+      "sha256": "2e55612a53af163c33746335b08caa2c09aa73636bce3a4718ff88808167b6ee",
+      "src_sha256": "2e55612a53af163c33746335b08caa2c09aa73636bce3a4718ff88808167b6ee",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    },
+    "submit_ncl_2d.tpl": {
+      "sha256": "3829c6be6e4821f0c7afad9debca22a912235171313fe9f2eb1999fc753d0012",
+      "src_sha256": "a48461fbd311db91d57828db0df9af29b6ded4baf1257dea9d660e28849a67bb",
+      "rendered": true,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_ncl_2d.tpl",
+      "origin": "skill"
+    },
+    "submit_ncl_3d.tpl": {
+      "sha256": "cdcc0fa29d5d8f5d8736285a30897fd8631d087538b8d7cde2f6195939ca45ab",
+      "src_sha256": "872bc883ea14adaae2fc57802c47be3e7419085cc47e56dd865ef66beaba88cc",
+      "rendered": true,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_ncl_3d.tpl",
+      "origin": "skill"
+    },
+    "submit_std_2d.tpl": {
+      "sha256": "9ac02e56ef6339f3c82b5560ff1cb1cb6f00ff3fa134810a541981252c50ed21",
+      "src_sha256": "2d6de93549fe3d6571721b3d0ce3311d94c758266fca420b7c7c060eca8aa147",
+      "rendered": true,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_std_2d.tpl",
+      "origin": "skill"
+    },
+    "submit_std_3d.tpl": {
+      "sha256": "f98f0727bea24dbe4b50fe72491321553d92d90176f37979dbb5a18592139795",
+      "src_sha256": "4c47c5d39902d00c2fa55d480f0e29e03a98aabbab3d2674399bd7dfe075f242",
+      "rendered": true,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_std_3d.tpl",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "b0ec5547ef76bdc7a365fb21cbfccd3ae306f51c8c053a783dff91feefc19162",
+    "chars": 971,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step2_bandgap/step2.2_pbe   材料 MoSe2\n# 来源（越靠下优先级越高）：\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n\n[params]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\nBANDGAP        = hse                                                      # <- [1]\nFUNC           = pbesol                                                   # <- [1]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "bin/autozt"
+  }
+}

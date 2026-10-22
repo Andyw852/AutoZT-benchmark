@@ -1,0 +1,12 @@
+{
+ "schema": "autozt-origin/1",
+ "material": "CrS2_ortho_ke-dft-cpu/CrS2_ortho",
+ "material_dir": "/mnt/d/tf_data/jzz/jap/CrS2_ortho",
+ "skill": "ke-dft-cpu",
+ "step": "step8_amset",
+ "label": "S8_kappa",
+ "poscar_sha256": "7d58737f3125aa6debf60590f9b41778f1fac31aa0c509fafad8cde64c4838b6",
+ "host": "jzzn",
+ "remote_dir": "/public/home/wangchao/Fullerene_Network/work/jzz/jap/CrS2_ortho/ke-dft-cpu/step8_amset",
+ "fetched_at": "2026-10-15T00:27:58"
+}

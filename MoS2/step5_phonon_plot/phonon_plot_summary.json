@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "nac_considered": true,
+  "fc_dir": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step5_fc/phono3py",
+  "out_dir": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step5_phonon_plot",
+  "note": "有 NAC：band_nac + band_nonac 两张对照",
+  "lowfreq_max_THz": 10.0,
+  "data_files": [
+    "band_nac.dat",
+    "band_nonac.dat"
+  ],
+  "lowfreq_figures": [
+    "band_nac_lowfreq.png",
+    "band_nonac_lowfreq.png"
+  ],
+  "plots": [
+    {
+      "tag": "nac",
+      "nac": true,
+      "png": "band_nac.png",
+      "yaml": "band_nac.yaml",
+      "dat": "band_nac.dat",
+      "lowfreq_png": "band_nac_lowfreq.png",
+      "n_band_rows": 93,
+      "min_freq_THz": -0.0294,
+      "imaginary": false,
+      "path_source": "2d-hexagonal"
+    },
+    {
+      "tag": "nonac",
+      "nac": false,
+      "png": "band_nonac.png",
+      "yaml": "band_nonac.yaml",
+      "dat": "band_nonac.dat",
+      "lowfreq_png": "band_nonac_lowfreq.png",
+      "n_band_rows": 93,
+      "min_freq_THz": -0.0554,
+      "imaginary": true,
+      "path_source": "2d-hexagonal"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# 冻声子 ODP 参数（2026-10-15 04:31:48）
+# D 单位 eV/Å（= 1e8 eV/cm），ħω 单位 meV；真空对齐；位移 0.010 Å；极性模 exclude
+electron Q          ×6  组1  模 4,5     ħω= 21.43 meV  D= 0.000 eV/Å（不对齐  0.000）  成员离散 0.0%  central
+electron Q          ×6  组3  模 8       ħω= 30.71 meV  D= 2.715 eV/Å（不对齐  2.957）  成员离散 0.0%  central
+electron K          ×2  组1  模 4,5     ħω= 21.43 meV  D= 0.000 eV/Å（不对齐  0.000）  成员离散 0.0%  central
+electron K          ×2  组3  模 8       ħω= 30.71 meV  D= 5.729 eV/Å（不对齐  5.487）  成员离散 0.0%  central
+hole     K          ×2  组1  模 4,5     ħω= 21.43 meV  D= 0.000 eV/Å（不对齐  0.000）  成员离散 0.0%  central
+hole     K          ×2  组3  模 8       ħω= 30.71 meV  D= 2.544 eV/Å（不对齐  2.302）  成员离散 0.0%  central

@@ -1,0 +1,491 @@
+{
+  "cell_c_A": 23.3456,
+  "functional": {
+    "func": "pbesol",
+    "label": "PBEsol（GGA=PS，无色散修正）",
+    "source": "step1_opt/workflow_method.txt",
+    "note": "和文献比较前先核对文献用的泛函：GGA=PS 是 PBEsol，不是 PBE。PBEsol 的晶格通常比 PBE 小约 1%，C_2D 随之偏硬，m*、形变势和谷间能差也会变，不能直接当作 PBE 结果比。"
+  },
+  "layer_normal": [
+    -0.0,
+    0.0,
+    1.0
+  ],
+  "layer_thickness": {
+    "source_file": "step3_uniform/CONTCAR",
+    "z_span_A": 3.3321,
+    "top_species": "Se",
+    "top_vdw_radius_A": 1.9,
+    "bottom_species": "Se",
+    "bottom_vdw_radius_A": 1.9,
+    "vdw_radii_source": "Bondi 1964 / Alvarez 2013",
+    "thickness_A": 7.1321,
+    "method": "vdw",
+    "thickness_used_A": 7.1321
+  },
+  "elastic_rescale_factor_c_over_t": 3.2733,
+  "elastic_constant_raw_GPa": [
+    [
+      51.101,
+      10.854,
+      -0.119,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      10.854,
+      51.101,
+      -0.119,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      -0.119,
+      -0.119,
+      -0.801,
+      0.0,
+      0.0,
+      -0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.199,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.199,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.0,
+      20.124
+    ]
+  ],
+  "elastic_constant_rescaled_GPa": null,
+  "elastic_constant_convention": "standard Voigt (XX YY ZZ YZ XZ XY)，已由 read_elastic 从 VASP 的 (XX YY ZZ XY YZ ZX) 重排",
+  "elastic_constant_note": "插件用原始 slab 值（= C_2D/c），不乘 c/t；c/t 只用于 σ/κ 的厚度归一化（见 elastic_rescale_factor_c_over_t）",
+  "eps_inf_slab": [
+    [
+      5.227485,
+      0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      5.227491,
+      -0.0
+    ],
+    [
+      -0.0,
+      0.0,
+      1.313873
+    ]
+  ],
+  "eps_static_slab": [
+    [
+      5.391188,
+      0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      5.391195,
+      -0.0
+    ],
+    [
+      -0.0,
+      0.0,
+      1.314523
+    ]
+  ],
+  "eps_inf_override": null,
+  "r_inf_delta_r_check": {
+    "available": true,
+    "eps_inf_inplane_mean": 5.2275,
+    "eps_static_inplane_mean": 5.3912,
+    "r_inf_A": 49.3467,
+    "r_0_A": 51.2575,
+    "delta_r_A": 1.9109,
+    "delta_r_over_r_inf": 0.03872,
+    "definition": "r = c*(eps_slab,inplane - 1)/2 (Angstrom); Delta r = r0 - r_inf = c*(eps0-eps_inf)/2",
+    "anchors": {
+      "MoS2": {
+        "r_inf_A": 46.5,
+        "delta_r_A": 0.53
+      },
+      "h-BN": {
+        "r_inf_A": 7.64,
+        "delta_r_A": 2.84
+      }
+    },
+    "delta_r_crosscheck": {
+      "route1_dielectric_A": 1.910879,
+      "route2_mode_sum_A": 1.910964,
+      "route2_tensor_A": [
+        [
+          1.910959,
+          0.0
+        ],
+        [
+          0.0,
+          1.910969
+        ]
+      ],
+      "deviation_pct": 0.004,
+      "modes_used": 6,
+      "acoustic_removed": 3,
+      "r_inf_A": 49.3467,
+      "eps_inf_inplane": 5.22749,
+      "eps_ionic_inplane": 0.1637,
+      "anchors_literature": {
+        "MoS2_delta_r_A": 0.53,
+        "MoS2_r_inf_A": 46.5
+      },
+      "note": "路线①= c(ε0-ε∞)/2（DFPT 介电）；路线②= (2π/A)ΣX²/ω²（声子模求和，原子单位、M 用电子质量、e 用质量加权归一的本征矢）。两条应一致；差几个百分点以上说明本征矢口径或声学模剔除有问题。"
+    }
+  },
+  "deform_geometry": "ionrelax(in-plane)+clamped(out-of-plane)",
+  "adp_d_scale": 1.0,
+  "adp_d_scale_note": "strain（h5 绝对形变势 D_vac 原样，现状）",
+  "za_coupling": {
+    "sigma_h": true,
+    "structure": "step3_uniform/POSCAR",
+    "symprec": 0.01,
+    "note": "有水平镜面 σh：ZA 一阶耦合被对称性禁止，只算面内声学支成立"
+  },
+  "eps_env": 1.0,
+  "imp_distance_A": 0.0,
+  "pop_lo_dispersion": true,
+  "mechanisms_2d": [
+    "ADP",
+    "IMP",
+    "POP",
+    "ODP"
+  ],
+  "dp_optical": {
+    "electron": {
+      "channels": [
+        {
+          "from": "K",
+          "to": "K",
+          "kind": "intra",
+          "D_eV_A": 4.09237,
+          "hw_meV": 29.8879,
+          "source": "frozen"
+        },
+        {
+          "from": "Q",
+          "to": "Q",
+          "kind": "intra",
+          "D_eV_A": 2.30409,
+          "hw_meV": 29.8879,
+          "source": "frozen"
+        }
+      ],
+      "valleys": [
+        {
+          "label": "K",
+          "g": 2,
+          "k_frac": [
+            [
+              0.333333,
+              0.333333,
+              0.0
+            ],
+            [
+              -0.333333,
+              -0.333333,
+              0.0
+            ]
+          ],
+          "dE_eV": 0.0,
+          "k_grid": [
+            [
+              0.333333,
+              0.333333,
+              0.0
+            ],
+            [
+              -0.333333,
+              -0.333333,
+              0.0
+            ]
+          ]
+        },
+        {
+          "label": "Q",
+          "g": 6,
+          "k_frac": [
+            [
+              0.177272,
+              0.177272,
+              0.0
+            ],
+            [
+              0.177272,
+              -0.354544,
+              0.0
+            ],
+            [
+              0.354544,
+              -0.177272,
+              0.0
+            ],
+            [
+              -0.354544,
+              0.177272,
+              0.0
+            ],
+            [
+              -0.177272,
+              0.354544,
+              0.0
+            ],
+            [
+              -0.177272,
+              -0.177272,
+              0.0
+            ]
+          ],
+          "dE_eV": 0.025,
+          "k_grid": [
+            [
+              0.177778,
+              0.177778,
+              0.0
+            ],
+            [
+              0.177778,
+              -0.355556,
+              0.0
+            ],
+            [
+              0.355556,
+              -0.177778,
+              0.0
+            ],
+            [
+              -0.355556,
+              0.177778,
+              0.0
+            ],
+            [
+              -0.177778,
+              0.355556,
+              0.0
+            ],
+            [
+              -0.177778,
+              -0.177778,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "valleys_source": "step8.2_dpt/dpt_result.json",
+      "frozen": {
+        "digest": "f21eed961200cc58",
+        "n_channels": 2,
+        "dropped_below_dmin": [
+          {
+            "valley": "K",
+            "hw_meV": 20.7309,
+            "D_eV_A": 0.0
+          },
+          {
+            "valley": "Q",
+            "hw_meV": 20.7309,
+            "D_eV_A": 0.0
+          }
+        ],
+        "merge_notes": [],
+        "summary": "K 4.09 eV/Å@29.9 meV, Q 2.30 eV/Å@29.9 meV",
+        "manual_reference": [
+          {
+            "valley": "K",
+            "D_eV_A": 5.2,
+            "hw_meV": 34.33
+          },
+          {
+            "valley": "Q",
+            "D_eV_A": 7.8,
+            "hw_meV": 34.33
+          }
+        ]
+      }
+    },
+    "hole": {
+      "channels": [
+        {
+          "from": "K",
+          "to": "K",
+          "kind": "intra",
+          "D_eV_A": 2.43144,
+          "hw_meV": 29.8879,
+          "source": "frozen"
+        }
+      ],
+      "valleys": [
+        {
+          "label": "K",
+          "g": 2,
+          "k_frac": [
+            [
+              0.333333,
+              0.333333,
+              0.0
+            ],
+            [
+              -0.333333,
+              -0.333333,
+              0.0
+            ]
+          ],
+          "dE_eV": 0.0,
+          "k_grid": [
+            [
+              0.333333,
+              0.333333,
+              0.0
+            ],
+            [
+              -0.333333,
+              -0.333333,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "valleys_source": "step8.2_dpt/dpt_result.json",
+      "frozen": {
+        "digest": "2ed14f6977a6cb75",
+        "n_channels": 1,
+        "dropped_below_dmin": [
+          {
+            "valley": "K",
+            "hw_meV": 20.7309,
+            "D_eV_A": 0.0
+          }
+        ],
+        "merge_notes": [],
+        "summary": "K 2.43 eV/Å@29.9 meV",
+        "manual_reference": [
+          {
+            "valley": "K",
+            "D_eV_A": 4.9,
+            "hw_meV": 34.33
+          }
+        ]
+      }
+    },
+    "adp_intravalley": {
+      "electron": false,
+      "hole": false
+    },
+    "adp_intravalley_mode": "auto",
+    "model": "常数形变势：1/τ_c(x) = π D_c²/(M ω_c)·[N·G_c(x+ħω) + (N+1)·G_c(x−ħω)]，G_c 为目标谷（星平均）每原胞每自旋态密度，M 为原胞质量；各向同性，动量弛豫率 = 散射率",
+    "reference": "Jin et al. PRB 90, 045422 (2014); Kaasbjerg et al. PRB 85, 115317 (2012)"
+  },
+  "dp_optical_frozen": {
+    "mode": "auto",
+    "source": "step8.21_odp_read/odp_params.json",
+    "dmin_eV_A": 0.05,
+    "frozen_use": {
+      "electron": "used",
+      "hole": "used"
+    },
+    "digest": {
+      "electron": "f21eed961200cc58",
+      "hole": "2ed14f6977a6cb75"
+    },
+    "odp_allowed": true,
+    "info": {
+      "electron": {
+        "digest": "f21eed961200cc58",
+        "n_channels": 2,
+        "dropped_below_dmin": [
+          {
+            "valley": "K",
+            "hw_meV": 20.7309,
+            "D_eV_A": 0.0
+          },
+          {
+            "valley": "Q",
+            "hw_meV": 20.7309,
+            "D_eV_A": 0.0
+          }
+        ],
+        "merge_notes": [],
+        "summary": "K 4.09 eV/Å@29.9 meV, Q 2.30 eV/Å@29.9 meV",
+        "manual_reference": [
+          {
+            "valley": "K",
+            "D_eV_A": 5.2,
+            "hw_meV": 34.33
+          },
+          {
+            "valley": "Q",
+            "D_eV_A": 7.8,
+            "hw_meV": 34.33
+          }
+        ]
+      },
+      "hole": {
+        "digest": "2ed14f6977a6cb75",
+        "n_channels": 1,
+        "dropped_below_dmin": [
+          {
+            "valley": "K",
+            "hw_meV": 20.7309,
+            "D_eV_A": 0.0
+          }
+        ],
+        "merge_notes": [],
+        "summary": "K 2.43 eV/Å@29.9 meV",
+        "manual_reference": [
+          {
+            "valley": "K",
+            "D_eV_A": 4.9,
+            "hw_meV": 34.33
+          }
+        ]
+      }
+    }
+  },
+  "dp_optical_ivs": {
+    "mode": "auto",
+    "source": "step8.22_ivs_read/ivs_params.json",
+    "dmin_eV_A": 0.05,
+    "frozen_use": {
+      "electron": "unavailable",
+      "hole": "unavailable"
+    },
+    "digest": {},
+    "ivs_allowed": false,
+    "info": {}
+  },
+  "areal_density_factor_cm": 2.3345614999999998e-07,
+  "areal_density_note": "n_2D [cm^-2] = n_3D [cm^-3] x cell_c [cm]",
+  "inplane_cell_area_cm2": 9.252636247214726e-16,
+  "carrier_per_atom_threshold": 0.02,
+  "num_atoms": 3,
+  "free_carrier_screening": true,
+  "skill_rev": "2026-10-16-0055-dopinglow",
+  "plugin": "amset2d_plugin.py",
+  "limitation": "单一有效极性模、偶极近似（无四极矩、无面外偶极/Janus 耦合）；屏蔽用局域场 + 二维 Thomas–Fermi。模型级近似，适合筛选与趋势；要发表的绝对值建议用 EPW/Perturbo 对照。",
+  "kz_cap_rmax": 1,
+  "kz_flat_tol_ev": 0.005
+}

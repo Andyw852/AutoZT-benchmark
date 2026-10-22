@@ -1,0 +1,12 @@
+{
+ "schema": "autozt-origin/1",
+ "material": "WS2_ke-dft-cpu/WS2",
+ "material_dir": "/mnt/d/tf_data/work_AutoZT/WS2",
+ "skill": "ke-dft-cpu",
+ "step": "step8.2_dpt",
+ "label": "S8.2_dpt",
+ "poscar_sha256": "304fcd87800722b7ef768e4e67a239547af1c3468475023904a965c26884b87a",
+ "host": "jzzn",
+ "remote_dir": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu/step8.2_dpt",
+ "fetched_at": "2026-10-10T01:19:28"
+}

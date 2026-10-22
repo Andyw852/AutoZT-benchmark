@@ -1,0 +1,112 @@
+{
+  "mode": "scan",
+  "candidates": [
+    3.54,
+    4.19,
+    4.73,
+    5.24,
+    5.86,
+    6.5
+  ],
+  "shells": [
+    2.391019942541333,
+    3.1379454367241495,
+    3.94687080782875,
+    4.425038741054663,
+    5.0436694956897385,
+    5.438974023120649,
+    6.275902961339002,
+    6.720135980608725,
+    7.011662162712621,
+    7.417616895333189
+  ],
+  "bootstrap": 0,
+  "stability_thr": 0.3,
+  "recommended_cut": null,
+  "records": [
+    {
+      "cut": 3.54,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cut3_3p54",
+      "train_rel_err": 0.006016055605063679,
+      "free_ifcs": 171,
+      "err_kind": "in-sample",
+      "ratio": 47.36842105263158,
+      "train_rel_se": 0.0,
+      "stability_measured": false
+    },
+    {
+      "cut": 4.19,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cut3_4p19",
+      "train_rel_err": 0.0054213301231208644,
+      "free_ifcs": 238,
+      "err_kind": "in-sample",
+      "ratio": 34.03361344537815,
+      "train_rel_se": 0.0,
+      "stability_measured": false
+    },
+    {
+      "cut": 4.73,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cut3_4p73",
+      "train_rel_err": 0.0038712706323819745,
+      "free_ifcs": 340,
+      "err_kind": "in-sample",
+      "ratio": 23.823529411764707,
+      "train_rel_se": 0.0,
+      "stability_measured": false
+    },
+    {
+      "cut": 5.24,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cut3_5p24",
+      "train_rel_err": 0.0030295078267152838,
+      "free_ifcs": 568,
+      "err_kind": "in-sample",
+      "ratio": 14.26056338028169,
+      "train_rel_se": 0.0,
+      "stability_measured": false
+    },
+    {
+      "cut": 5.86,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cut3_5p86",
+      "train_rel_err": 0.002837978976802522,
+      "free_ifcs": 798,
+      "err_kind": "in-sample",
+      "ratio": 10.150375939849624,
+      "train_rel_se": 0.0,
+      "stability_measured": false
+    },
+    {
+      "cut": 6.5,
+      "natom_super": 75,
+      "ndata": 36,
+      "shell_stats": [],
+      "stable_upper_cut": null,
+      "dir": "cut3_6p50",
+      "train_rel_err": 0.002572230638877399,
+      "free_ifcs": 1294,
+      "err_kind": "in-sample",
+      "ratio": 6.259659969088099,
+      "train_rel_se": 0.0,
+      "stability_measured": false
+    }
+  ]
+}

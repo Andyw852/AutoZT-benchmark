@@ -1,0 +1,99 @@
+{
+  "status": "not_converged",
+  "err_gate_applied": false,
+  "criteria": {
+    "rel_err_1se": "train_rel_err <= min(train_rel_err) + 1*SE（err_kind=held-out 时才启用）",
+    "stability": "sigma/|mean| < 0.3",
+    "plateau": "相邻 Δκ <= max(5%, sqrt(err_i^2+err_j^2))"
+  },
+  "records": [
+    {
+      "cut": 3.55,
+      "ratio": 47.928994082840234,
+      "train_rel_err": 0.00584019032654195,
+      "train_rel_se": 7.4086294573751e-05,
+      "err_kind": "in-sample",
+      "stable_upper_cut": 4.199188800644414,
+      "kappa": 211.87451837197116,
+      "kappa_err": 0.6826937675241783,
+      "data_ok": true,
+      "stable_ok": true,
+      "err_ok": true,
+      "plateau_ok": false
+    },
+    {
+      "cut": 4.2,
+      "ratio": 34.32203389830509,
+      "train_rel_err": 0.005430422688161652,
+      "train_rel_se": 0.00014261622860515415,
+      "err_kind": "in-sample",
+      "stable_upper_cut": 4.748372154683402,
+      "kappa": 175.6834601839946,
+      "kappa_err": 2.8063461831285266,
+      "data_ok": true,
+      "stable_ok": true,
+      "err_ok": true,
+      "plateau_ok": false
+    },
+    {
+      "cut": 4.75,
+      "ratio": 23.964497041420117,
+      "train_rel_err": 0.003910933248180675,
+      "train_rel_se": 7.731967089503256e-05,
+      "err_kind": "in-sample",
+      "stable_upper_cut": 5.2521460395394985,
+      "kappa": 181.7020460361425,
+      "kappa_err": 4.542650814369445,
+      "data_ok": true,
+      "stable_ok": true,
+      "err_ok": true,
+      "plateau_ok": false
+    },
+    {
+      "cut": 5.25,
+      "ratio": 14.31095406360424,
+      "train_rel_err": 0.0031967320445821313,
+      "train_rel_se": 8.528025950006157e-05,
+      "err_kind": "in-sample",
+      "stable_upper_cut": 5.869689491907534,
+      "kappa": 123.4760583634303,
+      "kappa_err": 2.9923225110114626,
+      "data_ok": true,
+      "stable_ok": true,
+      "err_ok": true,
+      "plateau_ok": false
+    },
+    {
+      "cut": 5.87,
+      "ratio": 10.175879396984925,
+      "train_rel_err": 0.003064530238567455,
+      "train_rel_se": 0.00016275869946441563,
+      "err_kind": "in-sample",
+      "stable_upper_cut": 6.512166147036084,
+      "kappa": 132.01003398548218,
+      "kappa_err": 5.4668709304869125,
+      "data_ok": true,
+      "stable_ok": true,
+      "err_ok": true,
+      "plateau_ok": false
+    },
+    {
+      "cut": 6.51,
+      "ratio": 6.269349845201238,
+      "train_rel_err": 0.002864584044012142,
+      "train_rel_se": 0.0001973635235072258,
+      "err_kind": "in-sample",
+      "stable_upper_cut": 6.882190688979542,
+      "kappa": 115.11488305050013,
+      "kappa_err": 8.93964186478781,
+      "data_ok": true,
+      "stable_ok": true,
+      "err_ok": true,
+      "plateau_ok": false
+    }
+  ],
+  "chosen_cut": 6.51,
+  "pick": "smallest",
+  "reason": "κ 在数据能确定的范围内（≤ 6.51 Å）仍未到平台，报能确定范围内最大截断的 κ；更长程三阶项当前数据无法确定",
+  "kappa_err_source": "fc3 逐壳层 σ/|mean| 上界传播（粗；每档只跑 1 次 κ）"
+}

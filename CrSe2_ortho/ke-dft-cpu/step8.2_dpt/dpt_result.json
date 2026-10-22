@@ -1,0 +1,77 @@
+{
+  "dim": "2d",
+  "is_2d": true,
+  "temperature_K": 300.0,
+  "skill_rev": "2026-08-31-rscan",
+  "env": {
+    "python": "/home/wangchao/miniconda3/envs/atomate2_p_a/bin/python",
+    "amset": "N/A",
+    "host": "DESKTOP-3B6UKIT"
+  },
+  "formula": "2D Bardeen-Shockley: μ=eℏ³C_2D/(k_BT m* m_d E1²)",
+  "results": [
+    {
+      "carrier": "electron",
+      "inputs": {
+        "C_2D_N_per_m": 99.20362,
+        "C_provenance": "step6 面内(C11+C22)/2 × h(V/A)=20.000Å",
+        "m_eff_m0": 1.078,
+        "m_provenance": "带边方向分解+q^4外推(面内, 3方向, 最轻两支 1.0447/1.1123, 全组 1.0447..1.4319, spin=0)",
+        "E1_eV": 5.0196,
+        "E1_provenance": "band_edges.json 真空对齐(n=2)面内对角",
+        "T_K": 300.0
+      },
+      "mobility_cm2_Vs": 72.158,
+      "status": "ok",
+      "by_direction": {
+        "C_2D_N_per_m": [
+          99.20362,
+          99.20362
+        ],
+        "C_provenance": "step6 C11/C22 × h(V/A)=20.000A",
+        "m_eff_m0": null,
+        "m_provenance": "全 BZ 展开失败（amset/subprocess/pymatgen 都不可用：RuntimeError）——拒绝在 IBZ 上拟合 m*（单侧取点是系统性错误）",
+        "E1_eV": [
+          5.2506,
+          4.7885
+        ],
+        "E1_provenance": "band_edges.json 真空对齐(n=2) D_xx/D_yy",
+        "T_K": 300.0,
+        "formula": "mu_a = e*hbar^3*C_2D,a/(kB*T*m_a*m_d*E1_a^2); tau_a = mu_a*m_a/e",
+        "status": "缺输入：m*（可在 MANUAL_ANISO 手填）"
+      }
+    },
+    {
+      "carrier": "hole",
+      "inputs": {
+        "C_2D_N_per_m": 99.20362,
+        "C_provenance": "step6 面内(C11+C22)/2 × h(V/A)=20.000Å",
+        "m_eff_m0": 1.1289,
+        "m_provenance": "带边方向分解+q^4外推(面内, 3方向, 最轻两支 1.1120/1.1460, 全组 1.1120..1.5477, spin=0)",
+        "E1_eV": 2.8346,
+        "E1_provenance": "band_edges.json 真空对齐(n=2)面内对角",
+        "T_K": 300.0
+      },
+      "mobility_cm2_Vs": 206.333,
+      "status": "ok",
+      "by_direction": {
+        "C_2D_N_per_m": [
+          99.20362,
+          99.20362
+        ],
+        "C_provenance": "step6 C11/C22 × h(V/A)=20.000A",
+        "m_eff_m0": null,
+        "m_provenance": "全 BZ 展开失败（amset/subprocess/pymatgen 都不可用：RuntimeError）——拒绝在 IBZ 上拟合 m*（单侧取点是系统性错误）",
+        "E1_eV": [
+          2.6706,
+          2.9985
+        ],
+        "E1_provenance": "band_edges.json 真空对齐(n=2) D_xx/D_yy",
+        "T_K": 300.0,
+        "formula": "mu_a = e*hbar^3*C_2D,a/(kB*T*m_a*m_d*E1_a^2); tau_a = mu_a*m_a/e",
+        "status": "缺输入：m*（可在 MANUAL_ANISO 手填）"
+      }
+    }
+  ],
+  "note": "经典 DPT 声学支迁移率，用于和 amset(ADP) 对标。m*/E1 自动值精度有限——务必核对，或在 MANUAL 手填。μ∝1/T。"
+}

@@ -1,0 +1,189 @@
+{
+  "triggered": true,
+  "reason": "symprec=1e-5 与 1e-4 空间群不一致 -> 数值微畸变",
+  "when": "2026-09-26T16:49:23",
+  "source": "kl-dft-cpu step4_disp",
+  "used_symprec": 0.0001,
+  "audit_before": {
+    "micro_distortion": true,
+    "audit_symprecs": [
+      1e-05,
+      0.0001
+    ],
+    "spacegroup": [
+      {
+        "symprec": 1e-05,
+        "number": 156,
+        "international": "P3m1",
+        "n_ops": 6,
+        "ok": true
+      },
+      {
+        "symprec": 0.0001,
+        "number": 187,
+        "international": "P-6m2",
+        "n_ops": 12,
+        "ok": true
+      }
+    ],
+    "micro_distortion_detail": {
+      "a_minus_b_A": 0.0,
+      "a_over_b_minus_1": 0.0,
+      "gamma_minus_120_deg": 1.3320116380555191e-05,
+      "alpha_minus_90_deg": 0.0,
+      "beta_minus_90_deg": 0.0
+    },
+    "lattice_metrics": {
+      "a": 3.146132085732823,
+      "b": 3.146132085732823,
+      "c": 30.202402,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 120.00001332011638
+    },
+    "vacuum": {
+      "axis": 2,
+      "axis_name": "c",
+      "vacuum_A": 27.067042921646838,
+      "height_A": 30.202402000000003,
+      "center_frac": 0.8526804766455314,
+      "vacuums_A": [
+        1.8164174079154625,
+        1.8164174079154625,
+        27.067042921646838
+      ],
+      "is_2d": true
+    },
+    "n_atoms": 3,
+    "composition": {
+      "S": 2,
+      "W": 1
+    },
+    "symmetrize_symprec": 0.0001,
+    "spglib_version": "2.6.0",
+    "path": "/public/home/wangchao/Fullerene_Network/work/WS2_kltest/kl-dft-cpu/step4_disp/POSCAR"
+  },
+  "audit_after": {
+    "micro_distortion": false,
+    "audit_symprecs": [
+      1e-05,
+      0.0001
+    ],
+    "spacegroup": [
+      {
+        "symprec": 1e-05,
+        "number": 187,
+        "international": "P-6m2",
+        "n_ops": 12,
+        "ok": true
+      },
+      {
+        "symprec": 0.0001,
+        "number": 187,
+        "international": "P-6m2",
+        "n_ops": 12,
+        "ok": true
+      }
+    ],
+    "micro_distortion_detail": {
+      "a_minus_b_A": 4.440892098500626e-16,
+      "a_over_b_minus_1": 2.220446049250313e-16,
+      "gamma_minus_120_deg": 1.4210854715202004e-14,
+      "alpha_minus_90_deg": 0.0,
+      "beta_minus_90_deg": 0.0
+    },
+    "lattice_metrics": {
+      "a": 3.146132085732823,
+      "b": 3.1461320857328228,
+      "c": 30.202402,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 120.00000000000001
+    },
+    "vacuum": {
+      "axis": 2,
+      "axis_name": "c",
+      "vacuum_A": 27.06701271924662,
+      "height_A": 30.202401999999992,
+      "center_frac": 0.5,
+      "vacuums_A": [
+        1.8164202066039636,
+        1.8164202066039634,
+        27.06701271924662
+      ],
+      "is_2d": true
+    },
+    "n_atoms": 3,
+    "composition": {
+      "S": 2,
+      "W": 1
+    },
+    "symmetrize_symprec": 0.0001,
+    "spglib_version": "2.6.0"
+  },
+  "confirmations": {
+    "c1_stoichiometry": {
+      "ok": true,
+      "before": {
+        "S": 2,
+        "W": 1
+      },
+      "after": {
+        "S": 2,
+        "W": 1
+      },
+      "natoms_before": 3,
+      "natoms_after": 3
+    },
+    "c2_energy": {
+      "status": "pending",
+      "energy_before_eV": null,
+      "energy_after_eV": null,
+      "note": "需要两个单点（对称化前后各一个）才能完成本项；成本 = 2 个单点。"
+    },
+    "c3_vacuum_axis": {
+      "ok": true,
+      "axis_moved": false,
+      "before": {
+        "axis": 2,
+        "axis_name": "c",
+        "vacuum_A": 27.067042921646838,
+        "height_A": 30.202402000000003,
+        "center_frac": 0.8526804766455314,
+        "vacuums_A": [
+          1.8164174079154625,
+          1.8164174079154625,
+          27.067042921646838
+        ],
+        "is_2d": true
+      },
+      "after": {
+        "axis": 2,
+        "axis_name": "c",
+        "vacuum_A": 27.06701271924662,
+        "height_A": 30.202401999999992,
+        "center_frac": 0.5,
+        "vacuums_A": [
+          1.8164202066039636,
+          1.8164202066039634,
+          27.06701271924662
+        ],
+        "is_2d": true
+      },
+      "center_shift_frac": 0.35268047664553137,
+      "center_tol": 0.02,
+      "center_shift_note": "真空方向平移不计入判据（PBC 下物理等价）"
+    },
+    "all_ok": true,
+    "fully_confirmed": false
+  },
+  "stress_recheck": null,
+  "files": {
+    "before": "/public/home/wangchao/Fullerene_Network/work/WS2_kltest/kl-dft-cpu/step4_disp/symmetry_audit/POSCAR.before",
+    "after": "/public/home/wangchao/Fullerene_Network/work/WS2_kltest/kl-dft-cpu/step4_disp/symmetry_audit/POSCAR.symmetrized",
+    "json": "/public/home/wangchao/Fullerene_Network/work/WS2_kltest/kl-dft-cpu/step4_disp/symmetry_audit/symmetry_audit.json",
+    "log": "/public/home/wangchao/Fullerene_Network/work/WS2_kltest/kl-dft-cpu/step4_disp/symmetry_audit/symmetry_audit.log",
+    "out": "/public/home/wangchao/Fullerene_Network/work/WS2_kltest/kl-dft-cpu/step4_disp/POSCAR"
+  },
+  "fit_for_use": false
+}

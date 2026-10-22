@@ -1,0 +1,12 @@
+{
+ "schema": "autozt-origin/1",
+ "material": "MoSe2_ke-dft-cpu/MoSe2",
+ "material_dir": "/mnt/d/tf_data/work_AutoZT/MoSe2",
+ "skill": "ke-dft-cpu",
+ "step": "step8.1_boltztrap",
+ "label": "S8.1_bt2",
+ "poscar_sha256": "87ba699cd7982366f85c963bcf0239a1149ee19a89342ebd6cfd4671ab89f609",
+ "host": "jzzn",
+ "remote_dir": "/public/home/wangchao/Fullerene_Network/work/MoSe2/ke-dft-cpu/step8.1_boltztrap",
+ "fetched_at": "2026-10-10T02:13:36"
+}

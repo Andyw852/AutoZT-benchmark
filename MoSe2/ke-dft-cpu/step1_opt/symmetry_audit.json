@@ -1,0 +1,60 @@
+{
+  "micro_distortion": true,
+  "audit_symprecs": [
+    1e-05,
+    0.0001
+  ],
+  "spacegroup": [
+    {
+      "symprec": 1e-05,
+      "number": 156,
+      "international": "P3m1",
+      "n_ops": 6,
+      "ok": true
+    },
+    {
+      "symprec": 0.0001,
+      "number": 187,
+      "international": "P-6m2",
+      "n_ops": 12,
+      "ok": true
+    }
+  ],
+  "micro_distortion_detail": {
+    "a_minus_b_A": 0.0,
+    "a_over_b_minus_1": 0.0,
+    "gamma_minus_120_deg": 3.0663510102613145e-05,
+    "alpha_minus_90_deg": 0.0,
+    "beta_minus_90_deg": 0.0
+  },
+  "lattice_metrics": {
+    "a": 3.3234319199943334,
+    "b": 3.3234319199943334,
+    "c": 23.345615,
+    "alpha": 90.0,
+    "beta": 90.0,
+    "gamma": 120.0000306635101
+  },
+  "vacuum": {
+    "axis": 2,
+    "axis_name": "c",
+    "vacuum_A": 19.999101549188,
+    "height_A": 23.345615000000002,
+    "center_frac": 0.5716540153463509,
+    "vacuums_A": [
+      1.9187865300436553,
+      1.9187865300436553,
+      19.999101549188
+    ],
+    "is_2d": true
+  },
+  "n_atoms": 3,
+  "composition": {
+    "Mo": 1,
+    "Se": 2
+  },
+  "symmetrize_symprec": 0.0001,
+  "spglib_version": "2.6.0",
+  "available": true,
+  "path": "/public/home/wangchao/Fullerene_Network/work/MoSe2/ke-dft-cpu/step1_opt/POSCAR"
+}

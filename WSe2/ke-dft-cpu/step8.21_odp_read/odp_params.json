@@ -1,0 +1,488 @@
+{
+ "schema": "odp_params/1",
+ "skill_rev": "2026-10-12-0036",
+ "created": "2026-10-15 04:31:48",
+ "dim": "2d",
+ "aligned": "vacuum",
+ "valleys_source": "step8.2_dpt/dpt_result.json",
+ "manifest": "step7c_odp_frozen/odp_manifest.json",
+ "disp_max_A": 0.01,
+ "polar": "exclude",
+ "groups": [
+  {
+   "group": 1,
+   "modes": [
+    4,
+    5
+   ],
+   "freq_THz": 5.182747678596655,
+   "hw_meV": 21.434122150891177,
+   "polar": false,
+   "use": true,
+   "why": null
+  },
+  {
+   "group": 2,
+   "modes": [
+    6,
+    7
+   ],
+   "freq_THz": 7.376233842551225,
+   "hw_meV": 30.50565202078105,
+   "polar": true,
+   "use": false,
+   "why": "极性模（模有效电荷 1.47 e > 0.10）：长程耦合由 POP 管（ODP_POLAR=include 才算）"
+  },
+  {
+   "group": 3,
+   "modes": [
+    8
+   ],
+   "freq_THz": 7.426844552028809,
+   "hw_meV": 30.714961097039136,
+   "polar": false,
+   "use": true,
+   "why": null
+  },
+  {
+   "group": 4,
+   "modes": [
+    9
+   ],
+   "freq_THz": 9.233316024051165,
+   "hw_meV": 38.18592680762756,
+   "polar": true,
+   "use": false,
+   "why": "面外极性模（面外模有效电荷 0.141 e > 0.02）：二维 POP 不含它；有 σh 的材料里它对谷内一阶耦合是对称性禁戒的（D≈0），位移还会产生面外偶极（ODP_POLAR=include 才算）"
+  }
+ ],
+ "modes": [
+  {
+   "index": 1,
+   "freq_THz": -0.0018453711279848288,
+   "hw_meV": -0.007631841761137938,
+   "trans_weight": 0.9999999660011817,
+   "acoustic": true,
+   "Z_mode_e": 3.27637288501206e-05,
+   "Z_mode_z_e": 3.27637288501206e-05,
+   "polar": false,
+   "polar_kind": null,
+   "group": null
+  },
+  {
+   "index": 2,
+   "freq_THz": -0.00018746483910323024,
+   "hw_meV": -0.0007752922792150669,
+   "trans_weight": 0.9999999980192356,
+   "acoustic": true,
+   "Z_mode_e": 5.900803408136031e-05,
+   "Z_mode_z_e": 2.3003866670065984e-15,
+   "polar": false,
+   "polar_kind": null,
+   "group": null
+  },
+  {
+   "index": 3,
+   "freq_THz": -0.00018746482736769582,
+   "hw_meV": -0.0007752922306807962,
+   "trans_weight": 0.9999999980192356,
+   "acoustic": true,
+   "Z_mode_e": 5.900803408136031e-05,
+   "Z_mode_z_e": 3.765126557765638e-14,
+   "polar": false,
+   "polar_kind": null,
+   "group": null
+  },
+  {
+   "index": 4,
+   "freq_THz": 5.182746684915249,
+   "hw_meV": 21.434118041355084,
+   "trans_weight": 1.3219392675744623e-32,
+   "acoustic": false,
+   "Z_mode_e": 8.64390990653063e-17,
+   "Z_mode_z_e": 1.059766400216225e-22,
+   "polar": false,
+   "polar_kind": null,
+   "group": 1
+  },
+  {
+   "index": 5,
+   "freq_THz": 5.182748672278061,
+   "hw_meV": 21.434126260427266,
+   "trans_weight": 2.004843699228477e-34,
+   "acoustic": false,
+   "Z_mode_e": 5.562576856125076e-17,
+   "Z_mode_z_e": 5.462751530543054e-23,
+   "polar": false,
+   "polar_kind": null,
+   "group": 1
+  },
+  {
+   "index": 6,
+   "freq_THz": 7.376232432617616,
+   "hw_meV": 30.50564618976417,
+   "trans_weight": 1.5189590265900134e-09,
+   "acoustic": false,
+   "Z_mode_e": 1.4688410832558956,
+   "Z_mode_z_e": 5.934528676068584e-18,
+   "polar": true,
+   "polar_kind": "面内",
+   "group": 2
+  },
+  {
+   "index": 7,
+   "freq_THz": 7.376235252484834,
+   "hw_meV": 30.50565785179793,
+   "trans_weight": 1.5189590265900134e-09,
+   "acoustic": false,
+   "Z_mode_e": 1.4688410832558956,
+   "Z_mode_z_e": 1.6401384558315353e-22,
+   "polar": true,
+   "polar_kind": "面内",
+   "group": 2
+  },
+  {
+   "index": 8,
+   "freq_THz": 7.426844552028809,
+   "hw_meV": 30.714961097039136,
+   "trans_weight": 2.588804993946884e-33,
+   "acoustic": false,
+   "Z_mode_e": 5.260015658130682e-15,
+   "Z_mode_z_e": 2.8381651281564705e-32,
+   "polar": false,
+   "polar_kind": null,
+   "group": 3
+  },
+  {
+   "index": 9,
+   "freq_THz": 9.233316024051165,
+   "hw_meV": 38.18592680762756,
+   "trans_weight": 3.470781958667183e-08,
+   "acoustic": false,
+   "Z_mode_e": 0.14057717376773227,
+   "Z_mode_z_e": 0.14057717376773227,
+   "polar": true,
+   "polar_kind": "面外",
+   "group": 4
+  }
+ ],
+ "vacuum_levels_eV": {
+  "odp-ref": 2.05153,
+  "odp-m04p": 2.051535,
+  "odp-m04m": 2.051535,
+  "odp-m05p": 2.051535,
+  "odp-m05m": 2.051535,
+  "odp-m08p": 2.053191,
+  "odp-m08m": 2.049907
+ },
+ "s5_freq_rel_change": 0.0,
+ "warnings": [],
+ "carriers": {
+  "electron": {
+   "status": "ok",
+   "valley_sig": {
+    "use_grid": true,
+    "sig": [
+     [
+      [
+       0.17778,
+       0.17778
+      ],
+      [
+       0.17778,
+       0.64444
+      ],
+      [
+       0.35556,
+       0.82222
+      ],
+      [
+       0.64444,
+       0.17778
+      ],
+      [
+       0.82222,
+       0.35556
+      ],
+      [
+       0.82222,
+       0.82222
+      ]
+     ],
+     [
+      [
+       0.33333,
+       0.33333
+      ],
+      [
+       0.66667,
+       0.66667
+      ]
+     ]
+    ]
+   },
+   "valleys": [
+    {
+     "label": "Q",
+     "spin": "up",
+     "band_index": 13,
+     "g": 6,
+     "dE_eV": 0.0,
+     "k_used": [
+      [
+       0.177778,
+       0.177778,
+       0.0
+      ],
+      [
+       0.177778,
+       -0.355556,
+       0.0
+      ],
+      [
+       0.355556,
+       -0.177778,
+       0.0
+      ],
+      [
+       -0.355556,
+       0.177778,
+       0.0
+      ],
+      [
+       -0.177778,
+       0.355556,
+       0.0
+      ],
+      [
+       -0.177778,
+       -0.177778,
+       0.0
+      ]
+     ],
+     "groups": [
+      {
+       "group": 1,
+       "modes": [
+        4,
+        5
+       ],
+       "hw_meV": 21.4341,
+       "freq_THz": 5.18275,
+       "polar": false,
+       "D_eV_A": 0.0,
+       "D_raw_eV_A": 0.0,
+       "D2_members": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "spread": 0.0,
+       "method": [
+        "central"
+       ],
+       "shift_max_eV": 0.00021,
+       "u_A": [
+        0.006798,
+        0.006798
+       ]
+      },
+      {
+       "group": 3,
+       "modes": [
+        8
+       ],
+       "hw_meV": 30.715,
+       "freq_THz": 7.42684,
+       "polar": false,
+       "D_eV_A": 2.71535,
+       "D_raw_eV_A": 2.95691,
+       "D2_members": [
+        7.373149,
+        7.373149,
+        7.373149,
+        7.373149,
+        7.373149,
+        7.373149
+       ],
+       "spread": 0.0,
+       "method": [
+        "central"
+       ],
+       "shift_max_eV": 0.01868,
+       "u_A": [
+        0.006798
+       ]
+      }
+     ]
+    },
+    {
+     "label": "K",
+     "spin": "up",
+     "band_index": 13,
+     "g": 2,
+     "dE_eV": 0.0259,
+     "k_used": [
+      [
+       0.333333,
+       0.333333,
+       0.0
+      ],
+      [
+       -0.333333,
+       -0.333333,
+       0.0
+      ]
+     ],
+     "groups": [
+      {
+       "group": 1,
+       "modes": [
+        4,
+        5
+       ],
+       "hw_meV": 21.4341,
+       "freq_THz": 5.18275,
+       "polar": false,
+       "D_eV_A": 0.0,
+       "D_raw_eV_A": 0.0,
+       "D2_members": [
+        0.0,
+        0.0
+       ],
+       "spread": 0.0,
+       "method": [
+        "central"
+       ],
+       "shift_max_eV": 1e-05,
+       "u_A": [
+        0.006798,
+        0.006798
+       ]
+      },
+      {
+       "group": 3,
+       "modes": [
+        8
+       ],
+       "hw_meV": 30.715,
+       "freq_THz": 7.42684,
+       "polar": false,
+       "D_eV_A": 5.72876,
+       "D_raw_eV_A": 5.4872,
+       "D2_members": [
+        32.818655,
+        32.818655
+       ],
+       "spread": 0.0,
+       "method": [
+        "central"
+       ],
+       "shift_max_eV": 0.03956,
+       "u_A": [
+        0.006798
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "hole": {
+   "status": "ok",
+   "valley_sig": {
+    "use_grid": true,
+    "sig": [
+     [
+      [
+       0.33333,
+       0.33333
+      ],
+      [
+       0.66667,
+       0.66667
+      ]
+     ]
+    ]
+   },
+   "valleys": [
+    {
+     "label": "K",
+     "spin": "up",
+     "band_index": 12,
+     "g": 2,
+     "dE_eV": 0.0,
+     "k_used": [
+      [
+       0.333333,
+       0.333333,
+       0.0
+      ],
+      [
+       -0.333333,
+       -0.333333,
+       0.0
+      ]
+     ],
+     "groups": [
+      {
+       "group": 1,
+       "modes": [
+        4,
+        5
+       ],
+       "hw_meV": 21.4341,
+       "freq_THz": 5.18275,
+       "polar": false,
+       "D_eV_A": 0.0,
+       "D_raw_eV_A": 0.0,
+       "D2_members": [
+        0.0,
+        0.0
+       ],
+       "spread": 0.0,
+       "method": [
+        "central"
+       ],
+       "shift_max_eV": 9e-05,
+       "u_A": [
+        0.006798,
+        0.006798
+       ]
+      },
+      {
+       "group": 3,
+       "modes": [
+        8
+       ],
+       "hw_meV": 30.715,
+       "freq_THz": 7.42684,
+       "polar": false,
+       "D_eV_A": 2.54383,
+       "D_raw_eV_A": 2.30227,
+       "D2_members": [
+        6.471053,
+        6.471053
+       ],
+       "spread": 0.0,
+       "method": [
+        "central"
+       ],
+       "shift_max_eV": 0.01776,
+       "u_A": [
+        0.006798
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "units": {
+  "D_eV_A": "eV/Å（= 1e8 eV/cm），与 step.conf DP_OPTICAL_* 同单位",
+  "hw_meV": "meV"
+ },
+ "definition": "D = d(E−V_vac)/du，位移 Δ_κ = u·√(M/m_κ)·e_κ（M 原胞质量、e 质量加权归一本征矢）；简并组各伙伴 ΣD²、星内各成员谷平均；简并带 D² = Σλ²/d²（见 odp_frozen.py）"
+}

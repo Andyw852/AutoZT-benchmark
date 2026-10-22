@@ -1,0 +1,80 @@
+{
+  "step": "step3_band_plot",
+  "step3_dir": "/public/home/wangchao/Fullerene_Network/work/WSe2/ke-dft-cpu/step2_bandgap/step2.2_pbe",
+  "out_dir": "/public/home/wangchao/Fullerene_Network/work/WSe2/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot",
+  "checked_at": "2026-09-23T12:18:56",
+  "status": "ok",
+  "functional": "pbesol",
+  "functional_display": "PBEsol",
+  "soc": true,
+  "nspin": 1,
+  "nelect": 26,
+  "n_path_kpts": 122,
+  "band_source": "vasprun.xml (kpoints_opt)",
+  "gap_eV": 1.3141,
+  "gap_type": "indirect",
+  "min_direct_gap_eV": 1.3953,
+  "vbm": {
+    "E_eV": -2.8528,
+    "k_frac": [
+      0.333333,
+      0.333333,
+      0.0
+    ]
+  },
+  "cbm": {
+    "E_eV": -1.5387,
+    "k_frac": [
+      0.183007,
+      0.183007,
+      0.0
+    ]
+  },
+  "efermi_scf_eV": -2.8267,
+  "efermi_source": "step2.15_discriminant 密网格 E_F（/public/home/wangchao/Fullerene_Network/work/WSe2/ke-dft-cpu/step2_bandgap/step2.15_discriminant/discriminant.json）",
+  "mesh_cross_check": {
+    "n_mesh_kpts": 46,
+    "mesh_vbm_eV": -2.8528,
+    "mesh_cbm_eV": -1.4862,
+    "mesh_vbm_k_frac": [
+      0.333333,
+      0.333333,
+      0.0
+    ],
+    "mesh_cbm_k_frac": [
+      0.2,
+      0.2,
+      0.0
+    ],
+    "gap_mesh_eV": 1.3666,
+    "gap_path_plus_mesh_eV": 1.3141,
+    "verdict": "consistent"
+  },
+  "mesh_cross_check_warning": null,
+  "energy_zero": "VBM",
+  "inputs_copied": [
+    "EIGENVAL",
+    "vasprun.xml",
+    "POSCAR",
+    "INCAR",
+    "KPOINTS",
+    "KPOINTS_OPT",
+    "kpath.json",
+    "workflow_method.txt"
+  ],
+  "files": {
+    "dat": "/public/home/wangchao/Fullerene_Network/work/WSe2/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot/band.dat",
+    "klabels": "/public/home/wangchao/Fullerene_Network/work/WSe2/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot/band_klabels.txt",
+    "png": "/public/home/wangchao/Fullerene_Network/work/WSe2/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot/band.png",
+    "summary": "/public/home/wangchao/Fullerene_Network/work/WSe2/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot/band_summary.json"
+  },
+  "labels_found": [
+    "Γ",
+    "M",
+    "K",
+    "Γ"
+  ],
+  "kpath_source": "kpath.json (native_2d)",
+  "kpath_method": "native_2d",
+  "kpath_note": "2D 原生路径 | hexagonal | a=3.2714 Ang, b=3.2714 Ang, γ=120.00° | 真空轴=c | 约化原胞面内基矢 |（dim=2D 且 AUTO_2D_KPATH=True，已从 seekpath 自动切换）"
+}

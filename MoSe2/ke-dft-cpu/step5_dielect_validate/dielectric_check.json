@@ -1,0 +1,65 @@
+{
+  "step": "step5_dielect.validate",
+  "outcar": "step5_dielect/OUTCAR",
+  "ok": true,
+  "status": "done",
+  "reasons": [],
+  "eps_inf": [
+    [
+      5.227485,
+      0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      5.227491,
+      -0.0
+    ],
+    [
+      -0.0,
+      0.0,
+      1.313873
+    ]
+  ],
+  "eps_ionic": [
+    [
+      0.163703,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      0.163704,
+      -0.0
+    ],
+    [
+      -0.0,
+      -0.0,
+      0.00065
+    ]
+  ],
+  "frohlich_coupling_max": 0.005808726879690113,
+  "physics": {
+    "nkpts": 48,
+    "born_sum_max": 1e-05,
+    "born_asr_ok": true,
+    "cross_ratio": 1.5063,
+    "offdiag_ratio": 0.0,
+    "born_ions": 3,
+    "eps_inf_independent": [
+      5.4628,
+      5.4628,
+      3.2929
+    ],
+    "soc_isym": {
+      "lsorbit": false,
+      "isym": 2
+    }
+  },
+  "warnings": [
+    "DFPT 与独立粒子 eps 差 150.6%（>25%）—— 检查 NBANDS 是否够多、k 网格是否太稀"
+  ],
+  "input_files": {
+    "step5_dielect/OUTCAR": "a60f789ad16825aac9be54089d39d643d54353dbd3010bd769ad9174cbcbfa9a"
+  }
+}

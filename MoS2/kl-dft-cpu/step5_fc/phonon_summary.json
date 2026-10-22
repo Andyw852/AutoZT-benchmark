@@ -1,0 +1,90 @@
+{
+  "stable": true,
+  "status": "stable",
+  "pheasy_rmse_eV_per_A": 0.0011948640253382468,
+  "pheasy_relative_error": 0.002976152315508073,
+  "pheasy_worst_force_correlation": 1.0,
+  "pheasy_free_ifcs": 796,
+  "rasr_applied": true,
+  "rasr_requested": "",
+  "ns_rank_tol": "1e-6",
+  "fc2max": 28.30706572142802,
+  "fc3max": 29.07915145286957,
+  "ns_anharm3_shape": [
+    [
+      40759
+    ],
+    [
+      40759
+    ],
+    [],
+    [
+      2
+    ],
+    [
+      40759
+    ]
+  ],
+  "ns_harm_free_params": 5,
+  "ns_harm_shape": [
+    [
+      369
+    ],
+    [
+      369
+    ],
+    [],
+    [
+      2
+    ],
+    [
+      369
+    ]
+  ],
+  "imaginary_frequency": false,
+  "stability_verdict": "pass",
+  "verdict": "pass",
+  "imag_class": "noise",
+  "min_freq_THz": -2.055490154701561e-07,
+  "min_freq_cm1": -6.856377235118869e-06,
+  "q_at_min_frac": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "q_norm_at_min": 0.0,
+  "branch_at_min": 0,
+  "n_neg_qpoints": 3,
+  "thresholds": {
+    "IMAG_THR": 0.1,
+    "IMAG_THR_STRICT": 0.1,
+    "IMAG_QGAMMA": 0.05,
+    "IMAG_QGAMMA_GRACE": 1.2,
+    "IMAG_QGAMMA_EFFECTIVE": 0.06,
+    "near_gamma": "声学支：|q|_frac < IMAG_QGAMMA × IMAG_QGAMMA_GRACE（=0.06）；Petretto 严格窗口 = |q|_frac < IMAG_QGAMMA（=0.05）",
+    "q_norm_def": "分数坐标去掉真空轴分量后的欧氏范数（3D 用三分量）",
+    "IMAG_THR_semantics": "近 Γ 声学支上限（不是全局阈值）",
+    "IMAG_QGAMMA_GRACE_semantics": "用户 2026-09-22 批准：同一条近 Γ 软模跨 0.05 边界时不被升格为 fail；1.0 = 严格口径",
+    "refs": [
+      "Petretto et al., Scientific Data 5, 180065 (2018)：0 < |q| < 0.05 失稳窗口、5 cm^-1 阈值",
+      "Lin, Poncé, Marzari, npj Comput. Mater. 8, 236 (2022)：远离 Γ 的虚频是真失稳特征"
+    ]
+  },
+  "policy_version": "imag_policy/1.0",
+  "imag_policy_refs": [
+    "Petretto et al., Scientific Data 5, 180065 (2018)：0 < |q| < 0.05 失稳窗口、5 cm^-1 阈值",
+    "Lin, Poncé, Marzari, npj Comput. Mater. 8, 236 (2022)：远离 Γ 的虚频是真失稳特征"
+  ],
+  "za_verdict": "pass",
+  "min_frequency_THz": -2.055490154701561e-07,
+  "min_freq_nonac_THz": -2.055490154701561e-07,
+  "min_freq_nac_THz": null,
+  "nac_used_for_verdict": false,
+  "is_2d": true,
+  "fit_engine": "pheasy",
+  "fc_calc": "symfc",
+  "pheasy_method": "RFE-OLS-TSQR",
+  "shengbte_export": true,
+  "tool_ok": true,
+  "note": "min_freq(no-NAC mesh)=-0.0000 THz (-0.00 cm-1)；imag_policy=pass/noise，合并集 min=-0.0000 THz (-0.00 cm-1)，策略 imag_policy/1.0；ZA verdict=pass；ZA 指数 p(q1,q2)=['1.993', '1.980']（新判据=本征矢量面外占比≥0.5 的最低频支，vac 轴原胞下标=2/笛卡尔=2）；旧最低支 p=['1.993', '1.980']；两个面内方向都有 1.7 < p < 2.3 → 无实质虚频，稳定"
+}

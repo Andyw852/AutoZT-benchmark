@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-09-25T03:24:24",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step2_bandgap/step2.3_hse_plot",
+  "material": {
+    "name": "MoSe2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/MoSe2/ke-dft-cpu",
+    "local": "/mnt/d/tf_data/work_AutoZT/MoSe2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/MoSe2/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step4.1_plot_band.py",
+    "sha256": "583fa8ae234aad3f9df30bd11ffbd02a38e83b9993d3174be1cb07d36a505b39",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "87ba699cd7982366f85c963bcf0239a1149ee19a89342ebd6cfd4671ab89f609",
+      "source": "/mnt/d/tf_data/work_AutoZT/MoSe2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "gen_step4.1_plot_band.py": {
+      "sha256": "583fa8ae234aad3f9df30bd11ffbd02a38e83b9993d3174be1cb07d36a505b39",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.3_hse_plot/gen_step4.1_plot_band.py",
+      "origin": "skill",
+      "args": null
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "afb66848bc148efb55eb36501fd24df3d9f14e9425daaaff162b529f3201b862",
+    "chars": 976,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step2_bandgap/step2.3_hse_plot   材料 MoSe2\n# 来源（越靠下优先级越高）：\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n\n[params]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\nBANDGAP        = hse                                                      # <- [1]\nFUNC           = pbesol                                                   # <- [1]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "bin/autozt"
+  }
+}

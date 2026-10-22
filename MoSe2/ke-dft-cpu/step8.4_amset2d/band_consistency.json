@@ -1,0 +1,65 @@
+{
+ "soc_impact": {
+  "check": "soc_impact",
+  "threshold_eV": 0.05,
+  "band_soc": false,
+  "transport_soc": false,
+  "status": "consistent",
+  "note": "能带步与输运链 SOC 设置一致（都不开 SOC）；注意：Z<50 的材料（如 MoS₂ 价带 K 点约 0.15 eV 劈裂）能带步也不开 SOC，本检查看不到它的 SOC 影响"
+ },
+ "hybrid_mass": {
+  "check": "hybrid_vs_semilocal_mass",
+  "ratio_tol": 0.25,
+  "fit_window_invA": 0.08,
+  "basis": "同一组 k 点：半局域能带只取杂化路径保留的 28 个点，两边同一窗口",
+  "fits": {
+   "VB": {
+    "semilocal": {
+     "i0": 18,
+     "x0_invA": 1.75057,
+     "fwd": null,
+     "bwd": 0.8695,
+     "fwd_window": null,
+     "bwd_window": 0.1479
+    },
+    "hybrid": {
+     "i0": 18,
+     "x0_invA": 1.75057,
+     "fwd": null,
+     "bwd": 0.7325,
+     "fwd_window": null,
+     "bwd_window": 0.1479
+    }
+   },
+   "CB": {
+    "semilocal": {
+     "i0": 18,
+     "x0_invA": 1.75057,
+     "fwd": null,
+     "bwd": 0.6652,
+     "fwd_window": null,
+     "bwd_window": 0.1479
+    },
+    "hybrid": {
+     "i0": 18,
+     "x0_invA": 1.75057,
+     "fwd": null,
+     "bwd": 0.5741,
+     "fwd_window": null,
+     "bwd_window": 0.1479
+    }
+   }
+  },
+  "functionals": {
+   "semilocal": "PBEsol",
+   "hybrid": null
+  },
+  "mass_ratio_hybrid_over_semilocal": {
+   "VB_bwd": 0.842,
+   "CB_bwd": 0.863
+  },
+  "status": "ok",
+  "reasons": [],
+  "note": "杂化与半局域带边 m* 一致（比值在 1±0.25 内；同一组 k 点：半局域能带只取杂化路径保留的 28 个点，两边同一窗口）"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "crys_basis": false,
+ "cuts": {
+  "2": null,
+  "3": 6.5
+ },
+ "dim": [
+  5,
+  5,
+  1
+ ],
+ "eps": 0.001,
+ "max_order": 3,
+ "nbody": [
+  2,
+  3
+ ],
+ "poscar": "ed82536af7e4b5fd59112f8e43de2a1e",
+ "sposcar": "699e74eff4f9c5fad94bc4173f4c1b90",
+ "symprec": 1e-05
+}

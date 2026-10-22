@@ -1,0 +1,20 @@
+{
+  "nk": 384,
+  "mesh_min": 100,
+  "mesh_min_kz": null,
+  "mesh_max": 200,
+  "factor_factory": 10,
+  "factor_used": 10,
+  "fmax": 60,
+  "mesh": [
+    119,
+    119,
+    15
+  ],
+  "satisfied": true,
+  "capped": false,
+  "full_grid": false,
+  "nk_ir": null,
+  "factor_start": 10,
+  "fmax_used": 60
+}

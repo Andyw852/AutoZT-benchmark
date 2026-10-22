@@ -1,0 +1,72 @@
+{
+ "soc_impact": {
+  "check": "soc_impact",
+  "threshold_eV": 0.05,
+  "band_soc": true,
+  "transport_soc": false,
+  "n_common_k": 27,
+  "source": {
+   "soc": "step2_bandgap/step2.2_pbe/EIGENVAL",
+   "no_soc": "step3_uniform/EIGENVAL"
+  },
+  "status": "inconclusive",
+  "missed_edges": [
+   "无 SOC（step3_uniform） 的 CBM（k=[0.1778, 0.1778, 0.0]，比共同 k 点上的低 25 meV）"
+  ],
+  "note": "★ 无法判断 SOC 对带边的影响：无 SOC（step3_uniform） 的 CBM（k=[0.1778, 0.1778, 0.0]，比共同 k 点上的低 25 meV） 不在两边共同的 27 个 k 点里（S2.2 自洽网格与 S3 网格不重合），真实带边没比到。本材料能带步带 SOC、输运链不带 SOC，请人工核对（比如让 S2.2 的自洽网格包含带边 k 点）"
+ },
+ "hybrid_mass": {
+  "check": "hybrid_vs_semilocal_mass",
+  "ratio_tol": 0.25,
+  "fit_window_invA": 0.08,
+  "basis": "同一组 k 点：半局域能带只取杂化路径保留的 28 个点，两边同一窗口",
+  "fits": {
+   "VB": {
+    "semilocal": {
+     "i0": 18,
+     "x0_invA": 1.74911,
+     "fwd": null,
+     "bwd": 0.4953,
+     "fwd_window": null,
+     "bwd_window": 0.1477
+    },
+    "hybrid": {
+     "i0": 18,
+     "x0_invA": 1.74911,
+     "fwd": null,
+     "bwd": 0.4209,
+     "fwd_window": null,
+     "bwd_window": 0.1477
+    }
+   },
+   "CB": {
+    "semilocal": {
+     "i0": 22,
+     "x0_invA": 2.32656,
+     "fwd": null,
+     "bwd": null,
+     "fwd_window": null,
+     "bwd_window": null
+    },
+    "hybrid": {
+     "i0": 22,
+     "x0_invA": 2.32656,
+     "fwd": null,
+     "bwd": null,
+     "fwd_window": null,
+     "bwd_window": null
+    }
+   }
+  },
+  "functionals": {
+   "semilocal": "PBEsol",
+   "hybrid": null
+  },
+  "mass_ratio_hybrid_over_semilocal": {
+   "VB_bwd": 0.85
+  },
+  "status": "ok",
+  "reasons": [],
+  "note": "杂化与半局域带边 m* 一致（比值在 1±0.25 内；同一组 k 点：半局域能带只取杂化路径保留的 28 个点，两边同一窗口）"
+ }
+}

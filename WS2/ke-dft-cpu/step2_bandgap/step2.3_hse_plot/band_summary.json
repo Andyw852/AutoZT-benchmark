@@ -1,0 +1,84 @@
+{
+  "step": "step4_band_plot",
+  "step4_dir": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu/step2_bandgap/step2.3_hse",
+  "merged_parts": null,
+  "out_dir": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu/step2_bandgap/step2.3_hse_plot",
+  "checked_at": "2026-09-25T03:32:47",
+  "status": "ok",
+  "soc": true,
+  "nelect": 26,
+  "n_path_kpts": 28,
+  "band_source": "vasprun.xml (kpoints_opt)",
+  "gap_eV": 2.1367,
+  "gap_type": "direct",
+  "min_direct_gap_eV": 2.1367,
+  "min_direct_gap_k_frac": [
+    0.333333,
+    -0.666667,
+    0.0
+  ],
+  "vbm": {
+    "E_eV": -3.2926,
+    "k_frac": [
+      0.333333,
+      -0.666667,
+      0.0
+    ]
+  },
+  "cbm": {
+    "E_eV": -1.1559,
+    "k_frac": [
+      0.333333,
+      -0.666667,
+      0.0
+    ]
+  },
+  "efermi_scf_eV": -2.9783,
+  "mesh_cross_check": {
+    "n_mesh_kpts": 46,
+    "mesh_vbm_eV": -3.2926,
+    "mesh_cbm_eV": -1.1559,
+    "mesh_vbm_k_frac": [
+      0.333333,
+      0.333333,
+      0.0
+    ],
+    "mesh_cbm_k_frac": [
+      0.333333,
+      0.333333,
+      0.0
+    ],
+    "gap_mesh_eV": 2.1367,
+    "gap_path_plus_mesh_eV": 2.1367,
+    "verdict": "consistent"
+  },
+  "mesh_cross_check_warning": null,
+  "energy_zero": "VBM",
+  "plot_title": "step2.3_hse   $E_g$ = 2.137 eV (direct)",
+  "extrema_marked": true,
+  "inputs_copied": [
+    "EIGENVAL",
+    "vasprun.xml",
+    "POSCAR",
+    "INCAR",
+    "KPOINTS",
+    "KPOINTS_OPT",
+    "kpath.json",
+    "workflow_method.txt"
+  ],
+  "files": {
+    "dat": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu/step2_bandgap/step2.3_hse_plot/band-dft-cpu.dat",
+    "klabels": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu/step2_bandgap/step2.3_hse_plot/band-dft-cpu_klabels.txt",
+    "png": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu/step2_bandgap/step2.3_hse_plot/band-dft-cpu.png",
+    "summary": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu/step2_bandgap/step2.3_hse_plot/band_summary.json"
+  },
+  "labels_found": [
+    "Γ",
+    "M",
+    "K",
+    "Γ"
+  ],
+  "kpath_source": "kpath.json (native_2d)",
+  "kpath_method": "native_2d",
+  "kpath_note": "2D 原生路径 | hexagonal | a=3.1461 Ang, b=3.1461 Ang, γ=120.00° | 真空轴=c | 约化原胞面内基矢 |（dim=2D 且 AUTO_2D_KPATH=True，已从 seekpath 自动切换） | downsampled: 127 -> 28 pts (line-density=10)"
+}

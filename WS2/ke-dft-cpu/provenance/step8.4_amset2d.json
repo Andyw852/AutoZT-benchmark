@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-17T04:04:20",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step8.4_amset2d",
+  "material": {
+    "name": "WS2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu",
+    "local": "/mnt/d/tf_data/work_AutoZT/WS2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step14_amset2d.py",
+    "sha256": "24b802d304583a2414281b3a14dfcc3b8afea0712b29a056bb8a5d6f554ceca5",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "304fcd87800722b7ef768e4e67a239547af1c3468475023904a965c26884b87a",
+      "source": "/mnt/d/tf_data/work_AutoZT/WS2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "amset2d_plugin.py": {
+      "sha256": "26d4f0fef47c685701ead4e7c7ba345d6d51b347e9eb4b1a81d3b8040219a929",
+      "src_sha256": "26d4f0fef47c685701ead4e7c7ba345d6d51b347e9eb4b1a81d3b8040219a929",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/amset2d_plugin.py",
+      "origin": "skill"
+    },
+    "amset2d_pop_freq.py": {
+      "sha256": "9fe1683eb1df277311797cbc7656191deede685a838257c999ee8d8a533c3866",
+      "src_sha256": "9fe1683eb1df277311797cbc7656191deede685a838257c999ee8d8a533c3866",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/amset2d_pop_freq.py",
+      "origin": "skill"
+    },
+    "amset_desym_fix.py": {
+      "sha256": "93eb2b6e97a82f8bafbbdb46d15e0ad050bd1c1f65483b09c98b7787c022a675",
+      "src_sha256": "93eb2b6e97a82f8bafbbdb46d15e0ad050bd1c1f65483b09c98b7787c022a675",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/amset_desym_fix.py",
+      "origin": "skill"
+    },
+    "amset_fermi_fix.py": {
+      "sha256": "f98d81caf4abcf0e88824e0adebe8e864197e9f7d68631bc27b0c98338777b51",
+      "src_sha256": "f98d81caf4abcf0e88824e0adebe8e864197e9f7d68631bc27b0c98338777b51",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/amset_fermi_fix.py",
+      "origin": "skill"
+    },
+    "amset_ir_fix.py": {
+      "sha256": "0887e9c21eadddd37cb596e657ee3f3bb0c083183b188b35ccd0ff507d4f97b4",
+      "src_sha256": "0887e9c21eadddd37cb596e657ee3f3bb0c083183b188b35ccd0ff507d4f97b4",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/amset_ir_fix.py",
+      "origin": "skill"
+    },
+    "dim_common.py": {
+      "sha256": "36754166f2fc1067f45bef9beb1e4da5ed34053deff8c11a22be6cc02a8086a9",
+      "src_sha256": "36754166f2fc1067f45bef9beb1e4da5ed34053deff8c11a22be6cc02a8086a9",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/dim_common.py",
+      "origin": "skill"
+    },
+    "discriminant_common.py": {
+      "sha256": "635d47648ef151cea12f894f7fdd64c9eb7e17a051ccd7e57caf41ff8f70c61e",
+      "src_sha256": "635d47648ef151cea12f894f7fdd64c9eb7e17a051ccd7e57caf41ff8f70c61e",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.15_discriminant/discriminant_common.py",
+      "origin": "skill"
+    },
+    "dp_optical.py": {
+      "sha256": "e495392f5c8f03f8aab98b4add790c35e6adde3ba46ac0da931d97697e51526c",
+      "src_sha256": "e495392f5c8f03f8aab98b4add790c35e6adde3ba46ac0da931d97697e51526c",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/dp_optical.py",
+      "origin": "skill"
+    },
+    "fermi_window_check.py": {
+      "sha256": "8c99e5b1ea4a9dde9a20b06a54fece949e051cca6d51853e58cf91c4f9fc4bb6",
+      "src_sha256": "8c99e5b1ea4a9dde9a20b06a54fece949e051cca6d51853e58cf91c4f9fc4bb6",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/fermi_window_check.py",
+      "origin": "skill"
+    },
+    "gen_step14_amset2d.py": {
+      "sha256": "24b802d304583a2414281b3a14dfcc3b8afea0712b29a056bb8a5d6f554ceca5",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/gen_step14_amset2d.py",
+      "origin": "skill",
+      "args": null
+    },
+    "ivs_frozen.py": {
+      "sha256": "9f23b6c914250a0d1ff4d541209e6fd8b94de78ab58ec876c4ce3521a32350a7",
+      "src_sha256": "9f23b6c914250a0d1ff4d541209e6fd8b94de78ab58ec876c4ce3521a32350a7",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./ivs_frozen.py",
+      "origin": "skill"
+    },
+    "ke_common.py": {
+      "sha256": "bc1ef5a5eb126a526c3934edba07f8bae45819ad07bce3074287942f3d22a55b",
+      "src_sha256": "bc1ef5a5eb126a526c3934edba07f8bae45819ad07bce3074287942f3d22a55b",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./ke_common.py",
+      "origin": "skill"
+    },
+    "odp_frozen.py": {
+      "sha256": "5a717e6545a4138188d38f7ae19ffcf5831c1d0fec977383c59e6a0b454b3b6a",
+      "src_sha256": "5a717e6545a4138188d38f7ae19ffcf5831c1d0fec977383c59e6a0b454b3b6a",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./odp_frozen.py",
+      "origin": "skill"
+    },
+    "overlap_preflight.py": {
+      "sha256": "ff059868d2e67565976b5624081d992c34890a1117e2900f325497a10f86c173",
+      "src_sha256": "ff059868d2e67565976b5624081d992c34890a1117e2900f325497a10f86c173",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/overlap_preflight.py",
+      "origin": "skill"
+    },
+    "postprocess_intrinsic.py": {
+      "sha256": "464af60015cf2b79ef3664f2693473d3c6fe7577e8e7ca9d999af6b153390045",
+      "src_sha256": "464af60015cf2b79ef3664f2693473d3c6fe7577e8e7ca9d999af6b153390045",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/postprocess_intrinsic.py",
+      "origin": "skill"
+    },
+    "step.conf": {
+      "sha256": "d82804412baf2c183230fbd34a0db8c9081b3bd6c05b0b4358a9180f16727632",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "stepconf.py": {
+      "sha256": "5c33841432587fe26de0a91abb1f6c181cbbf8e22174908f04e613d80eec3c6f",
+      "src_sha256": "5c33841432587fe26de0a91abb1f6c181cbbf8e22174908f04e613d80eec3c6f",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    },
+    "submit_amset.tpl": {
+      "sha256": "c8bbd6511a169510fe4a59c273adb5378253e901bc78717d4fc0127467d5f0af",
+      "src_sha256": "c8bbd6511a169510fe4a59c273adb5378253e901bc78717d4fc0127467d5f0af",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_amset.tpl",
+      "origin": "skill"
+    },
+    "tau_energy.py": {
+      "sha256": "e45c9e02a080e3de220ed198ce2bc69af2b709ad1257dd83417168bd9eee6ba9",
+      "src_sha256": "e45c9e02a080e3de220ed198ce2bc69af2b709ad1257dd83417168bd9eee6ba9",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.4_amset2d/tau_energy.py",
+      "origin": "skill"
+    },
+    "vdw_radii.py": {
+      "sha256": "689d4e1eeda726b29ccb17e918fafefa80d44b3df90ac90e9d017bb61f314fe3",
+      "src_sha256": "689d4e1eeda726b29ccb17e918fafefa80d44b3df90ac90e9d017bb61f314fe3",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/./vdw_radii.py",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "d82804412baf2c183230fbd34a0db8c9081b3bd6c05b0b4358a9180f16727632",
+    "chars": 3548,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step8.4_amset2d   材料 WS2\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [2] /mnt/d/tf_data/work_AutoZT/WS2/ke-dft-cpu/project_setting/templates/step8.4_amset2d/step.conf   (project_setting 本步)\n\n[params]\nBANDGAP            = hse                                                                                                                                                       # <- [1]\nFUNC               = auto                                                                                                                                                      # <- [1]\nCONDA_SH           = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh                                                                                                   # <- [cluster:jzzn]\nCONDA_ENV          = /public/home/wangchao/venvs/mace_cpu                                                                                                                      # <- [cluster:jzzn]\nMACE_MODEL_DIR     = /public/home/wangchao/software/mace/mlff_models                                                                                                           # <- [cluster:jzzn]\nAMSET_ENV          = amset051                                                                                                                                                  # <- [cluster:jzzn]\nPOTCAR_DIR         = /public/home/wangchao/software/vasp_pseudopotentials                                                                                                      # <- [cluster:jzzn]\nREFERENCES_DIR     = /public/home/wangchao/convex_hull_refs                                                                                                                    # <- [cluster:jzzn]\nUNDOPED_POINT      = true                                                                                                                                                      # <- [2]\nSCATTERING         = ADP,IMP,POP,ODP                                                                                                                                           # <- [2]\nWAVEFUNCTION_FULL  = true                                                                                                                                                      # <- [2]\nUNITY_OVERLAP      = false                                                                                                                                                     # <- [2]\nWRITE_MESH         = true                                                                                                                                                      # <- [2]\nKZ_CAP_2D          = on                                                                                                                                                        # <- [2]\nINTRINSIC_ADP_ONLY = true                                                                                                                                                      # <- [2]\nDP_OPTICAL_E       = K>K:3.1@46.80; K>K':1.2@20.50; K>K':1.1@45.00; K>Q:7.3@17.70; K>Q:0.9@45.87; Q>Q:3.4@46.80; Q>Q':1.7@17.70; Q>Q':2.3@45.87; Q>K:1.4@17.70; Q>K:1.3@45.87  # <- [2]\nDP_OPTICAL_H       = K>K:2.3@46.80; K>K':0.8@20.50; K>K':1.4@45.00; K>Γ:1.4@20.50; K>Γ:1.9@45.00; Γ>Γ:1.5@46.80; Γ>K:3.3@20.50; Γ>K:2.9@45.00                                  # <- [2]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "/home/wangchao/software/AutoZT/bin/autozt"
+  }
+}

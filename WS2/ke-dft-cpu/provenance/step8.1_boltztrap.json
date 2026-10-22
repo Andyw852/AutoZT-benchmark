@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-10T01:41:38",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step8.1_boltztrap",
+  "material": {
+    "name": "WS2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu",
+    "local": "/mnt/d/tf_data/work_AutoZT/WS2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step11_boltztrap.py",
+    "sha256": "29a91e20dac637b3733da67e1126b065d250b6664ccd00306bdef17986568882",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "304fcd87800722b7ef768e4e67a239547af1c3468475023904a965c26884b87a",
+      "source": "/mnt/d/tf_data/work_AutoZT/WS2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "dim_common.py": {
+      "sha256": "766281990690e28d707f5369ee3d0ae62f91d0c9d2c62435f8b8014a70988fb6",
+      "src_sha256": "766281990690e28d707f5369ee3d0ae62f91d0c9d2c62435f8b8014a70988fb6",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/dim_common.py",
+      "origin": "skill"
+    },
+    "discriminant_common.py": {
+      "sha256": "635d47648ef151cea12f894f7fdd64c9eb7e17a051ccd7e57caf41ff8f70c61e",
+      "src_sha256": "635d47648ef151cea12f894f7fdd64c9eb7e17a051ccd7e57caf41ff8f70c61e",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.15_discriminant/discriminant_common.py",
+      "origin": "skill"
+    },
+    "gen_step11_boltztrap.py": {
+      "sha256": "29a91e20dac637b3733da67e1126b065d250b6664ccd00306bdef17986568882",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.1_boltztrap/gen_step11_boltztrap.py",
+      "origin": "skill",
+      "args": null
+    },
+    "ke_common.py": {
+      "sha256": "98871913a616efc3c87780a931d63f4cca50f880a4467dc6bdfcfd2c7b121311",
+      "src_sha256": "98871913a616efc3c87780a931d63f4cca50f880a4467dc6bdfcfd2c7b121311",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./ke_common.py",
+      "origin": "skill"
+    },
+    "step.conf": {
+      "sha256": "f259148d1b6fbee3efbd04278b8060af91d69ef26b2396372f0c51165a229478",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "stepconf.py": {
+      "sha256": "b275eefea8da779d3cec9593fb4076c56a4009a00f7b96c6b1918d8689eb33d0",
+      "src_sha256": "b275eefea8da779d3cec9593fb4076c56a4009a00f7b96c6b1918d8689eb33d0",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    },
+    "thickness_2d.py": {
+      "sha256": "7e4e720f3e51fc8c4baaffb3f5f1782efa90149b28b15f1541a50743d3bf70b0",
+      "src_sha256": "7e4e720f3e51fc8c4baaffb3f5f1782efa90149b28b15f1541a50743d3bf70b0",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/./thickness_2d.py",
+      "origin": "skill"
+    },
+    "vdw_radii.py": {
+      "sha256": "689d4e1eeda726b29ccb17e918fafefa80d44b3df90ac90e9d017bb61f314fe3",
+      "src_sha256": "689d4e1eeda726b29ccb17e918fafefa80d44b3df90ac90e9d017bb61f314fe3",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/./vdw_radii.py",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "f259148d1b6fbee3efbd04278b8060af91d69ef26b2396372f0c51165a229478",
+    "chars": 961,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step8.1_boltztrap   材料 WS2\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n\n[params]\nBANDGAP        = hse                                                      # <- [1]\nFUNC           = pbesol                                                   # <- [1]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "/home/wangchao/software/AutoZT/bin/autozt"
+  }
+}

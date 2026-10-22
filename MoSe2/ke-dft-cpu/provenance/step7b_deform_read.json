@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-09T16:50:36",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step7b_deform_read",
+  "material": {
+    "name": "MoSe2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/MoSe2/ke-dft-cpu",
+    "local": "/mnt/d/tf_data/work_AutoZT/MoSe2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/MoSe2/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step9b_deform_read.py",
+    "sha256": "a2afefacb6da92611d95025d4fb9ce6a919c320176aec3c88f87b239dbd8581f",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "87ba699cd7982366f85c963bcf0239a1149ee19a89342ebd6cfd4671ab89f609",
+      "source": "/mnt/d/tf_data/work_AutoZT/MoSe2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "dp_symmetrize.py": {
+      "sha256": "ad70fc52fab9bcac057c93c1c764fe71106784665dba92bf8219955d39f27551",
+      "src_sha256": "ad70fc52fab9bcac057c93c1c764fe71106784665dba92bf8219955d39f27551",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./dp_symmetrize.py",
+      "origin": "skill"
+    },
+    "gen_step9b_deform_read.py": {
+      "sha256": "a2afefacb6da92611d95025d4fb9ce6a919c320176aec3c88f87b239dbd8581f",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step7_deform/step7b_read/gen_step9b_deform_read.py",
+      "origin": "skill",
+      "args": null
+    },
+    "ke_common.py": {
+      "sha256": "98871913a616efc3c87780a931d63f4cca50f880a4467dc6bdfcfd2c7b121311",
+      "src_sha256": "98871913a616efc3c87780a931d63f4cca50f880a4467dc6bdfcfd2c7b121311",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./ke_common.py",
+      "origin": "skill"
+    },
+    "nspin_norm_fix.py": {
+      "sha256": "0b8f3d03f44a37b72093116cb0aa98bac2aca9b972013ca0930240bb64ddb3a8",
+      "src_sha256": "0b8f3d03f44a37b72093116cb0aa98bac2aca9b972013ca0930240bb64ddb3a8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./nspin_norm_fix.py",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "c7416cb353d91ad75bd0809c747e2a72b671742fc81689204582b4311153975d",
+    "chars": 964,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step7b_deform_read   材料 MoSe2\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n\n[params]\nBANDGAP        = hse                                                      # <- [1]\nFUNC           = pbesol                                                   # <- [1]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "/home/wangchao/software/AutoZT/bin/autozt"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "needs_full_grid": false,
+  "needs_full_grid_original": false,
+  "bad_ops": 0,
+  "total_ops": 24,
+  "tr_ops": 12,
+  "has_inversion": false,
+  "max_tau": 3.999712660629484e-06,
+  "tau_ops": 0,
+  "strict_ops": 12,
+  "desym_fix": true,
+  "ncl": false,
+  "symprec": 0.01,
+  "op_source": "pymatgen SGA(symprec=0.01) + amset_op_set",
+  "reason": "AMSET 原公式在全部 24 个操作上精确（逐操作条件 (R±I)τ≡0 全满足）-> IBZ 即可",
+  "poscar": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu/step3_uniform/POSCAR"
+}

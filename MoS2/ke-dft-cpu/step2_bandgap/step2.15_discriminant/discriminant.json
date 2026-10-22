@@ -1,0 +1,64 @@
+{
+  "step": "step2bandgap.discriminant",
+  "label": "SEMICONDUCTOR@PBE",
+  "effective": {
+    "label": "SEMICONDUCTOR",
+    "functional": "PBE",
+    "gap_eV": 1.8269,
+    "decisive": true
+  },
+  "algo_recommendation": "All",
+  "verdicts": [
+    {
+      "label": "SEMICONDUCTOR",
+      "functional": "PBE",
+      "gap_eV": 1.8269,
+      "metric": "min_k E[nocc](k) - max_k E[nocc-1](k), nocc=NELECT//2 (带指标法；不是 OUTCAR 的 fundamental gap 行)",
+      "nocc": 13,
+      "nbands": 18,
+      "nkpts": 1180,
+      "nocc_rule": "NELECT//2（共线，每态 2 电子）",
+      "nelect": 26.0,
+      "encut_eV": 390.0,
+      "mesh": [
+        116,
+        116,
+        1
+      ],
+      "efermi_eV": -3.3749,
+      "soc": false,
+      "vbm": {
+        "E_eV": -3.6514,
+        "k_frac": [
+          0.3362,
+          0.3276,
+          0.0
+        ]
+      },
+      "cbm": {
+        "E_eV": -1.8245,
+        "k_frac": [
+          0.3362,
+          0.3276,
+          0.0
+        ]
+      },
+      "thresholds": {
+        "semicond_min_eV": 0.05,
+        "narrow_gap_eV": 0.3
+      },
+      "outcar": "/public/home/wangchao/Fullerene_Network/work/MoS2/ke-dft-cpu/step2_bandgap/step2.15_discriminant/OUTCAR"
+    }
+  ],
+  "block": {
+    "blocked": false,
+    "steps": [
+      "step5_dielect",
+      "step8_amset"
+    ],
+    "forced": false,
+    "decisive": true,
+    "hint": ""
+  },
+  "note": "algo_recommendation 供 step2.3 杂化步使用：SEMICONDUCTOR -> All，SEMIMETAL/METAL -> Damped。block.blocked 只是默认拦截，不是硬停：下游 gen 的 FORCE_TRANSPORT=True 可强制继续。"
+}

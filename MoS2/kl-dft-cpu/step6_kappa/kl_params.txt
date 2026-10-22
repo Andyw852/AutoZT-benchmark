@@ -1,0 +1,5 @@
+DIM=2D
+SUPERCELL=5 5 1
+MESH=88 88 1
+METHOD=alm
+FUNC=pbesol

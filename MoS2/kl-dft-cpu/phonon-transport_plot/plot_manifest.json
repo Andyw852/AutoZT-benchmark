@@ -1,0 +1,26 @@
+{
+  "material": "MoS2",
+  "generator": "gen_step6.1_plot.py",
+  "phonon_band": [
+    "band_nac.dat",
+    "band_nac.path",
+    "band_nac.png",
+    "band_nac.yaml",
+    "band_nac_lowfreq.png",
+    "band_nonac.dat",
+    "band_nonac.path",
+    "band_nonac.png",
+    "band_nonac.yaml",
+    "band_nonac_lowfreq.png",
+    "phonon_plot_summary.json"
+  ],
+  "kappa": [
+    "MoS2_kl_overview.png",
+    "MoS2_kl_anisotropy.png",
+    "MoS2_kl_vs_T.csv",
+    "MoS2_kl_summary.csv",
+    "MoS2_kl_summary.json"
+  ],
+  "note": "S5.1 原图直拷、未重画；κL 图为 ke 风格多面板",
+  "done": true
+}

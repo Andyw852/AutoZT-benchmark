@@ -1,0 +1,17 @@
+{
+  "h_perp_A": 25.0,
+  "Lz_A": 25.0,
+  "atomic_span_A": 3.1177,
+  "vacuum_gap_A": 21.8823,
+  "thickness_d_A": 6.7177,
+  "thickness_convention": "span 3.12 + vdW(S 1.80 + S 1.80)",
+  "kappa_2d_norm_factor": 3.721503,
+  "note": "kappa_2d_normalized = kappa_raw * h_perp/d（h_perp=V/A；面内分量才有物理意义，2D 的 zz 分量无物理意义）",
+  "Lz_ang": 25.0,
+  "thickness_d_ang": 6.7177,
+  "atomic_zspan_ang": 3.1177,
+  "dim": "2d",
+  "vac_axis": 2,
+  "source": "kl-dft-cpu:step6_kappa",
+  "poscar": "POSCAR"
+}

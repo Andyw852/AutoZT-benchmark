@@ -1,0 +1,3 @@
+DIM=2D
+FUNC=pbe
+# DFPT 介电常数

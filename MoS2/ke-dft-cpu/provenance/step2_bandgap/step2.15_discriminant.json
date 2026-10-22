@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-09-16T20:45:50",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step2_bandgap/step2.15_discriminant",
+  "material": {
+    "name": "MoS2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/MoS2/ke-dft-cpu",
+    "local": "/mnt/d/tf_data/MoS2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/MoS2/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step2.15_discriminant.py",
+    "sha256": "54fcfe522b3bf57ddf5839951067a42f2bed08c9cb3f2e961ac9b6196db0fba7",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "bba7856f7d3d09954e8a7cca393a343060b99057e29c15f33bc6a972fd033b8c",
+      "source": "/mnt/d/tf_data/MoS2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "check_common.py": {
+      "sha256": "696a1683e81fced794d1289c1c688d9f840a71d27ad8e3589a5e4bce8a04a4c8",
+      "src_sha256": "696a1683e81fced794d1289c1c688d9f840a71d27ad8e3589a5e4bce8a04a4c8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/check_common.py",
+      "origin": "skill"
+    },
+    "check_discriminant.py": {
+      "sha256": "4f58c5ce82f493660886efd1cbcd8953419dacd4acb6376f6c47ca21a848bb01",
+      "src_sha256": "4f58c5ce82f493660886efd1cbcd8953419dacd4acb6376f6c47ca21a848bb01",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.15_discriminant/check_discriminant.py",
+      "origin": "skill"
+    },
+    "decide_discriminant.py": {
+      "sha256": "56772cfdf13c40ca3e266b727fac37321b153ef871ed2e6db6ad77a025ad7924",
+      "src_sha256": "56772cfdf13c40ca3e266b727fac37321b153ef871ed2e6db6ad77a025ad7924",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.15_discriminant/decide_discriminant.py",
+      "origin": "skill"
+    },
+    "dim_common.py": {
+      "sha256": "31ef0aeaadd4a4573c4bcd8ae491ce39dbbce5004e63f7917a91713bb3676765",
+      "src_sha256": "31ef0aeaadd4a4573c4bcd8ae491ce39dbbce5004e63f7917a91713bb3676765",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/dim_common.py",
+      "origin": "skill"
+    },
+    "discriminant_common.py": {
+      "sha256": "635d47648ef151cea12f894f7fdd64c9eb7e17a051ccd7e57caf41ff8f70c61e",
+      "src_sha256": "635d47648ef151cea12f894f7fdd64c9eb7e17a051ccd7e57caf41ff8f70c61e",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.15_discriminant/discriminant_common.py",
+      "origin": "skill"
+    },
+    "gen_step2.15_discriminant.py": {
+      "sha256": "54fcfe522b3bf57ddf5839951067a42f2bed08c9cb3f2e961ac9b6196db0fba7",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step2_bandgap/step2.15_discriminant/gen_step2.15_discriminant.py",
+      "origin": "skill",
+      "args": null
+    },
+    "step.conf": {
+      "sha256": "1e7a9fbe4aff6f3f0fbd1065babd92cdcba7d0fc52da70d28f4ad89d334d628a",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "stepconf.py": {
+      "sha256": "2b10ae021eeec303796f81a1a26ca677f448a06c1d8c0dc211371975c83dc5a4",
+      "src_sha256": "2b10ae021eeec303796f81a1a26ca677f448a06c1d8c0dc211371975c83dc5a4",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "1e7a9fbe4aff6f3f0fbd1065babd92cdcba7d0fc52da70d28f4ad89d334d628a",
+    "chars": 1078,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step2_bandgap/step2.15_discriminant   材料 MoS2\n# 来源（越靠下优先级越高）：\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [2] /mnt/d/tf_data/MoS2/ke-dft-cpu/project_setting/templates/step.conf   (project_setting 共用)\n\n[params]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mace_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset_clean                                              # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\nBANDGAP        = hse                                                      # <- [2]\nFUNC           = auto                                                     # <- [2]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "./bin/autozt"
+  }
+}

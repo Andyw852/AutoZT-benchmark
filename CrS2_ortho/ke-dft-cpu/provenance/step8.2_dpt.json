@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-12T14:33:22",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step8.2_dpt",
+  "material": {
+    "name": "CrS2_ortho",
+    "path": "/public/home/wangchao/Fullerene_Network/work/jzz/jap/CrS2_ortho/ke-dft-cpu",
+    "local": "/mnt/d/tf_data/jzz/jap/CrS2_ortho"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/jzz/jap/CrS2_ortho/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step12_dpt.py",
+    "sha256": "e93e16a678e13324c7760850fe06022dfc5a16d6b4e34b81f69574801ed30176",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "7d58737f3125aa6debf60590f9b41778f1fac31aa0c509fafad8cde64c4838b6",
+      "source": "/mnt/d/tf_data/jzz/jap/CrS2_ortho/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "dim_common.py": {
+      "sha256": "36754166f2fc1067f45bef9beb1e4da5ed34053deff8c11a22be6cc02a8086a9",
+      "src_sha256": "36754166f2fc1067f45bef9beb1e4da5ed34053deff8c11a22be6cc02a8086a9",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/dim_common.py",
+      "origin": "skill"
+    },
+    "gen_step12_dpt.py": {
+      "sha256": "e93e16a678e13324c7760850fe06022dfc5a16d6b4e34b81f69574801ed30176",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step8.2_dpt/gen_step12_dpt.py",
+      "origin": "skill",
+      "args": null
+    },
+    "ke_common.py": {
+      "sha256": "bb14d838b0ec238ec391f1a3cccfd0253af8c3726b140abbdc7941b175ae73b8",
+      "src_sha256": "bb14d838b0ec238ec391f1a3cccfd0253af8c3726b140abbdc7941b175ae73b8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./ke_common.py",
+      "origin": "skill"
+    },
+    "step.conf": {
+      "sha256": "c57bfb8cd2992ef5088fd45e3880512b9e46c893ac609ee3cbf3731574b5e348",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "stepconf.py": {
+      "sha256": "b275eefea8da779d3cec9593fb4076c56a4009a00f7b96c6b1918d8689eb33d0",
+      "src_sha256": "b275eefea8da779d3cec9593fb4076c56a4009a00f7b96c6b1918d8689eb33d0",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "c57bfb8cd2992ef5088fd45e3880512b9e46c893ac609ee3cbf3731574b5e348",
+    "chars": 1074,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step8.2_dpt   材料 CrS2_ortho\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [2] /mnt/d/tf_data/jzz/jap/CrS2_ortho/ke-dft-cpu/project_setting/templates/step.conf   (project_setting 共用)\n\n[params]\nBANDGAP        = pbe                                                      # <- [2]\nFUNC           = pbe                                                      # <- [2]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "/home/wangchao/software/AutoZT/bin/autozt"
+  }
+}

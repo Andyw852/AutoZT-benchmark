@@ -1,0 +1,6 @@
+# 电子弛豫时间（S8.4 tau_energy.json vs S8.2 DPT），300 K、各载流子最低掺杂档
+# τ_eff = 常数 τ 的玻尔兹曼输运复现 AMSET 迁移率所需的 τ（面内）；τ_eff,ADP 与 DPT 的 τ 同为声学形变势口径
+# τ_σ/τ_eff 最大相对差 11.2%（核对项，见 tau_energy.json 的 notes）
+electron doping -3.31e+09 cm^-3：τ_eff overall 86.4 fs；ODP 562；ADP 355；IMP 1.34e+08；POP 1.52e+03；DPT τ 71.2 fs（x 71.2 / y 71.2）；ADP/DPT = 4.98
+hole     doping 0.00e+00 cm^-3：τ_eff overall 372 fs；ODP 2.38e+03；ADP 838；IMP 1e+47；POP 1.38e+03；DPT τ 990 fs（x 990 / y 990）；ADP/DPT = 0.846
+# ADP/DPT 偏离 1：AMSET 的 ADP 逐 k 点算（含能量依赖、真实能带、波函数重叠），DPT 是抛物带解析式；相差 2 倍以内属正常口径差，差太多先查 S8.2 的 m*/E1

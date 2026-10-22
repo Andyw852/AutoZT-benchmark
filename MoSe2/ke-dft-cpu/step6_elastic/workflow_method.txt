@@ -1,0 +1,10 @@
+FUNC=pbesol
+GGA=PS
+IVDW=NONE
+LABEL=MoSe2
+FORMULA=MoSe2
+STAGE_MODE=in_job
+DIM=2D
+MAG=nonmag
+LDAU=off
+CELL_POLICY=primitive STD_CELL=primitive_standard VACUUM_AXIS_POLICY=rotate (技能默认)

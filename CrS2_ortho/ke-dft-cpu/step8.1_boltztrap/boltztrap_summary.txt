@@ -1,0 +1,26 @@
+# BoltzTraP2 CRTA 摘要（详见 boltztrap_crta.json）
+# dim=2d  nelect=24.0
+300 K 处 PF/τ 最大点：
+  μ-E_F = -2.720 eV
+  σ/τ   = 2.734e+20 S/m/s
+  S     = -73.3 µV/K
+  κ_e/τ = 1.762e+15 W/m/K/s
+  Lorenz= 2.149e-08 WΩ/K²（Sommerfeld=2.44e-8）
+  n     = +3.813e+22 cm^-3（负=n型电子 / 正=p型空穴）
+
+# ---- 文献口径（CRTA x DPT-tau）：paper_mu_scan_600K.csv ----
+# T=600 K；sigma_a=(sigma_a/tau)*tau_a 分方向；kappa_e=L*sigma*T（WF, 文献 Eq.5）
+# 2D 口径 cell（c=20.0 A, t=None A, 因子=1.0000）—— ZT 对口径不变
+# kappa_L 未找到：/public/home/wangchao/Fullerene_Network/work/jzz/jap/CrS2_ortho/ke-dft-cpu 下没有 step6_kappa|step6_kappa_shengbte/kappa_summary.json
+#   kl-dft-cpu 跑完了吗？或用 KL_ROOT 指定 kl-dft-cpu 的材料目录
+# tau_electron x=916.0 fs  y=916.0 fs
+# tau_hole     x=904.4 fs  y=904.4 fs
+# ZT_xx          未算（没拿到 kappa_L，见上）
+# ZT_yy          未算（没拿到 kappa_L，见上）
+# PF_xx_W/mK2    峰值 0.7117 @ mu=-1.439 eV（n=1.350e+22 cm^-3，hole 支）
+# PF_yy_W/mK2    峰值 0.7117 @ mu=-1.439 eV（n=1.350e+22 cm^-3，hole 支）
+
+# ---- 按载流子浓度对齐 amset：paper_at_doping_600K.csv ----
+# 掺杂列表来源：step8_amset/transport.json（10 个点，命中 10 个）
+# [口径] BoltzTraP2 的 n 与 amset 的 doping 都按含真空的元胞体积定义，符号约定同为 负=n型/正=p型
+#        元胞 c=20.0000 Å；n_2D = n_3D × c 跨口径不歧义

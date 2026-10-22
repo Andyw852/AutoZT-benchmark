@@ -1,0 +1,143 @@
+{
+  "T_K": 300,
+  "rows": [
+    {
+      "cut_A": 3.54,
+      "n_shells": 2,
+      "kappa_xx": 36.37161218081345,
+      "kappa_yy": 36.37161218081345,
+      "kappa_zz": 0.0,
+      "kappa_inplane": 36.37161218081345,
+      "mesh": "18 18 1",
+      "force_rmse_meV_per_A": 2.2323033471282283,
+      "force_rmse_relative": 0.0060181480737778095,
+      "fit_rel_err": 0.0060181480737778095,
+      "stable_ok": true,
+      "plateau_ok": false,
+      "kappa_xx_2d_norm": 135.3570638457338,
+      "kappa_yy_2d_norm": 135.3570638457338,
+      "kappa_inplane_2d_norm": 135.3570638457338
+    },
+    {
+      "cut_A": 4.19,
+      "n_shells": 3,
+      "kappa_xx": 32.54278934742519,
+      "kappa_yy": 32.54278934742519,
+      "kappa_zz": 0.0,
+      "kappa_inplane": 32.54278934742519,
+      "mesh": "18 18 1",
+      "force_rmse_meV_per_A": 2.0118587311999794,
+      "force_rmse_relative": 0.005423843387351573,
+      "fit_rel_err": 0.005423843387351573,
+      "stable_ok": true,
+      "plateau_ok": false,
+      "kappa_xx_2d_norm": 121.10808818481088,
+      "kappa_yy_2d_norm": 121.10808818481088,
+      "kappa_inplane_2d_norm": 121.10808818481088,
+      "pct_change_from_prev": {
+        "kappa_xx": -10.527,
+        "kappa_yy": -10.527,
+        "kappa_zz": null,
+        "kappa_inplane": -10.527
+      }
+    },
+    {
+      "cut_A": 4.73,
+      "n_shells": 4,
+      "kappa_xx": 32.093366919149,
+      "kappa_yy": 32.093366919149,
+      "kappa_zz": 0.0,
+      "kappa_inplane": 32.093366919149,
+      "mesh": "18 18 1",
+      "force_rmse_meV_per_A": 1.4380370018181043,
+      "force_rmse_relative": 0.0038768564423138497,
+      "fit_rel_err": 0.0038768564423138497,
+      "stable_ok": true,
+      "plateau_ok": false,
+      "kappa_xx_2d_norm": 119.43556126971374,
+      "kappa_yy_2d_norm": 119.43556126971374,
+      "kappa_inplane_2d_norm": 119.43556126971374,
+      "pct_change_from_prev": {
+        "kappa_xx": -1.381,
+        "kappa_yy": -1.381,
+        "kappa_zz": null,
+        "kappa_inplane": -1.381
+      }
+    },
+    {
+      "cut_A": 5.24,
+      "n_shells": 5,
+      "kappa_xx": 24.88242220490437,
+      "kappa_yy": 24.88242220490437,
+      "kappa_zz": 0.0,
+      "kappa_inplane": 24.88242220490437,
+      "mesh": "18 18 1",
+      "force_rmse_meV_per_A": 1.127070170717698,
+      "force_rmse_relative": 0.003038509611896182,
+      "fit_rel_err": 0.003038509611896182,
+      "stable_ok": true,
+      "plateau_ok": false,
+      "kappa_xx_2d_norm": 92.60000888281822,
+      "kappa_yy_2d_norm": 92.60000888281822,
+      "kappa_inplane_2d_norm": 92.60000888281822,
+      "pct_change_from_prev": {
+        "kappa_xx": -22.469,
+        "kappa_yy": -22.469,
+        "kappa_zz": null,
+        "kappa_inplane": -22.469
+      }
+    },
+    {
+      "cut_A": 5.86,
+      "n_shells": 6,
+      "kappa_xx": 21.668724713554912,
+      "kappa_yy": 21.668724713554912,
+      "kappa_zz": 0.0,
+      "kappa_inplane": 21.668724713554912,
+      "mesh": "18 18 1",
+      "force_rmse_meV_per_A": 1.0559918522501912,
+      "force_rmse_relative": 0.00284688697874335,
+      "fit_rel_err": 0.00284688697874335,
+      "stable_ok": true,
+      "plateau_ok": true,
+      "kappa_xx_2d_norm": 80.64022402766874,
+      "kappa_yy_2d_norm": 80.64022402766874,
+      "kappa_inplane_2d_norm": 80.64022402766874,
+      "pct_change_from_prev": {
+        "kappa_xx": -12.916,
+        "kappa_yy": -12.916,
+        "kappa_zz": null,
+        "kappa_inplane": -12.916
+      }
+    },
+    {
+      "cut_A": 6.5,
+      "n_shells": 7,
+      "kappa_xx": 22.083119160750282,
+      "kappa_yy": 22.083119160750275,
+      "kappa_zz": 0.0,
+      "kappa_inplane": 22.08311916075028,
+      "mesh": "18 18 1",
+      "force_rmse_meV_per_A": 0.9572836064870787,
+      "force_rmse_relative": 0.00258077581608731,
+      "fit_rel_err": 0.00258077581608731,
+      "stable_ok": true,
+      "plateau_ok": false,
+      "kappa_xx_2d_norm": 82.18239420608965,
+      "kappa_yy_2d_norm": 82.18239420608963,
+      "kappa_inplane_2d_norm": 82.18239420608964,
+      "pct_change_from_prev": {
+        "kappa_xx": 1.912,
+        "kappa_yy": 1.912,
+        "kappa_zz": null,
+        "kappa_inplane": 1.912
+      }
+    }
+  ],
+  "is_2d": true,
+  "method": "RFE-OLS-TSQR",
+  "kappa_2d_norm_factor": 3.721503,
+  "chosen_cut_A": 5.86,
+  "status": "ok",
+  "note": "each cutoff at the scan's starting mesh; only the chosen one is mesh-converged afterwards"
+}

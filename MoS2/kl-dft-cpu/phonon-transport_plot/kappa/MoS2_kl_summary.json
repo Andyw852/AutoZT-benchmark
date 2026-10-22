@@ -1,0 +1,17 @@
+{
+  "material": "MoS2",
+  "dim": "2d",
+  "bte_method": "rta",
+  "thickness_d_A": 6.7177,
+  "thickness_convention": "span 3.12 + vdW(S 1.80 + S 1.80)",
+  "stability_verdict": "pass",
+  "kappa_inplane_300K_W_mK": 27.0816,
+  "kappa_2d_normalized_300K_W_mK": 100.7843,
+  "mesh": "138 138 1",
+  "mesh_converged_5pct": true,
+  "mesh_max_rel_change_pct": 0.1568,
+  "kappa_inf_extrap_300K_W_mK": 26.9511,
+  "fc3_cutoff_chosen_A": 6.5,
+  "fc3_cutoff_status": "not_converged",
+  "kappa_300K_from_T_series": 27.0816
+}

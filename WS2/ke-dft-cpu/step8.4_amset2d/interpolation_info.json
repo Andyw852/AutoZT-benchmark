@@ -1,0 +1,26 @@
+{
+  "nk": 6627,
+  "mesh_min": 263,
+  "mesh_min_kz": 3,
+  "mesh_max": 400,
+  "mesh_min_dk": 0.00865,
+  "need": [
+    263,
+    263,
+    3
+  ],
+  "factor_factory": 10,
+  "factor_used": 5.226045,
+  "fmax": 150,
+  "mesh": [
+    273,
+    273,
+    3
+  ],
+  "satisfied": true,
+  "capped": false,
+  "full_grid": true,
+  "nk_ir": 416,
+  "factor_start": 0.627735,
+  "fmax_used": 9.416025
+}

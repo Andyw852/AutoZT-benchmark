@@ -1,0 +1,50 @@
+{
+  "available": true,
+  "material_name": "kl-dft-cpu",
+  "n_atoms": 3,
+  "composition": {
+    "S": 2,
+    "W": 1
+  },
+  "formula": "S2W",
+  "nearest": {
+    "i": 1,
+    "j": 2,
+    "si": "S",
+    "sj": "W",
+    "dist_A": 2.3993693260753064,
+    "overlap_thr_A": 1.8689999999999998,
+    "dist_over_sum": 0.89864019703195,
+    "ok": true
+  },
+  "coordination": {
+    "cn": [
+      3,
+      3,
+      12
+    ],
+    "cn_min": 3,
+    "cn_max": 12,
+    "n_dangling": 0,
+    "dangling": [],
+    "cutoff_scale": 1.0
+  },
+  "stoichiometry": {
+    "material_name": "kl-dft-cpu",
+    "claim": "kl-dft-cpu",
+    "formula": "S2W",
+    "elements_match": null,
+    "ok": true,
+    "note": "材料名末段 'kl-dft-cpu' 不是化学式，跳过"
+  },
+  "layers": {
+    "axis": 2,
+    "span_A": 3.135359078353165,
+    "n_layers": 3,
+    "vacuum_A": 27.067042921646838,
+    "is_2d": true,
+    "flags": []
+  },
+  "flags": [],
+  "ok": true
+}

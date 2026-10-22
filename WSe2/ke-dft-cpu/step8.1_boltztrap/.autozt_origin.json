@@ -1,0 +1,12 @@
+{
+ "schema": "autozt-origin/1",
+ "material": "WSe2_ke-dft-cpu/WSe2",
+ "material_dir": "/mnt/d/tf_data/work_AutoZT/WSe2",
+ "skill": "ke-dft-cpu",
+ "step": "step8.1_boltztrap",
+ "label": "S8.1_bt2",
+ "poscar_sha256": "d1da1b5428f868d24e0967d5fb5a139f3cccc3a4f5356aa1e188de2416f473ce",
+ "host": "jzzn",
+ "remote_dir": "/public/home/wangchao/Fullerene_Network/work/WSe2/ke-dft-cpu/step8.1_boltztrap",
+ "fetched_at": "2026-10-10T01:42:38"
+}

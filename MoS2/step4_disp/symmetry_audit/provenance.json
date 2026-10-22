@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-09-25T01:08:01",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "kl-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "晶格热导率(DFT/CPU)"
+  },
+  "step": "step4_disp",
+  "material": {
+    "name": "MoS2_kltest",
+    "path": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu",
+    "local": "/mnt/d/tf_data/test_kl/MoS2_kltest"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu",
+  "generator": {
+    "script": "gen_step4_disp.py",
+    "sha256": "d8f546529e7614a2fc149118396b99389fec702d0bf64076457363860bb9391a",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "7f78da8cfd96b3f58bba9678c90df3480cdc75ffd19c2d1f8d9f6331b0158fcc",
+      "source": "/mnt/d/tf_data/test_kl/MoS2_kltest/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "check_common.py": {
+      "sha256": "696a1683e81fced794d1289c1c688d9f840a71d27ad8e3589a5e4bce8a04a4c8",
+      "src_sha256": "696a1683e81fced794d1289c1c688d9f840a71d27ad8e3589a5e4bce8a04a4c8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/check_common.py",
+      "origin": "skill"
+    },
+    "dim_common.py": {
+      "sha256": "766281990690e28d707f5369ee3d0ae62f91d0c9d2c62435f8b8014a70988fb6",
+      "src_sha256": "766281990690e28d707f5369ee3d0ae62f91d0c9d2c62435f8b8014a70988fb6",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/dim_common.py",
+      "origin": "skill"
+    },
+    "gen_step4_disp.py": {
+      "sha256": "d8f546529e7614a2fc149118396b99389fec702d0bf64076457363860bb9391a",
+      "source": "/home/wangchao/software/AutoZT/skill/kl-dft-cpu/gen_step4_disp.py",
+      "origin": "skill",
+      "args": null
+    },
+    "incar_bench.py": {
+      "sha256": "8b4a5a2243efe29d35f523306539292579feca4ebcd87774b26fd9a0f4277a55",
+      "src_sha256": "8b4a5a2243efe29d35f523306539292579feca4ebcd87774b26fd9a0f4277a55",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/kl-dft-cpu/incar_bench.py",
+      "origin": "skill"
+    },
+    "incar_force_2d.tpl": {
+      "sha256": "0b96135ccad40a3a26365d4c441ee01d411cd36b952371e77376f7a59a24627f",
+      "src_sha256": "0b96135ccad40a3a26365d4c441ee01d411cd36b952371e77376f7a59a24627f",
+      "rendered": false,
+      "source": "/mnt/d/tf_data/test_kl/MoS2_kltest/kl-dft-cpu/project_setting/templates/step4_disp/incar_force_2d.tpl",
+      "origin": "project"
+    },
+    "incar_force_3d.tpl": {
+      "sha256": "64d30e95c02eecce96f240fe0536329958998ca060b1b4d17a73584655168524",
+      "src_sha256": "64d30e95c02eecce96f240fe0536329958998ca060b1b4d17a73584655168524",
+      "rendered": false,
+      "source": "/mnt/d/tf_data/test_kl/MoS2_kltest/kl-dft-cpu/project_setting/templates/step4_disp/incar_force_3d.tpl",
+      "origin": "project"
+    },
+    "kl_common.py": {
+      "sha256": "c13456d5bc7da0d20583defb09f7b5d31ce1a9659aae5a05612fe707d51a702b",
+      "src_sha256": "c13456d5bc7da0d20583defb09f7b5d31ce1a9659aae5a05612fe707d51a702b",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/kl-dft-cpu/kl_common.py",
+      "origin": "skill"
+    },
+    "lattice_kappa.py": {
+      "sha256": "9f31d73a2ac318ba19fce6b85bfe63db8412cebc33646da88236317cce7b556c",
+      "src_sha256": "9f31d73a2ac318ba19fce6b85bfe63db8412cebc33646da88236317cce7b556c",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/kl-dft-cpu/lattice_kappa.py",
+      "origin": "skill"
+    },
+    "step.conf": {
+      "sha256": "c5216988638140cfffe2aa7ca11b49c03b585f40e00520a4b8c03a65d6a3ee80",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "step2_check_and_resubmit.py": {
+      "sha256": "9a185ad8c8a5bec4c2b88f6f4f260aab1b61c836468fffab8a8642ca3f4b41c8",
+      "src_sha256": "9a185ad8c8a5bec4c2b88f6f4f260aab1b61c836468fffab8a8642ca3f4b41c8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/kl-dft-cpu/step2_check_and_resubmit.py",
+      "origin": "skill"
+    },
+    "stepconf.py": {
+      "sha256": "2e55612a53af163c33746335b08caa2c09aa73636bce3a4718ff88808167b6ee",
+      "src_sha256": "2e55612a53af163c33746335b08caa2c09aa73636bce3a4718ff88808167b6ee",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    },
+    "submit_std_2d.tpl": {
+      "sha256": "9ac02e56ef6339f3c82b5560ff1cb1cb6f00ff3fa134810a541981252c50ed21",
+      "src_sha256": "2d6de93549fe3d6571721b3d0ce3311d94c758266fca420b7c7c060eca8aa147",
+      "rendered": true,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_std_2d.tpl",
+      "origin": "skill"
+    },
+    "submit_std_3d.tpl": {
+      "sha256": "f98f0727bea24dbe4b50fe72491321553d92d90176f37979dbb5a18592139795",
+      "src_sha256": "4c47c5d39902d00c2fa55d480f0e29e03a98aabbab3d2674399bd7dfe075f242",
+      "rendered": true,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_std_3d.tpl",
+      "origin": "skill"
+    },
+    "symmetry_audit.py": {
+      "sha256": "34dc82f911d27eceab7598684b847880495bfacec445c9b770e6c061dab298bf",
+      "src_sha256": "34dc82f911d27eceab7598684b847880495bfacec445c9b770e6c061dab298bf",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/symmetry_audit.py",
+      "origin": "skill"
+    },
+    "thickness_2d.py": {
+      "sha256": "7e4e720f3e51fc8c4baaffb3f5f1782efa90149b28b15f1541a50743d3bf70b0",
+      "src_sha256": "7e4e720f3e51fc8c4baaffb3f5f1782efa90149b28b15f1541a50743d3bf70b0",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/thickness_2d.py",
+      "origin": "skill"
+    },
+    "vdw_radii.py": {
+      "sha256": "689d4e1eeda726b29ccb17e918fafefa80d44b3df90ac90e9d017bb61f314fe3",
+      "src_sha256": "689d4e1eeda726b29ccb17e918fafefa80d44b3df90ac90e9d017bb61f314fe3",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/vdw_radii.py",
+      "origin": "skill"
+    },
+    "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step4_disp/POSCAR": {
+      "sha256": "765c435196eef33c767b1d82fcb12de67e703f50c86c9748488c3fb3209d23a3",
+      "bytes": 517,
+      "mtime": "2026-09-25T01:12:36"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "c5216988638140cfffe2aa7ca11b49c03b585f40e00520a4b8c03a65d6a3ee80",
+    "chars": 4016,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step4_disp   材料 MoS2_kltest\n# 来源（越靠下优先级越高）：\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [1] /home/wangchao/software/AutoZT/skill/kl-dft-cpu/templates/step.conf   (skill 默认)\n#   [2] /home/wangchao/software/AutoZT/skill/kl-dft-cpu/templates/step4_disp/step.conf   (skill 默认(本步))\n#   [3] /mnt/d/tf_data/test_kl/MoS2_kltest/kl-dft-cpu/project_setting/templates/step.conf   (project_setting 共用)\n#   [4] /mnt/d/tf_data/test_kl/MoS2_kltest/kl-dft-cpu/project_setting/templates/step4_disp/step.conf   (project_setting 本步)\n\n[params]\nCONDA_SH               = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV              = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR         = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV              = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR             = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR         = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\nFUNC                   = pbesol                                                   # <- [4]\nMETHOD                 = alm                                                      # <- [4]\nMAX_DISP               = 500                                                      # <- [4]\nMIN_SC_LEN             = 12.0                                                     # <- [4]\nMAX_MULTIPLE           = 6                                                        # <- [4]\nSUPERCELL              = 5 5 1                                                    # <- [4]\nKAPPA_MESH             = auto                                                     # <- [4]\nQ_LEN_2D               = 275.0                                                    # <- [4]\nMESH_MIN               = 20                                                       # <- [4]\nKSPACING               = 0.03                                                     # <- [4]\nFORCE_PREC             = Accurate                                                 # <- [4]\nFORCE_EDIFF            = 1E-8                                                     # <- [4]\nFORCE_LREAL            = .FALSE.                                                  # <- [4]\nFC3_CUTOFF_PAIR        =                                                          # <- [2]\nFD_DISTANCE            = 0.03                                                     # <- [4]\nOVERSAMPLE             = 3                                                        # <- [4]\nALM_CUT2               =                                                          # <- [4]\nALM_CUT3               = 6.0                                                      # <- [4]\nCUT3_CANDIDATES        = auto                                                     # <- [2]\nCUT3_MAX               = 7.0                                                      # <- [2]\nCUT3_MIN_SHELLS        = 2                                                        # <- [2]\nCUT3_GAP_TOL           = 0.05                                                     # <- [2]\nCUT3_MIN_GAP           = 0.05                                                     # <- [2]\nDISP_RMS               = 0.03                                                     # <- [4]\nMC_DMIN_SCALE          = 0.75                                                     # <- [4]\nMC_NITER               = 10                                                       # <- [4]\nMC_SEED                = 2025                                                     # <- [4]\nINCAR_BENCH            = off                                                      # <- [4]\nINCAR_BENCH_FRAMES     = 2                                                        # <- [2]\nSYMMETRY_SYMMETRIZE    = on                                                       # <- [4]\nSYMMETRY_ALLOW_PENDING = true                                                     # <- [4]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "./bin/autozt"
+  },
+  "updated_ts": "2026-09-25T01:12:36",
+  "outputs": {
+    "/public/home/wangchao/Fullerene_Network/work/MoS2_kltest/kl-dft-cpu/step4_disp/symmetry_audit/POSCAR.symmetrized": {
+      "sha256": "1c7dc679360c8a0d79f0459d95a6806378db8522829f76cff01089190ea8dde3",
+      "bytes": 530,
+      "mtime": "2026-09-25T01:12:36"
+    }
+  },
+  "tools": {},
+  "hostname": "login01",
+  "note": "结构体检第五条：数值微畸变对称化",
+  "symmetry_audit": {
+    "triggered": true,
+    "used_symprec": 0.0001,
+    "reason": "symprec=1e-5 与 1e-4 空间群不一致 -> 数值微畸变",
+    "micro_distortion_detail": {
+      "a_minus_b_A": 7.882300618877736e-06,
+      "a_over_b_minus_1": 2.51013559338098e-06,
+      "gamma_minus_120_deg": 8.303465178016722e-05,
+      "alpha_minus_90_deg": 0.0,
+      "beta_minus_90_deg": 0.0
+    },
+    "confirmations": {
+      "c1_stoichiometry": {
+        "ok": true,
+        "before": {
+          "Mo": 1,
+          "S": 2
+        },
+        "after": {
+          "Mo": 1,
+          "S": 2
+        },
+        "natoms_before": 3,
+        "natoms_after": 3
+      },
+      "c2_energy": {
+        "status": "pending",
+        "energy_before_eV": null,
+        "energy_after_eV": null,
+        "note": "需要两个单点（对称化前后各一个）才能完成本项；成本 = 2 个单点。"
+      },
+      "c3_vacuum_axis": {
+        "ok": true,
+        "axis_moved": false,
+        "before": {
+          "axis": 2,
+          "axis_name": "c",
+          "vacuum_A": 21.882283680035286,
+          "height_A": 25.0,
+          "center_frac": 0.0,
+          "vacuums_A": [
+            1.8129921004151004,
+            1.8129875495705219,
+            21.882283680035286
+          ],
+          "is_2d": true
+        },
+        "after": {
+          "axis": 2,
+          "axis_name": "c",
+          "vacuum_A": 21.88228368003529,
+          "height_A": 25.000000000000004,
+          "center_frac": 0.0,
+          "vacuums_A": [
+            1.8129913410402168,
+            1.8129913410402163,
+            21.88228368003529
+          ],
+          "is_2d": true
+        },
+        "center_shift_frac": 0.0,
+        "center_tol": 0.02
+      },
+      "all_ok": true,
+      "fully_confirmed": false
+    },
+    "stress_recheck": null
+  }
+}

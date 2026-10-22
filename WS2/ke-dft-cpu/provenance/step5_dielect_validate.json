@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-05T02:20:03",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step5_dielect_validate",
+  "material": {
+    "name": "WS2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu",
+    "local": "/mnt/d/tf_data/work_AutoZT/WS2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/WS2/ke-dft-cpu",
+  "generator": {
+    "script": "validate_dielectric.py",
+    "sha256": "20b8ccb04719bdc59ef523b0a623bb41afe46c94daba49bedc10c205818e524e",
+    "args": "--json step5_dielect_validate/dielectric_check.json"
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "304fcd87800722b7ef768e4e67a239547af1c3468475023904a965c26884b87a",
+      "source": "/mnt/d/tf_data/work_AutoZT/WS2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "validate_dielectric.py": {
+      "sha256": "20b8ccb04719bdc59ef523b0a623bb41afe46c94daba49bedc10c205818e524e",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step5_dielect/validate_dielectric.py",
+      "origin": "skill",
+      "args": "--json step5_dielect_validate/dielectric_check.json"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "ef02b9235bb4a577c2d4705c988919ff1fe4ce4e559654bd98cd041fdd779ff8",
+    "chars": 966,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step5_dielect_validate   材料 WS2\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n\n[params]\nBANDGAP        = hse                                                      # <- [1]\nFUNC           = pbesol                                                   # <- [1]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/home/wangchao/software/AutoZT",
+    "argv": "./bin/autozt"
+  }
+}

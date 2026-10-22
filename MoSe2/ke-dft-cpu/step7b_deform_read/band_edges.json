@@ -1,0 +1,227 @@
+{
+  "electron": {
+    "edge_energy_eV": -0.6023,
+    "n_hits": 1,
+    "E1_xx_eV": 5.4317,
+    "E1_yy_eV": 5.4317,
+    "E1_iso_eV": 5.4317,
+    "spread_xx": 0.0,
+    "spread_yy": 0.0,
+    "hits": [
+      {
+        "spin": "up",
+        "band_global": 13,
+        "band_h5": 3,
+        "k_h5": 5107,
+        "k_frac": [
+          0.333333,
+          0.333333,
+          0.0
+        ],
+        "E1_xx_eV": 5.4317,
+        "E1_yy_eV": 5.4317,
+        "E1_iso_eV": 5.4317
+      }
+    ],
+    "E1_vac_xx_raw_eV": 7.3866,
+    "E1_vac_yy_raw_eV": 7.3878,
+    "E1_vac_xx_eV": 7.3872,
+    "E1_vac_yy_eV": 7.3872,
+    "E1_vac_iso_eV": 7.3872,
+    "vac_window_scan": {
+      "0.1": {
+        "xx": 7.3881,
+        "yy": 7.3894,
+        "iso": 7.3887
+      },
+      "0.15": {
+        "xx": 7.3878,
+        "yy": 7.3891,
+        "iso": 7.3885
+      },
+      "0.2": {
+        "xx": 7.3874,
+        "yy": 7.3886,
+        "iso": 7.388
+      },
+      "0.3": {
+        "xx": 7.3854,
+        "yy": 7.3865,
+        "iso": 7.3859
+      }
+    },
+    "scan_verdict": {
+      "n_windows": 4,
+      "mean_iso_eV": 7.3878,
+      "std_eV": 0.0011,
+      "CV": 0.0002,
+      "sign_flips": 0,
+      "recommend": "窗口依赖弱（CV < 5%），生产值可靠"
+    }
+  },
+  "hole": {
+    "edge_energy_eV": -2.1874,
+    "n_hits": 1,
+    "E1_xx_eV": 0.2017,
+    "E1_yy_eV": 0.2017,
+    "E1_iso_eV": 0.2017,
+    "spread_xx": 0.0,
+    "spread_yy": 0.0,
+    "hits": [
+      {
+        "spin": "up",
+        "band_global": 12,
+        "band_h5": 2,
+        "k_h5": 5107,
+        "k_frac": [
+          0.333333,
+          0.333333,
+          0.0
+        ],
+        "E1_xx_eV": 0.2017,
+        "E1_yy_eV": 0.2017,
+        "E1_iso_eV": 0.2017
+      }
+    ],
+    "E1_vac_xx_raw_eV": 2.1566,
+    "E1_vac_yy_raw_eV": 2.1578,
+    "E1_vac_xx_eV": 2.1572,
+    "E1_vac_yy_eV": 2.1572,
+    "E1_vac_iso_eV": 2.1572,
+    "vac_window_scan": {
+      "0.1": {
+        "xx": 2.1581,
+        "yy": 2.1594,
+        "iso": 2.1588
+      },
+      "0.15": {
+        "xx": 2.1578,
+        "yy": 2.1591,
+        "iso": 2.1585
+      },
+      "0.2": {
+        "xx": 2.1574,
+        "yy": 2.1586,
+        "iso": 2.158
+      },
+      "0.3": {
+        "xx": 2.1554,
+        "yy": 2.1565,
+        "iso": 2.1559
+      }
+    },
+    "scan_verdict": {
+      "n_windows": 4,
+      "mean_iso_eV": 2.1578,
+      "std_eV": 0.0011,
+      "CV": 0.0005,
+      "sign_flips": 0,
+      "recommend": "窗口依赖弱（CV < 5%），生产值可靠"
+    }
+  },
+  "vac_align": {
+    "status": "ok",
+    "window_half": 0.25,
+    "flat_tol_eV": 0.001,
+    "strain_mag": {
+      "xx": 0.005,
+      "yy": 0.005
+    },
+    "pairs": {
+      "xx": [
+        "deform-01",
+        "deform-02"
+      ],
+      "yy": [
+        "deform-03",
+        "deform-04"
+      ]
+    },
+    "dvac_eV_per_unit_strain": {
+      "xx": -2.693394,
+      "yy": -2.692194
+    }
+  },
+  "deform_ref": {
+    "delta_eV_per_unit_strain": [
+      [
+        2.693393630463745,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.692194421806391,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "dvac_eV_per_unit_strain": {
+      "xx": -2.693394,
+      "yy": -2.692194
+    },
+    "components_applied": [
+      "xx",
+      "yy"
+    ],
+    "formula": "D_vac = D_core + delta,  delta_ij = -dE_vac/deps_ij",
+    "note": "Δ 与能带无关（真空势的应变导数只依赖构型），加到 deformation.h5 的所有带×所有 k 上即得真空口径；未施加的应变分量 Δ 留 0。"
+  },
+  "skill_rev": "2026-09-16-deform-ref-vacuum",
+  "read_paths": {
+    "undeformed": {
+      "vasprun.xml": "rigid",
+      "LOCPOT": "rigid"
+    },
+    "deform-01": {
+      "POSCAR": "ionrelax",
+      "LOCPOT": "ionrelax",
+      "vasprun.xml": "ionrelax"
+    },
+    "deform-02": {
+      "POSCAR": "ionrelax",
+      "LOCPOT": "ionrelax",
+      "vasprun.xml": "ionrelax"
+    },
+    "deform-03": {
+      "POSCAR": "ionrelax",
+      "LOCPOT": "ionrelax",
+      "vasprun.xml": "ionrelax"
+    },
+    "deform-04": {
+      "POSCAR": "ionrelax",
+      "LOCPOT": "ionrelax",
+      "vasprun.xml": "ionrelax"
+    }
+  },
+  "validity": "UNKNOWN: no discriminant.json",
+  "deform_geometry": "ionrelax(in-plane)+clamped(out-of-plane)",
+  "deform_geometry_folders": {
+    "deform-01": "ionrelax",
+    "deform-02": "ionrelax",
+    "deform-03": "ionrelax",
+    "deform-04": "ionrelax",
+    "deform-05": "clamped",
+    "deform-06": "clamped",
+    "deform-07": "clamped",
+    "deform-08": "clamped",
+    "deform-09": "ionrelax"
+  },
+  "core_reference": "avg_core",
+  "core_reference_folders": {
+    "undeformed": "avg_core",
+    "deform-01/ionrelax": "avg_core",
+    "deform-02/ionrelax": "avg_core",
+    "deform-03/ionrelax": "avg_core",
+    "deform-04/ionrelax": "avg_core",
+    "deform-05": "avg_core",
+    "deform-06": "avg_core",
+    "deform-07": "avg_core",
+    "deform-08": "avg_core",
+    "deform-09/ionrelax": "avg_core"
+  }
+}
