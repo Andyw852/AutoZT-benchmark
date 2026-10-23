@@ -1,0 +1,323 @@
+{
+  "electron": {
+    "edge_energy_eV": -1.0969,
+    "n_hits": 2,
+    "E1_xx_eV": 3.555,
+    "E1_yy_eV": 3.555,
+    "E1_zz_eV": 2.3467,
+    "E1_iso_eV": 3.555,
+    "E1_iso_def": "(D_xx+D_yy)/2（面内）",
+    "spread_xx": 0.0,
+    "spread_yy": 0.0,
+    "hits": [
+      {
+        "spin": "up",
+        "band_global": 12,
+        "band_h5": 4,
+        "k_h5": 5735,
+        "k_frac": [
+          0.333333,
+          0.333333,
+          0.333333
+        ],
+        "E1_xx_eV": 3.555,
+        "E1_yy_eV": 3.555,
+        "E1_zz_eV": 2.3467,
+        "E1_iso_eV": 3.555
+      },
+      {
+        "spin": "down",
+        "band_global": 12,
+        "band_h5": 4,
+        "k_h5": 5735,
+        "k_frac": [
+          0.333333,
+          0.333333,
+          0.333333
+        ],
+        "E1_xx_eV": 3.555,
+        "E1_yy_eV": 3.555,
+        "E1_zz_eV": 2.3467,
+        "E1_iso_eV": 3.555
+      }
+    ],
+    "E1_vac_xx_raw_eV": 5.2112,
+    "E1_vac_yy_raw_eV": 5.1907,
+    "E1_vac_xx_eV": 5.2009,
+    "E1_vac_yy_eV": 5.201,
+    "E1_vac_iso_eV": 5.201,
+    "vac_window_scan": {
+      "0.1": {
+        "xx": 5.2118,
+        "yy": 5.1914,
+        "iso": 5.2016
+      },
+      "0.15": {
+        "xx": 5.2118,
+        "yy": 5.1913,
+        "iso": 5.2016
+      },
+      "0.2": {
+        "xx": 5.2117,
+        "yy": 5.1912,
+        "iso": 5.2015
+      },
+      "0.3": {
+        "xx": 5.212,
+        "yy": 5.1916,
+        "iso": 5.2018
+      }
+    },
+    "scan_verdict": {
+      "n_windows": 4,
+      "mean_iso_eV": 5.2016,
+      "std_eV": 0.0001,
+      "CV": 0.0,
+      "sign_flips": 1,
+      "recommend": "窗口依赖弱（CV < 5%），生产值可靠"
+    }
+  },
+  "hole": {
+    "edge_energy_eV": -1.8568,
+    "n_hits": 2,
+    "E1_xx_eV": 1.335,
+    "E1_yy_eV": 1.335,
+    "E1_zz_eV": 1.7217,
+    "E1_iso_eV": 1.335,
+    "E1_iso_def": "(D_xx+D_yy)/2（面内）",
+    "spread_xx": 0.0,
+    "spread_yy": 0.0,
+    "hits": [
+      {
+        "spin": "up",
+        "band_global": 11,
+        "band_h5": 3,
+        "k_h5": 5734,
+        "k_frac": [
+          0.333333,
+          0.333333,
+          0.0
+        ],
+        "E1_xx_eV": 1.335,
+        "E1_yy_eV": 1.335,
+        "E1_zz_eV": 1.7267,
+        "E1_iso_eV": 1.335
+      },
+      {
+        "spin": "down",
+        "band_global": 11,
+        "band_h5": 3,
+        "k_h5": 5734,
+        "k_frac": [
+          0.333333,
+          0.333333,
+          0.0
+        ],
+        "E1_xx_eV": 1.335,
+        "E1_yy_eV": 1.335,
+        "E1_zz_eV": 1.7167,
+        "E1_iso_eV": 1.335
+      }
+    ],
+    "E1_vac_xx_raw_eV": 2.9912,
+    "E1_vac_yy_raw_eV": 2.9707,
+    "E1_vac_xx_eV": 2.9809,
+    "E1_vac_yy_eV": 2.981,
+    "E1_vac_iso_eV": 2.981,
+    "vac_window_scan": {
+      "0.1": {
+        "xx": 2.9918,
+        "yy": 2.9714,
+        "iso": 2.9816
+      },
+      "0.15": {
+        "xx": 2.9918,
+        "yy": 2.9713,
+        "iso": 2.9815
+      },
+      "0.2": {
+        "xx": 2.9917,
+        "yy": 2.9712,
+        "iso": 2.9814
+      },
+      "0.3": {
+        "xx": 2.992,
+        "yy": 2.9716,
+        "iso": 2.9818
+      }
+    },
+    "scan_verdict": {
+      "n_windows": 4,
+      "mean_iso_eV": 2.9816,
+      "std_eV": 0.0001,
+      "CV": 0.0,
+      "sign_flips": 1,
+      "recommend": "窗口依赖弱（CV < 5%），生产值可靠"
+    }
+  },
+  "vac_align": {
+    "status": "ok",
+    "window_half": 0.25,
+    "flat_tol_eV": 0.001,
+    "strain_mag": {
+      "xx": 0.005,
+      "yy": 0.005
+    },
+    "pairs": {
+      "xx": [
+        "deform-01",
+        "deform-02"
+      ],
+      "yy": [
+        "deform-03",
+        "deform-04"
+      ]
+    },
+    "dvac_eV_per_unit_strain": {
+      "xx": -2.888773,
+      "yy": -2.899309
+    }
+  },
+  "deform_ref": {
+    "delta_eV_per_unit_strain": [
+      [
+        2.888773287172783,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.8993090106415016,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "dvac_eV_per_unit_strain": {
+      "xx": -2.888773,
+      "yy": -2.899309
+    },
+    "components_applied": [
+      "xx",
+      "yy"
+    ],
+    "formula": "D_vac = D_core + delta,  delta_ij = -dE_vac/deps_ij",
+    "note": "Δ 与能带无关（真空势的应变导数只依赖构型），加到 deformation.h5 的所有带×所有 k 上即得真空口径；未施加的应变分量 Δ 留 0。"
+  },
+  "skill_rev": "2026-10-13-v187-3d-ionrelax",
+  "read_paths": {
+    "undeformed": {
+      "vasprun.xml": "rigid",
+      "LOCPOT": "rigid"
+    },
+    "deform-01": {
+      "POSCAR": "ionrelax",
+      "LOCPOT": "ionrelax",
+      "vasprun.xml": "ionrelax"
+    },
+    "deform-02": {
+      "POSCAR": "ionrelax",
+      "LOCPOT": "ionrelax",
+      "vasprun.xml": "ionrelax"
+    },
+    "deform-03": {
+      "POSCAR": "ionrelax",
+      "LOCPOT": "ionrelax",
+      "vasprun.xml": "ionrelax"
+    },
+    "deform-04": {
+      "POSCAR": "ionrelax",
+      "LOCPOT": "ionrelax",
+      "vasprun.xml": "ionrelax"
+    }
+  },
+  "validity": "UNKNOWN: no discriminant.json",
+  "deform_geometry": "ionrelax(in-plane)+clamped(out-of-plane)",
+  "deform_geometry_folders": {
+    "deform-01": "ionrelax",
+    "deform-02": "ionrelax",
+    "deform-03": "ionrelax",
+    "deform-04": "ionrelax",
+    "deform-05": "clamped",
+    "deform-06": "clamped",
+    "deform-07": "clamped",
+    "deform-08": "clamped",
+    "deform-09": "ionrelax"
+  },
+  "core_reference": "avg_core",
+  "core_reference_folders": {
+    "undeformed": "avg_core",
+    "deform-01/ionrelax": "avg_core",
+    "deform-02/ionrelax": "avg_core",
+    "deform-03/ionrelax": "avg_core",
+    "deform-04/ionrelax": "avg_core",
+    "deform-05": "avg_core",
+    "deform-06": "avg_core",
+    "deform-07": "avg_core",
+    "deform-08": "avg_core",
+    "deform-09/ionrelax": "avg_core"
+  },
+  "ionrelax_check": {
+    "ediffg_ref": -0.005,
+    "ratio_warn": 0.25,
+    "folders": {
+      "deform-01": {
+        "ediffg": -0.005,
+        "nsw": 60,
+        "n_ionic": 4,
+        "fmax_first": 0.05016,
+        "fmax_last": 0.00039,
+        "ratio_last_first": 0.0078,
+        "flags": [],
+        "status": "ok"
+      },
+      "deform-02": {
+        "ediffg": -0.005,
+        "nsw": 60,
+        "n_ionic": 3,
+        "fmax_first": 0.02485,
+        "fmax_last": 0.0046,
+        "ratio_last_first": 0.1849,
+        "flags": [],
+        "status": "ok"
+      },
+      "deform-03": {
+        "ediffg": -0.005,
+        "nsw": 60,
+        "n_ionic": 4,
+        "fmax_first": 0.05008,
+        "fmax_last": 0.00035,
+        "ratio_last_first": 0.007,
+        "flags": [],
+        "status": "ok"
+      },
+      "deform-04": {
+        "ediffg": -0.005,
+        "nsw": 60,
+        "n_ionic": 3,
+        "fmax_first": 0.02532,
+        "fmax_last": 0.00462,
+        "ratio_last_first": 0.1825,
+        "flags": [],
+        "status": "ok"
+      },
+      "deform-09": {
+        "ediffg": -0.005,
+        "nsw": 60,
+        "n_ionic": 2,
+        "fmax_first": 0.04874,
+        "fmax_last": 0.00422,
+        "ratio_last_first": 0.0865,
+        "flags": [],
+        "status": "ok"
+      }
+    },
+    "ediffg_used": [
+      -0.005
+    ],
+    "n_flagged": 0
+  }
+}
