@@ -1,0 +1,82 @@
+{
+  "step": "step3_band_plot",
+  "step3_dir": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step2_bandgap/step2.2_pbe",
+  "out_dir": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot",
+  "checked_at": "2026-10-20T20:40:33",
+  "status": "ok",
+  "functional": "pbe",
+  "functional_display": "PBE",
+  "soc": false,
+  "nspin": 1,
+  "nelect": 96,
+  "n_path_kpts": 105,
+  "band_source": "vasprun.xml (kpoints_opt)",
+  "gap_eV": 0.8185,
+  "gap_type": "indirect",
+  "min_direct_gap_eV": 0.8188,
+  "vbm": {
+    "E_eV": -1.9591,
+    "k_frac": [
+      0.0,
+      0.325,
+      0.0
+    ]
+  },
+  "cbm": {
+    "E_eV": -1.1406,
+    "k_frac": [
+      0.0,
+      0.3375,
+      0.0
+    ]
+  },
+  "efermi_scf_eV": -1.7053,
+  "efermi_source": "step2.15_discriminant 密网格 E_F（/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step2_bandgap/step2.15_discriminant/discriminant.json）",
+  "mesh_cross_check": {
+    "n_mesh_kpts": 12,
+    "mesh_vbm_eV": -1.976,
+    "mesh_cbm_eV": -1.1315,
+    "mesh_vbm_k_frac": [
+      0.0,
+      0.363636,
+      0.0
+    ],
+    "mesh_cbm_k_frac": [
+      0.0,
+      0.363636,
+      0.0
+    ],
+    "gap_mesh_eV": 0.8445,
+    "gap_path_plus_mesh_eV": 0.8185,
+    "verdict": "consistent"
+  },
+  "mesh_cross_check_warning": null,
+  "energy_zero": "VBM",
+  "inputs_copied": [
+    "EIGENVAL",
+    "vasprun.xml",
+    "POSCAR",
+    "INCAR",
+    "KPOINTS",
+    "KPOINTS_OPT",
+    "kpath.json",
+    "workflow_method.txt"
+  ],
+  "files": {
+    "dat": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot/band.dat",
+    "klabels": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot/band_klabels.txt",
+    "png": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot/band.png",
+    "summary": "/public/home/wangchao/Fullerene_Network/work/superlattice/SS/ke-dft-cpu/step2_bandgap/step2.2_pbe_plot/band_summary.json"
+  },
+  "labels_found": [
+    "Γ",
+    "X",
+    "S",
+    "Y",
+    "Γ"
+  ],
+  "kpath_source": "kpath.json (native_2d)",
+  "kpath_method": "native_2d",
+  "kpath_note": "2D 原生路径 | rectangular | a=3.1252 Ang, b=10.8188 Ang, γ=90.00° | 真空轴=c | 约化原胞面内基矢 |（dim=2D 且 AUTO_2D_KPATH=True，已从 seekpath 自动切换）",
+  "invalidated_downstream": []
+}

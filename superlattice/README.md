@@ -251,13 +251,26 @@ S = √(PF/σ) 与厚度/体积归一化无关（S 是强度量），可用它�
 │   │   ├── dpt_result.json          S8.2 完整结果
 │   │   ├── transport.json           S8.4 AMSET 完整结果
 │   │   ├── comparison_300K.png      S8.3 对比图
-│   │   └── transport_plots/         9 个温度的 params CSV
+│   │   ├── step7b_deform_read/       E1 原始数据（band_edges.json + deformation.h5）
+│   │   ├── step8.1_boltztrap/        BoltzTraP2 CRTA 原始输出
+│   │   └── transport_plots/          9 个温度的 params CSV
 │   ├── CrSe2/  (同结构)
 │   ├── SS/     (同结构)
 │   └── LS/     ← 待完成（见第 8 节）
-└── 03_计算参数/
-    ├── step.conf_CrS2 / CrSe2 / SS / LS   四个材料的最终配置
-    └── (本 README 第 2 节即参数说明)
+├── 03_计算参数/
+│   ├── step.conf_CrS2 / CrSe2 / SS / LS   四个材料的最终配置
+│   └── (本 README 第 2 节即参数说明)
+├── 04_文献vsDPTvsAMSET/             三线对比（迁移率）
+├── 05_综合汇总/                     综合报告 + 全部数据汇总表
+├── 06_双口径结果/                   m* 两种口径的对照结果
+├── 07_DPT修复重算验证/              [0069]/[0071]/[0061-m] 修复的实测影响
+├── 08_σ偏差复核_2026-10-24.md       ★ σ/PF/κe 偏差的四步核对与归因
+└── 09_复核材料/                     ★ 供第三方复核的原始数据/文献位图/数字化脚本
+    ├── README.md                    索引：每个文件干什么、怎么复核
+    ├── 能带/                        band.dat + band_summary.json（判 K–Γ）
+    ├── K-Gamma/                     我们算的 K 谷 vs Γ 谷价带位置
+    ├── 输运原始/                    S8.1 逐化学势扫描（σ/S/PF/κe 源头）
+    └── 数字化/                      文献 Fig.4/Fig.S3 位图 + 数字化脚本
 ```
 
 ---
