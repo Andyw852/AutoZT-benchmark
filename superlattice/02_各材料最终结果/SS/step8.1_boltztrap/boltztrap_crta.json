@@ -131078,8 +131078,8 @@
     "issues": []
   },
   "tensor_average": "in-plane (xx+yy)/2",
-  "twoD_c_over_t": 2.8682,
-  "twoD_c_over_t_source": "step8.4_amset2d/2d_correction.json",
-  "twoD_thickness_A": 6.9731,
-  "twoD_note": "2D：张量已取面内 (xx+yy)/2；σ、κ_e 仍按超胞体积口径（与 amset 一致，可直接对比）。要面内薄片口径再乘 c/t=2.8682。"
+  "twoD_c_over_t": 2.9717682020802374,
+  "twoD_c_over_t_source": "LAYER_THICKNESS(step.conf)",
+  "twoD_thickness_A": 6.73,
+  "twoD_note": "2D：张量已取面内 (xx+yy)/2；σ、κ_e 仍按超胞体积口径（与 amset 一致，可直接对比）。要面内薄片口径再乘 c/t=2.9717682020802374。"
 }
