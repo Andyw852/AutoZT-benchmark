@@ -1,0 +1,93 @@
+# [0053][0054] mechanism-resolved 迁移率（去 IMP，稀薄极限 f ≈ 0）；mechanism = combined 行是这些机制一起算的总值（total_mechs = 实际机制组合）；eta = n = p 点的 min(E_c-E_F, E_F-E_v)/kT（< 5 不是稀薄极限）；空穴取本征点 doping = 0（AMSET 对 doping ≥ 0 只积价带、除以 hole_conc），电子取最低 n 型点（AMSET 在 0 点不给电子 μ）；总值去 IMP
+# 单机制 = AMSET transport.json 的 mobility[机制]（只开该机制）；share_1/mu = (1/μ_i)/Σ(1/μ_i)；Matthiessen sum = (Σ 1/μ_i)^-1 ≥ 总值（RTA 热平均）；μ > 1e+10 的机制（前因子 0）不列；role = check 是非简并平台核对点
+T_K,carrier,role,source,doping_cm3,n_2D_cm-2,mechanism,mu_cm2/Vs,share_1/mu,eta,total_source,total_mechs
+100,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,106.425,0.962578,,,
+100,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,2737.49,0.0374221,,,
+100,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,102.443,,,,
+100,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,98.0494,,,去 IMP（ADP+POP）,ADP+POP
+200,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,62.8218,0.787632,,,
+200,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,232.994,0.212368,,,
+200,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,49.4805,,,,
+200,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,43.2612,,,去 IMP（ADP+POP）,ADP+POP
+300,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,41.4534,0.656826,,,
+300,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,79.3405,0.343174,,,
+300,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,27.2276,,,,
+300,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,24.2194,,,去 IMP（ADP+POP）,ADP+POP
+400,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,29.1936,0.588912,,,
+400,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,41.8219,0.411088,,,
+400,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,17.1925,,,,
+400,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,15.8287,,,去 IMP（ADP+POP）,ADP+POP
+500,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,21.3943,0.558075,,,
+500,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,27.0173,0.441925,,,
+500,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,11.9396,,,,
+500,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,11.2554,,,去 IMP（ADP+POP）,ADP+POP
+600,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,16.1477,0.552702,,,
+600,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,19.9529,0.447298,,,
+600,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,8.92489,,,,
+600,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,8.52497,,,去 IMP（ADP+POP）,ADP+POP
+700,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,12.5144,0.571742,,,
+700,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,16.7073,0.428258,,,
+700,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,7.15502,,,,
+700,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,6.87518,,,去 IMP（ADP+POP）,ADP+POP
+800,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,9.95334,0.612449,,,
+800,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,15.7293,0.387551,,,
+800,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,6.09592,,,,
+800,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,5.86363,,,去 IMP（ADP+POP）,ADP+POP
+900,electron,main,lowest n-type,-3.4737e+10,6947.4,ADP,8.12198,0.664536,,,
+900,electron,main,lowest n-type,-3.4737e+10,6947.4,POP,16.0892,0.335464,,,
+900,electron,main,lowest n-type,-3.4737e+10,6947.4,Matthiessen sum,5.39735,,,,
+900,electron,main,lowest n-type,-3.4737e+10,6947.4,combined,5.18398,,,去 IMP（ADP+POP）,ADP+POP
+100,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,98.0495,,,去 IMP（ADP+POP）,ADP+POP
+200,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,43.2613,,,去 IMP（ADP+POP）,ADP+POP
+300,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,24.2194,,,去 IMP（ADP+POP）,ADP+POP
+400,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,15.8287,,,去 IMP（ADP+POP）,ADP+POP
+500,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,11.2554,,,去 IMP（ADP+POP）,ADP+POP
+600,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,8.52497,,,去 IMP（ADP+POP）,ADP+POP
+700,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,6.87518,,,去 IMP（ADP+POP）,ADP+POP
+800,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,5.86363,,,去 IMP（ADP+POP）,ADP+POP
+900,electron,check,2nd-lowest n-type,-3.4737e+11,69474,combined,5.18398,,,去 IMP（ADP+POP）,ADP+POP
+100,hole,main,n = p (undoped),0,0,ADP,488.566,0.850234,44.0661,,
+100,hole,main,n = p (undoped),0,0,POP,2773.63,0.149766,44.0661,,
+100,hole,main,n = p (undoped),0,0,Matthiessen sum,415.396,,44.0661,,
+100,hole,main,n = p (undoped),0,0,combined,356.733,,44.0661,去 IMP（ADP+POP）,ADP+POP
+200,hole,main,n = p (undoped),0,0,ADP,267.926,0.472823,22.0294,,
+200,hole,main,n = p (undoped),0,0,POP,240.302,0.527177,22.0294,,
+200,hole,main,n = p (undoped),0,0,Matthiessen sum,126.682,,22.0294,,
+200,hole,main,n = p (undoped),0,0,combined,109.447,,22.0294,去 IMP（ADP+POP）,ADP+POP
+300,hole,main,n = p (undoped),0,0,ADP,173.526,0.318694,14.6886,,
+300,hole,main,n = p (undoped),0,0,POP,81.1701,0.681306,14.6886,,
+300,hole,main,n = p (undoped),0,0,Matthiessen sum,55.3017,,14.6886,,
+300,hole,main,n = p (undoped),0,0,combined,49.5514,,14.6886,去 IMP（ADP+POP）,ADP+POP
+400,hole,main,n = p (undoped),0,0,ADP,122.095,0.258066,11.0199,,
+400,hole,main,n = p (undoped),0,0,POP,42.4682,0.741934,11.0199,,
+400,hole,main,n = p (undoped),0,0,Matthiessen sum,31.5086,,11.0199,,
+400,hole,main,n = p (undoped),0,0,combined,29.2299,,11.0199,去 IMP（ADP+POP）,ADP+POP
+500,hole,main,n = p (undoped),0,0,ADP,90.881,0.231151,8.81917,,
+500,hole,main,n = p (undoped),0,0,POP,27.323,0.768849,8.81917,,
+500,hole,main,n = p (undoped),0,0,Matthiessen sum,21.0073,,8.81917,,
+500,hole,main,n = p (undoped),0,0,combined,19.8692,,8.81917,去 IMP（ADP+POP）,ADP+POP
+600,hole,main,n = p (undoped),0,0,ADP,70.989,0.221526,7.35133,,
+600,hole,main,n = p (undoped),0,0,POP,20.2009,0.778474,7.35133,,
+600,hole,main,n = p (undoped),0,0,Matthiessen sum,15.7259,,7.35133,,
+600,hole,main,n = p (undoped),0,0,combined,14.9637,,7.35133,去 IMP（ADP+POP）,ADP+POP
+700,hole,main,n = p (undoped),0,0,ADP,57.8259,0.227797,6.30123,,
+700,hole,main,n = p (undoped),0,0,POP,17.0585,0.772203,6.30123,,
+700,hole,main,n = p (undoped),0,0,Matthiessen sum,13.1726,,6.30123,,
+700,hole,main,n = p (undoped),0,0,combined,12.4648,,6.30123,去 IMP（ADP+POP）,ADP+POP
+800,hole,main,n = p (undoped),0,0,ADP,48.7178,0.251284,5.51148,,
+800,hole,main,n = p (undoped),0,0,POP,16.3506,0.748716,5.51148,,
+800,hole,main,n = p (undoped),0,0,Matthiessen sum,12.242,,5.51148,,
+800,hole,main,n = p (undoped),0,0,combined,11.3827,,5.51148,去 IMP（ADP+POP）,ADP+POP
+900,hole,main,n = p (undoped),0,0,ADP,42.0901,0.289719,4.89493,,
+900,hole,main,n = p (undoped),0,0,POP,17.1683,0.710281,4.89493,,
+900,hole,main,n = p (undoped),0,0,Matthiessen sum,12.1943,,4.89493,,
+900,hole,main,n = p (undoped),0,0,combined,11.019,,4.89493,去 IMP（ADP+POP）,ADP+POP
+100,hole,check,lowest p-type,3.4737e+10,6947.4,combined,356.735,,,去 IMP（ADP+POP）,ADP+POP
+200,hole,check,lowest p-type,3.4737e+10,6947.4,combined,109.447,,,去 IMP（ADP+POP）,ADP+POP
+300,hole,check,lowest p-type,3.4737e+10,6947.4,combined,49.5514,,,去 IMP（ADP+POP）,ADP+POP
+400,hole,check,lowest p-type,3.4737e+10,6947.4,combined,29.2299,,,去 IMP（ADP+POP）,ADP+POP
+500,hole,check,lowest p-type,3.4737e+10,6947.4,combined,19.8692,,,去 IMP（ADP+POP）,ADP+POP
+600,hole,check,lowest p-type,3.4737e+10,6947.4,combined,14.9637,,,去 IMP（ADP+POP）,ADP+POP
+700,hole,check,lowest p-type,3.4737e+10,6947.4,combined,12.4648,,,去 IMP（ADP+POP）,ADP+POP
+800,hole,check,lowest p-type,3.4737e+10,6947.4,combined,11.3827,,,去 IMP（ADP+POP）,ADP+POP
+900,hole,check,lowest p-type,3.4737e+10,6947.4,combined,11.019,,,去 IMP（ADP+POP）,ADP+POP
