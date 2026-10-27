@@ -256,7 +256,7 @@ S = √(PF/σ) 与厚度/体积归一化无关（S 是强度量），可用它�
 │   │   └── transport_plots/          9 个温度的 params CSV
 │   ├── CrSe2/  (同结构)
 │   ├── SS/     (同结构)
-│   └── LS/     ← 待完成（见第 8 节）
+│   └── LS/     ← 已中止（2026-10-27 用户决定，见第 8 节）
 ├── 03_计算参数/
 │   ├── step.conf_CrS2 / CrSe2 / SS / LS   四个材料的最终配置
 │   └── (本 README 第 2 节即参数说明)
@@ -303,7 +303,7 @@ superlattice/<材料>/ke-dft-cpu/
 
 | 项 | 状态 | 说明 |
 |---|---|---|
-| **LS** | ⏳ 未完成 | S7 形变帧计算中；后续 S7.1→S8.2→S8.1→S8.4→S8.3 待跑 |
+| **LS** | ❌ **已中止（2026-10-27 用户决定）** | 集群争抢导致 10 帧里长期只有 1 帧能正常推进（其余帧 13h 走不完 1 个 SCF 步）；多次换节点/换集群（hfeshell 因 QOSMaxCpuPerUserLimit 等 2 天）均未解决。已 scancel，不再重跑。**LS 的 S7–S8.3 全部无结果**，本文档所有 LS 相关数据仅来自上游 S1–S6 与文献 |
 | **ODP / IVS** | ❌ 未算 | 用户决定先不跑冻声子线（`odp_frozen: false`）；S8/S8.4 只含 ADP/POP/PIE/IMP |
 | **DFPT-IVS** | ❌ 未接入 | eph-qe-cpu 的 `ivs_dfpt` 组是另一条线，本次未接 |
 | **HSE 带隙** | ❌ 未算 | 文献无 HSE，故 `BANDGAP=pbe` |
