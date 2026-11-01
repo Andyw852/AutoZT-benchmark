@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "kind": "gen",
+  "ts": "2026-10-19T15:25:48",
+  "tf_version": "1.2.0",
+  "skill": {
+    "key": "ke-dft-cpu",
+    "version": null,
+    "manifest": null,
+    "desc": "电子热导率(DFT/CPU)"
+  },
+  "step": "step6_elastic",
+  "material": {
+    "name": "CrS2",
+    "path": "/public/home/wangchao/Fullerene_Network/work/superlattice/CrS2/ke-dft-cpu",
+    "local": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice/CrS2"
+  },
+  "hpc": "jzzn",
+  "host": "jzzn",
+  "step_dir": "/public/home/wangchao/Fullerene_Network/work/superlattice/CrS2/ke-dft-cpu",
+  "generator": {
+    "script": "gen_step2_elastic.py",
+    "sha256": "a7c6e3f2a6ab0ab182effde3c011438e4dc69773d592c214ea230d44c30fa1e0",
+    "args": null
+  },
+  "inputs": {
+    "POSCAR": {
+      "sha256": "7d58737f3125aa6debf60590f9b41778f1fac31aa0c509fafad8cde64c4838b6",
+      "source": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice/CrS2/POSCAR",
+      "origin": "project",
+      "sync": "push-if-diff+verify"
+    },
+    "check_common.py": {
+      "sha256": "696a1683e81fced794d1289c1c688d9f840a71d27ad8e3589a5e4bce8a04a4c8",
+      "src_sha256": "696a1683e81fced794d1289c1c688d9f840a71d27ad8e3589a5e4bce8a04a4c8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/check_common.py",
+      "origin": "skill"
+    },
+    "dim_common.py": {
+      "sha256": "36754166f2fc1067f45bef9beb1e4da5ed34053deff8c11a22be6cc02a8086a9",
+      "src_sha256": "36754166f2fc1067f45bef9beb1e4da5ed34053deff8c11a22be6cc02a8086a9",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/dim_common.py",
+      "origin": "skill"
+    },
+    "gen_step2_elastic.py": {
+      "sha256": "a7c6e3f2a6ab0ab182effde3c011438e4dc69773d592c214ea230d44c30fa1e0",
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step6_elastic/gen_step2_elastic.py",
+      "origin": "skill",
+      "args": null
+    },
+    "ke_common.py": {
+      "sha256": "78cc71e8535af113b1a7ecce6f4faedfb8efb10129f08e0279c22e4ae46c90f5",
+      "src_sha256": "78cc71e8535af113b1a7ecce6f4faedfb8efb10129f08e0279c22e4ae46c90f5",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/./ke_common.py",
+      "origin": "skill"
+    },
+    "step.conf": {
+      "sha256": "2f956843d76ffacfffb70f7f07b243e3e030105bf8f41450491a2e11c005a72a",
+      "source": null,
+      "origin": "merged(step.conf)"
+    },
+    "step2_check_and_resubmit.py": {
+      "sha256": "9a185ad8c8a5bec4c2b88f6f4f260aab1b61c836468fffab8a8642ca3f4b41c8",
+      "src_sha256": "9a185ad8c8a5bec4c2b88f6f4f260aab1b61c836468fffab8a8642ca3f4b41c8",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/ke-dft-cpu/step6_elastic/step2_check_and_resubmit.py",
+      "origin": "skill"
+    },
+    "stepconf.py": {
+      "sha256": "2ab447befe0d37a4c12b9dda2dc27b8ac60a15228c1c1230baaee3b94f8f1a85",
+      "src_sha256": "2ab447befe0d37a4c12b9dda2dc27b8ac60a15228c1c1230baaee3b94f8f1a85",
+      "rendered": false,
+      "source": "/home/wangchao/software/AutoZT/skill/_common/opt/stepconf.py",
+      "origin": "skill"
+    },
+    "submit_std_2d.tpl": {
+      "sha256": "9ac02e56ef6339f3c82b5560ff1cb1cb6f00ff3fa134810a541981252c50ed21",
+      "src_sha256": "2d6de93549fe3d6571721b3d0ce3311d94c758266fca420b7c7c060eca8aa147",
+      "rendered": true,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_std_2d.tpl",
+      "origin": "skill"
+    },
+    "submit_std_3d.tpl": {
+      "sha256": "f98f0727bea24dbe4b50fe72491321553d92d90176f37979dbb5a18592139795",
+      "src_sha256": "4c47c5d39902d00c2fa55d480f0e29e03a98aabbab3d2674399bd7dfe075f242",
+      "rendered": true,
+      "source": "/home/wangchao/software/AutoZT/setting/jzzn/templates/submit_std_3d.tpl",
+      "origin": "skill"
+    }
+  },
+  "step_conf": {
+    "name": "step.conf",
+    "sha256": "2f956843d76ffacfffb70f7f07b243e3e030105bf8f41450491a2e11c005a72a",
+    "chars": 1096,
+    "text": "# ===== 本文件由 tf 自动合成，勿手改 —— 要改请改下面列出的上游 =====\n# 步骤 step6_elastic   材料 CrS2\n# 来源（越靠下优先级越高）：\n#   [1] /home/wangchao/software/AutoZT/skill/ke-dft-cpu/step.conf   (skill 默认)\n#   [cluster:jzzn] <setting/jzzn.yaml>   (集群默认)\n#   [2] /mnt/d/joint_research_project/AutoZT/基准测试/superlattice/CrS2/ke-dft-cpu/project_setting/templates/step.conf   (project_setting 共用)\n\n[params]\nBANDGAP        = hse                                                      # <- [2]\nFUNC           = pbe                                                      # <- [2]\nCONDA_SH       = /public/home/wangchao/miniconda3/etc/profile.d/conda.sh  # <- [cluster:jzzn]\nCONDA_ENV      = /public/home/wangchao/venvs/mace_cpu                     # <- [cluster:jzzn]\nMACE_MODEL_DIR = /public/home/wangchao/software/mace/mlff_models          # <- [cluster:jzzn]\nAMSET_ENV      = amset051                                                 # <- [cluster:jzzn]\nPOTCAR_DIR     = /public/home/wangchao/software/vasp_pseudopotentials     # <- [cluster:jzzn]\nREFERENCES_DIR = /public/home/wangchao/convex_hull_refs                   # <- [cluster:jzzn]\n"
+  },
+  "run": {
+    "actor": "wangchao",
+    "cwd": "/mnt/d/joint_research_project/AutoZT/基准测试/superlattice",
+    "argv": "/home/wangchao/software/AutoZT/bin/autozt"
+  }
+}
